@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Table - ZUI Documentation</title>
+
+        <link href="css/docs.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="zui-top-bar" role="banner">
+            <nav role="navigation">
+                <div class="zui-header-primary">
+                    <h1 class="zui-top-bar-logo">
+                        <a href="index.html">
+                            ZUI Docs
+                        </a>
+                    </h1>
+                    <ul class="zui-nav">
+                        <li>
+                            <a href="index.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zource/zui">Repository</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="zui-page-header">
+            <div class="zui-page-header-inner">
+                <div class="zui-page-header-main">
+                    <h1>Table</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="zui-page-panel">
+            <div class="zui-page-sidebar">
+                <nav class="zui-navgroup zui-navgroup-vertical">
+                    <div class="zui-navgroup-inner">
+                        <div class="zui-nav-heading">
+                            <strong>Patterns</strong>
+                        </div>
+
+                        <ul class="zui-nav">
+                            
+                            <li><a href="alert.html">Alert</a></li>
+                            
+                            <li><a href="badge.html">Badge</a></li>
+                            
+                            <li><a href="banner.html">Banner</a></li>
+                            
+                            <li><a href="button.html">Button</a></li>
+                            
+                            <li><a href="dialog.html">Dialog</a></li>
+                            
+                            <li><a href="example.html">Example</a></li>
+                            
+                            <li><a href="font.html">Font</a></li>
+                            
+                            <li><a href="form.html">Form</a></li>
+                            
+                            <li><a href="header.html">Header</a></li>
+                            
+                            <li><a href="image.html">Image</a></li>
+                            
+                            <li><a href="keyboard.html">Keyboard</a></li>
+                            
+                            <li><a href="layout-group.html">Layout Group</a></li>
+                            
+                            <li><a href="layout.html">Layout</a></li>
+                            
+                            <li><a href="navigation.html">Navigation</a></li>
+                            
+                            <li><a href="page-header.html">Page Header</a></li>
+                            
+                            <li><a href="page.html">Page</a></li>
+                            
+                            <li><a href="pagination.html">Pagination</a></li>
+                            
+                            <li><a href="select-container.html">Select Container</a></li>
+                            
+                            <li><a href="splitter.html">Splitter</a></li>
+                            
+                            <li><a href="status-bar.html">Status Bar</a></li>
+                            
+                            <li><a href="status.html">Status</a></li>
+                            
+                            <li><a href="steps.html">Steps</a></li>
+                            
+                            <li><a href="tab.html">Tab</a></li>
+                            
+                            <li><a href="table.html">Table</a></li>
+                            
+                            <li><a href="tag.html">Tag</a></li>
+                            
+                            <li><a href="toolbar.html">Toolbar</a></li>
+                            
+                            <li><a href="top-bar.html">Top Bar</a></li>
+                            
+                            <li><a href="typography.html">Typography</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="zui-page-content zui-text-justify">
+                
+<h2>Summary</h2>
+
+
+<p>
+    Tables are meant to show structured data.
+</p>
+
+
+
+<h2>HTML Attributes</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no attributes defined for this pattern.
+    </p>
+</div>
+
+
+<h2>HTML Classes</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no classes defined for this pattern.
+    </p>
+</div>
+
+
+<h2>JavaScript Events</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no events defined for this pattern.
+    </p>
+</div>
+
+
+<h2>JavaScript Methods</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no methods defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Functions</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no functions defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Mixins</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no mixins defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Variables</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no variables defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Markup</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-markup-table" role="tab" aria-selected="true"><strong>Table</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-sortable" role="tab" aria-selected="false"><strong>Sortable</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-striped" role="tab" aria-selected="false"><strong>Striped</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-bordered" role="tab" aria-selected="false"><strong>Bordered</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-hover" role="tab" aria-selected="false"><strong>Hover</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-list" role="tab" aria-selected="false"><strong>List</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-markup-table" class="zui-tabs-pane zui-active-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-sortable" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-table-sortable"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-striped" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-table-striped"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-bordered" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-table-bordered"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-hover" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-table-hover"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-list" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-table-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-table" role="tab" aria-selected="true"><strong>Table</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-sortable" role="tab" aria-selected="false"><strong>Sortable</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-striped" role="tab" aria-selected="false"><strong>Striped</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-bordered" role="tab" aria-selected="false"><strong>Bordered</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-hover" role="tab" aria-selected="false"><strong>Hover</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-list" role="tab" aria-selected="false"><strong>List</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-table" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Jet Li</td>
+            <td>April 26, 1963</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bruce Lee</td>
+            <td>November 27, 1940</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Chuck Norris</td>
+            <td>March 10, 1940</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jackie Chan</td>
+            <td>April 7, 1954</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Jean-Claude Van Damme</td>
+            <td>October 18, 1960</td>
+        </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-sortable" class="zui-tabs-pane">
+            <div class="zui-example">
+<table class="zui-table-sortable">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Jet Li</td>
+            <td>April 26, 1963</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bruce Lee</td>
+            <td>November 27, 1940</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Chuck Norris</td>
+            <td>March 10, 1940</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jackie Chan</td>
+            <td>April 7, 1954</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Jean-Claude Van Damme</td>
+            <td>October 18, 1960</td>
+        </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-striped" class="zui-tabs-pane">
+            <div class="zui-example">
+<table class="zui-table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Jet Li</td>
+            <td>April 26, 1963</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bruce Lee</td>
+            <td>November 27, 1940</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Chuck Norris</td>
+            <td>March 10, 1940</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jackie Chan</td>
+            <td>April 7, 1954</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Jean-Claude Van Damme</td>
+            <td>October 18, 1960</td>
+        </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-bordered" class="zui-tabs-pane">
+            <div class="zui-example">
+<table class="zui-table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Jet Li</td>
+            <td>April 26, 1963</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bruce Lee</td>
+            <td>November 27, 1940</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Chuck Norris</td>
+            <td>March 10, 1940</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jackie Chan</td>
+            <td>April 7, 1954</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Jean-Claude Van Damme</td>
+            <td>October 18, 1960</td>
+        </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-hover" class="zui-tabs-pane">
+            <div class="zui-example">
+<table class="zui-table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Jet Li</td>
+            <td>April 26, 1963</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bruce Lee</td>
+            <td>November 27, 1940</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Chuck Norris</td>
+            <td>March 10, 1940</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jackie Chan</td>
+            <td>April 7, 1954</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Jean-Claude Van Damme</td>
+            <td>October 18, 1960</td>
+        </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-list" class="zui-tabs-pane">
+            <div class="zui-example">
+<table class="zui-table-list">
+    <tbody>
+        <tr>
+            <td>Key 1</td>
+            <td>Value 1</td>
+        </tr>
+        <tr>
+            <td>Key 2</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Key 3</td>
+            <td>Value 3</td>
+        </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+            </div>
+        </div>
+        
+        <a href="https://github.com/zource/zui"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>        
+        <script type="text/javascript" src="js/zui.js"></script>
+        <script type="text/javascript" src="js/docs.js"></script>
+    </body>
+</html>

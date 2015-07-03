@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Form - ZUI Documentation</title>
+
+        <link href="css/docs.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="zui-top-bar" role="banner">
+            <nav role="navigation">
+                <div class="zui-header-primary">
+                    <h1 class="zui-top-bar-logo">
+                        <a href="index.html">
+                            ZUI Docs
+                        </a>
+                    </h1>
+                    <ul class="zui-nav">
+                        <li>
+                            <a href="index.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zource/zui">Repository</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="zui-page-header">
+            <div class="zui-page-header-inner">
+                <div class="zui-page-header-main">
+                    <h1>Form</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="zui-page-panel">
+            <div class="zui-page-sidebar">
+                <nav class="zui-navgroup zui-navgroup-vertical">
+                    <div class="zui-navgroup-inner">
+                        <div class="zui-nav-heading">
+                            <strong>Patterns</strong>
+                        </div>
+
+                        <ul class="zui-nav">
+                            
+                            <li><a href="alert.html">Alert</a></li>
+                            
+                            <li><a href="badge.html">Badge</a></li>
+                            
+                            <li><a href="banner.html">Banner</a></li>
+                            
+                            <li><a href="button.html">Button</a></li>
+                            
+                            <li><a href="dialog.html">Dialog</a></li>
+                            
+                            <li><a href="example.html">Example</a></li>
+                            
+                            <li><a href="font.html">Font</a></li>
+                            
+                            <li><a href="form.html">Form</a></li>
+                            
+                            <li><a href="header.html">Header</a></li>
+                            
+                            <li><a href="image.html">Image</a></li>
+                            
+                            <li><a href="keyboard.html">Keyboard</a></li>
+                            
+                            <li><a href="layout-group.html">Layout Group</a></li>
+                            
+                            <li><a href="layout.html">Layout</a></li>
+                            
+                            <li><a href="navigation.html">Navigation</a></li>
+                            
+                            <li><a href="page-header.html">Page Header</a></li>
+                            
+                            <li><a href="page.html">Page</a></li>
+                            
+                            <li><a href="pagination.html">Pagination</a></li>
+                            
+                            <li><a href="select-container.html">Select Container</a></li>
+                            
+                            <li><a href="splitter.html">Splitter</a></li>
+                            
+                            <li><a href="status-bar.html">Status Bar</a></li>
+                            
+                            <li><a href="status.html">Status</a></li>
+                            
+                            <li><a href="steps.html">Steps</a></li>
+                            
+                            <li><a href="tab.html">Tab</a></li>
+                            
+                            <li><a href="table.html">Table</a></li>
+                            
+                            <li><a href="tag.html">Tag</a></li>
+                            
+                            <li><a href="toolbar.html">Toolbar</a></li>
+                            
+                            <li><a href="top-bar.html">Top Bar</a></li>
+                            
+                            <li><a href="typography.html">Typography</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="zui-page-content zui-text-justify">
+                
+<h2>Summary</h2>
+
+
+<p>
+    There are two different ways to show forms. ZUI provides support for horizontally labeled forms and vertically 
+    labeled forms.
+</p>
+
+
+
+<h2>HTML Attributes</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no attributes defined for this pattern.
+    </p>
+</div>
+
+
+<h2>HTML Classes</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no classes defined for this pattern.
+    </p>
+</div>
+
+
+<h2>JavaScript Events</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no events defined for this pattern.
+    </p>
+</div>
+
+
+<h2>JavaScript Methods</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no methods defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Functions</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no functions defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Mixins</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no mixins defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Variables</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no variables defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Markup</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-markup-input" role="tab" aria-selected="true"><strong>Input</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-checkbox" role="tab" aria-selected="false"><strong>Checkbox</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-radio" role="tab" aria-selected="false"><strong>Radio</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-disabled" role="tab" aria-selected="false"><strong>Disabled</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-select" role="tab" aria-selected="false"><strong>Select</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-textarea" role="tab" aria-selected="false"><strong>Textarea</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-button-container" role="tab" aria-selected="false"><strong>Button Container</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-markup-input" class="zui-tabs-pane zui-active-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"element"</span>&gt;</span>Input element<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"element"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-description"</span>&gt;</span>This is a description of the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-error"</span>&gt;</span>This is an error message for the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-checkbox" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">legend</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Checkboxes<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">legend</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxA"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxA"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxA"</span>&gt;</span>Checkbox A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxB"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxB"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxB"</span>&gt;</span>Checkbox B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxC"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxC"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxC"</span>&gt;</span>Checkbox C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-radio" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">legend</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Radio buttons<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">legend</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxA"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxA"</span>&gt;</span>Radio box A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxB"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxB"</span>&gt;</span>Radio box B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxC"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxC"</span>&gt;</span>Radio box C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-disabled" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-comment">&lt;!-- Simply place the disabled attribute on an element. --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">disabled</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-select" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Dropdown<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">optgroup</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">"Group 1"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Option one<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Option two<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">optgroup</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Option 4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-textarea" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"textareaElement"</span>&gt;</span>Textarea<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"textareaElement"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-description"</span>&gt;</span>This is a description of the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-error"</span>&gt;</span>This is an error message for the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-button-container" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-buttons-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-buttons"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Save"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-input" role="tab" aria-selected="true"><strong>Input</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-checkbox" role="tab" aria-selected="false"><strong>Checkbox</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-radio" role="tab" aria-selected="false"><strong>Radio</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-disabled" role="tab" aria-selected="false"><strong>Disabled</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-select" role="tab" aria-selected="false"><strong>Select</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-textarea" role="tab" aria-selected="false"><strong>Textarea</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-button-container" role="tab" aria-selected="false"><strong>Button Container</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-input" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+<form>
+    <div class="zui-field-group">
+        <label>Text</label>
+        <input type="text" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Password</label>
+        <input type="password" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Color</label>
+        <input type="color" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Date</label>
+        <input type="date" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Datetime</label>
+        <input type="datetime" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Datetime-local</label>
+        <input type="datetime-local" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Time</label>
+        <input type="time" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Week</label>
+        <input type="week" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Month</label>
+        <input type="month" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Email</label>
+        <input type="email" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Tel</label>
+        <input type="tel" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Url</label>
+        <input type="url" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>File</label>
+        <input type="file" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Number</label>
+        <input type="number" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Range</label>
+        <input type="range" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+
+    <div class="zui-field-group">
+        <label>Search</label>
+        <input type="search" value="">
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+</form>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-checkbox" class="zui-tabs-pane">
+            <div class="zui-example">
+<form>
+    <fieldset class="zui-group">
+        <legend><span>Checkboxes</span></legend>
+        <div class="checkbox">
+            <input class="checkbox" type="checkbox" name="checkBoxA" id="checkBoxA">
+            <label for="checkBoxA">Checkbox A</label>
+        </div>
+        <div class="checkbox">
+            <input class="checkbox" type="checkbox" name="checkBoxB" id="checkBoxB">
+            <label for="checkBoxB">Checkbox B</label>
+        </div>
+        <div class="checkbox">
+            <input class="checkbox" type="checkbox" name="checkBoxC" id="checkBoxC">
+            <label for="checkBoxC">Checkbox C</label>
+        </div>
+    </fieldset>
+</form>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-radio" class="zui-tabs-pane">
+            <div class="zui-example">
+<form>
+    <fieldset class="zui-group">
+        <legend><span>Radio buttons</span></legend>
+        <div class="radio">
+            <input class="radio" type="radio" name="radioBox" id="radioBoxA" checked="checked">
+            <label for="radioBoxA">Radio box A</label>
+        </div>
+        <div class="radio">
+            <input class="radio" type="radio" name="radioBox" id="radioBoxB">
+            <label for="radioBoxB">Radio box B</label>
+        </div>
+        <div class="radio">
+            <input class="radio" type="radio" name="radioBox" id="radioBoxC">
+            <label for="radioBoxC">Radio box C</label>
+        </div>
+    </fieldset>
+</form>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-disabled" class="zui-tabs-pane">
+            <div class="zui-example">
+<form>
+    <div class="zui-field-group">
+        <label for="disabledInput">Disabled field</label>
+        <input type="text" id="disabledInput" disabled value="">
+        <span class="zui-icon zui-icon-help">help</span>
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+</form>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-select" class="zui-tabs-pane">
+            <div class="zui-example">
+<form>
+    <div class="zui-field-group">
+        <label>Dropdown</label>
+        <select>
+            <option>Select</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <optgroup label="Group 1">
+                <option>Option one</option>
+                <option>Option two</option>
+            </optgroup>
+            <option>Option 3</option>
+            <option>Option 4</option>
+        </select>
+    </div>
+</form>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-textarea" class="zui-tabs-pane">
+            <div class="zui-example">
+<form>
+    <div class="zui-field-group">
+        <label for="textareaElement">Textarea</label>
+        <textarea id="textareaElement"></textarea>
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
+</form>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-button-container" class="zui-tabs-pane">
+            <div class="zui-example">
+<form>
+    <div class="zui-buttons-container">
+        <div class="zui-buttons">
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+            <input type="Button" value="Button">
+            <button class="zui-button-link">Link</button>
+        </div>
+    </div>
+</form>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+            </div>
+        </div>
+        
+        <a href="https://github.com/zource/zui"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>        
+        <script type="text/javascript" src="js/zui.js"></script>
+        <script type="text/javascript" src="js/docs.js"></script>
+    </body>
+</html>

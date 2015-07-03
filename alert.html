@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Alert - ZUI Documentation</title>
+
+        <link href="css/docs.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="zui-top-bar" role="banner">
+            <nav role="navigation">
+                <div class="zui-header-primary">
+                    <h1 class="zui-top-bar-logo">
+                        <a href="index.html">
+                            ZUI Docs
+                        </a>
+                    </h1>
+                    <ul class="zui-nav">
+                        <li>
+                            <a href="index.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zource/zui">Repository</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="zui-page-header">
+            <div class="zui-page-header-inner">
+                <div class="zui-page-header-main">
+                    <h1>Alert</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="zui-page-panel">
+            <div class="zui-page-sidebar">
+                <nav class="zui-navgroup zui-navgroup-vertical">
+                    <div class="zui-navgroup-inner">
+                        <div class="zui-nav-heading">
+                            <strong>Patterns</strong>
+                        </div>
+
+                        <ul class="zui-nav">
+                            
+                            <li><a href="alert.html">Alert</a></li>
+                            
+                            <li><a href="badge.html">Badge</a></li>
+                            
+                            <li><a href="banner.html">Banner</a></li>
+                            
+                            <li><a href="button.html">Button</a></li>
+                            
+                            <li><a href="dialog.html">Dialog</a></li>
+                            
+                            <li><a href="example.html">Example</a></li>
+                            
+                            <li><a href="font.html">Font</a></li>
+                            
+                            <li><a href="form.html">Form</a></li>
+                            
+                            <li><a href="header.html">Header</a></li>
+                            
+                            <li><a href="image.html">Image</a></li>
+                            
+                            <li><a href="keyboard.html">Keyboard</a></li>
+                            
+                            <li><a href="layout-group.html">Layout Group</a></li>
+                            
+                            <li><a href="layout.html">Layout</a></li>
+                            
+                            <li><a href="navigation.html">Navigation</a></li>
+                            
+                            <li><a href="page-header.html">Page Header</a></li>
+                            
+                            <li><a href="page.html">Page</a></li>
+                            
+                            <li><a href="pagination.html">Pagination</a></li>
+                            
+                            <li><a href="select-container.html">Select Container</a></li>
+                            
+                            <li><a href="splitter.html">Splitter</a></li>
+                            
+                            <li><a href="status-bar.html">Status Bar</a></li>
+                            
+                            <li><a href="status.html">Status</a></li>
+                            
+                            <li><a href="steps.html">Steps</a></li>
+                            
+                            <li><a href="tab.html">Tab</a></li>
+                            
+                            <li><a href="table.html">Table</a></li>
+                            
+                            <li><a href="tag.html">Tag</a></li>
+                            
+                            <li><a href="toolbar.html">Toolbar</a></li>
+                            
+                            <li><a href="top-bar.html">Top Bar</a></li>
+                            
+                            <li><a href="typography.html">Typography</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="zui-page-content zui-text-justify">
+                
+<h2>Summary</h2>
+
+
+<p>
+    Alerts should be used to provide feedback to the user. They are intended to serve informational message, errors and
+    warnings.
+</p>
+
+<p>
+    It is possible to set a title for an alert. Simply add an element that has the class <code>zui-alert-title</code> 
+    on it and it will act as the title.
+</p>
+
+<p>
+    In order to make alerts closable, simply add the close icon. JavaScript will automatically recognize it and close 
+    the alert when you click on it.
+</p>
+
+
+
+<h2>HTML Attributes</h2>
+
+
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><code>data-zui-alert-timeout</code></td>
+            <td>
+                When this attribute is set, it will close the alert after the given timeout. The value is in milliseconds.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>data-zui-alert-fade-speed</code></td>
+            <td>
+                When the data-zui-alert-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>role</code></td>
+            <td>
+                Depending on the type of alert the role attribute must be set. If the alert is an information message, the role attribute must be set to <em>status</em>. If the alert is a dangerous message or a warning message, the role attribute must be set to <em>alert</em>.
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<h2>HTML Classes</h2>
+
+
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><code>zui-alert</code></td>
+            <td>
+                The zui-alert class identifies an HTML element as an alert.The zui-alert class identifies an HTML element as an alert.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>zui-alert-danger</code></td>
+            <td>
+                The zui-alert-danger class should be set on the same element that has the zui-alert class set. By setting the zui-alert-danger class you identity the alert as a dangerous message.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>zui-alert-subtle</code></td>
+            <td>
+                The zui-alert-subtle class should be set on the same element that has the zui-alert class set. By setting the zui-alert-subtle class you identity the alert as a subtle message.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>zui-alert-success</code></td>
+            <td>
+                The zui-alert-success class should be set on the same element that has the zui-alert class set. By setting the zui-alert-success class you identity the alert as a successful message.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>zui-alert-title</code></td>
+            <td>
+                The zui-alert-title class should be set on the element that acts as the title of an alert.
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>zui-alert-warning</code></td>
+            <td>
+                The zui-alert-warning class should be set on the same element that has the zui-alert class set. By setting the zui-alert-warning class you identity the alert as a warning.
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<h2>JavaScript Events</h2>
+
+
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><code>zui-alert-closed</code></td>
+            <td>
+                The event that is triggered once an alert is closed.
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<h2>JavaScript Methods</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no methods defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Functions</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no functions defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Mixins</h2>
+
+
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no mixins defined for this pattern.
+    </p>
+</div>
+
+
+<h2>Sass Variables</h2>
+
+
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><code>alert-danger-background</code></td>
+            <td>
+                The background color of a dangerous alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-danger-border-color</code></td>
+            <td>
+                The border color of a dangerous alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-danger-border</code></td>
+            <td>
+                The border of a dangerous alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-info-background</code></td>
+            <td>
+                The background color of an information alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-info-border-color</code></td>
+            <td>
+                The border color of an information alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-info-border</code></td>
+            <td>
+                The border of an information alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-success-background</code></td>
+            <td>
+                The background color of a success alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-success-border-color</code></td>
+            <td>
+                The border color of a success alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-success-border</code></td>
+            <td>
+                The border of a success alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-warning-background</code></td>
+            <td>
+                The background color of a warning alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-warning-border-color</code></td>
+            <td>
+                The border color of a warning alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-warning-border</code></td>
+            <td>
+                The border of a warning alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-subtle-background</code></td>
+            <td>
+                The background color of a subtle alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-subtle-border-color</code></td>
+            <td>
+                The border color of a subtle alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-subtle-border</code></td>
+            <td>
+                The border of a subtle alert.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-font-icon-danger</code></td>
+            <td>
+                The icon character that is used for dangerous alerts.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-font-icon-info</code></td>
+            <td>
+                The icon character that is used for information alerts.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-font-icon-success</code></td>
+            <td>
+                The icon character that is used for success alerts.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-font-icon-warning</code></td>
+            <td>
+                The icon character that is used for warning alerts.
+
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>alert-font-icon-subtle</code></td>
+            <td>
+                The icon character that is used for warning alerts.
+
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<h2>Markup</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-markup-information" role="tab" aria-selected="true"><strong>Information</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-danger" role="tab" aria-selected="false"><strong>Danger</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-success" role="tab" aria-selected="false"><strong>Success</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-warning" role="tab" aria-selected="false"><strong>Warning</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-subtle" role="tab" aria-selected="false"><strong>Subtle</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-markup-information" class="zui-tabs-pane zui-active-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Information message<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        This is a message.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-danger" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert zui-alert-danger"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Dangerous message<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        This is a message.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-success" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert zui-alert-success"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Success  message<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        This is a message.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-warning" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert zui-alert-warning"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Warning message<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        This is a message.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-subtle" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert zui-alert-subtle"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-alert-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Subtle message<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        This is a message.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-information" role="tab" aria-selected="true"><strong>Information</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-danger" role="tab" aria-selected="false"><strong>Danger</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-success" role="tab" aria-selected="false"><strong>Success</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-warning" role="tab" aria-selected="false"><strong>Warning</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-subtle" role="tab" aria-selected="false"><strong>Subtle</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-information" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+<div class="zui-alert">
+    <p class="zui-alert-title">
+        <strong>Information message</strong>
+    </p>
+
+    <p>
+        This is a message.
+    </p>
+
+    <span class="zui-icon zui-icon-x" role="button" tabindex="0"></span>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-danger" class="zui-tabs-pane">
+            <div class="zui-example">
+<div class="zui-alert zui-alert-danger">
+    <p class="zui-alert-title">
+        <strong>Dangerous message</strong>
+    </p>
+
+    <p>
+        This is a message.
+    </p>
+
+    <span class="zui-icon zui-icon-x" role="button" tabindex="0"></span>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-success" class="zui-tabs-pane">
+            <div class="zui-example">
+<div class="zui-alert zui-alert-success">
+    <p class="zui-alert-title">
+        <strong>Success  message</strong>
+    </p>
+
+    <p>
+        This is a message.
+    </p>
+
+    <span class="zui-icon zui-icon-x" role="button" tabindex="0"></span>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-warning" class="zui-tabs-pane">
+            <div class="zui-example">
+<div class="zui-alert zui-alert-warning">
+    <p class="zui-alert-title">
+        <strong>Warning message</strong>
+    </p>
+
+    <p>
+        This is a message.
+    </p>
+
+    <span class="zui-icon zui-icon-x" role="button" tabindex="0"></span>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-subtle" class="zui-tabs-pane">
+            <div class="zui-example">
+<div class="zui-alert zui-alert-subtle">
+    <p class="zui-alert-title">
+        <strong>Subtle message</strong>
+    </p>
+
+    <p>
+        This is a message.
+    </p>
+
+    <span class="zui-icon zui-icon-x" role="button" tabindex="0"></span>
+</div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+            </div>
+        </div>
+        
+        <a href="https://github.com/zource/zui"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>        
+        <script type="text/javascript" src="js/zui.js"></script>
+        <script type="text/javascript" src="js/docs.js"></script>
+    </body>
+</html>
