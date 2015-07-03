@@ -1,0 +1,18 @@
+{
+    "name": "Status Bar",
+    "examples": [
+        "Status Bar"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

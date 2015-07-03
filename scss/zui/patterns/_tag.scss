@@ -1,0 +1,35 @@
+span.zui-tag {
+    color: #333;
+}
+
+.zui-tag {
+    background: #F5F5F5;
+    border: 1px solid #CCC;
+    border-radius: 3.01px;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1px 5px;
+    margin: 0 5px 0 0;
+    text-align: left;
+    text-decoration: none;
+
+    &.zui-tag-removable {
+        padding-right: 20px;
+        position: relative;
+    }
+
+    .zui-icon-x {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+    }
+}
+
+a.zui-tag {
+    color: $color-primary;
+}

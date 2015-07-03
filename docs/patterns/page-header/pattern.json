@@ -1,0 +1,22 @@
+{
+    "name": "Page Header",
+    "examples": [
+        "Page Header",
+        "Breadcrumb",
+        "Actions",
+        "Image",
+        "Details"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

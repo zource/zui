@@ -1,0 +1,74 @@
+.zui-page-header {
+    clear: both;
+    width: auto;
+}
+
+.zui-page-header-inner {
+    @include box-sizing(border-box);
+
+    border-spacing: 0;
+    display: table;
+    padding: 20px;
+    table-layout: auto;
+    width: 100%;
+}
+
+.zui-page-header-image {
+    vertical-align: top;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.zui-page-header-actions, 
+.zui-page-header-image, 
+.zui-page-header-main {
+    @include box-sizing(border-box);
+
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.zui-page-header-actions {
+    padding-left: 20px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.zui-page-header-image + .zui-page-header-main {
+    padding-left: 10px;
+}
+
+.zui-page-header-main {
+    vertical-align: middle;
+    
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+        margin: 0;
+    }
+}
+
+.zui-page-header-details {
+    display: inline;
+    list-style-type: none;
+    margin: 3px 0px 0px 0px;
+    padding: 0;
+
+    .list-label {
+        color: #707070;
+    }
+
+    > li {
+        display: inline-block;
+    }
+
+    > li + li {
+        margin-left: 20px;
+    }
+
+    > li + li:before {
+        color: #CCC;
+        margin: 0 3px;
+    }
+}

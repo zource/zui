@@ -1,0 +1,43 @@
+$page-sidebar-padding: 20px !default;
+$page-sidebar-width: 240px !default;
+
+$page-content-padding: 20px !default;
+
+.zui-page-panel {
+    @include box-sizing(border-box);
+
+    clear: both;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    .zui-page-sidebar {
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: $page-sidebar-padding;
+        vertical-align: top;
+        width: $page-sidebar-width;
+    }
+
+    .zui-page-content {
+        @include box-sizing(border-box);
+        display: table-cell;
+        padding: $page-content-padding;
+        vertical-align: top;
+    }
+}
+
+.zui-page-fixed .zui-page-panel,
+.zui-page-hybrid .zui-page-panel,
+.zui-page-hybrid .zui-page-header-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+.zui-page-fixed .zui-top-bar nav,
+.zui-page-fixed .zui-page-header-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}

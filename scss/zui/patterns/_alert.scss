@@ -1,0 +1,211 @@
+/// The background color of a dangerous alert.
+/// @type color
+/// @pattern alert
+$alert-danger-background: #FFF !default;
+
+/// The border color of a dangerous alert.
+/// @type color
+/// @pattern alert
+$alert-danger-border-color: $color-alert !default;
+
+/// The border of a dangerous alert.
+/// @type color
+/// @pattern alert
+$alert-danger-border: 1px solid $alert-danger-border-color !default;
+
+/// The background color of an information alert.
+/// @type color
+/// @pattern alert
+$alert-info-background: #FFF !default;
+
+/// The border color of an information alert.
+/// @type color
+/// @pattern alert
+$alert-info-border-color: $color-info !default;
+
+/// The border of an information alert.
+/// @type color
+/// @pattern alert
+$alert-info-border: 1px solid $alert-info-border-color !default;
+
+/// The background color of a success alert.
+/// @type color
+/// @pattern alert
+$alert-success-background: #FFF !default;
+
+/// The border color of a success alert.
+/// @type color
+/// @pattern alert
+$alert-success-border-color: $color-success !default;
+
+/// The border of a success alert.
+/// @type color
+/// @pattern alert
+$alert-success-border: 1px solid $alert-success-border-color !default;
+
+/// The background color of a warning alert.
+/// @type color
+/// @pattern alert
+$alert-warning-background: #FFF !default;
+
+/// The border color of a warning alert.
+/// @type color
+/// @pattern alert
+$alert-warning-border-color: $color-warning !default;
+
+/// The border of a warning alert.
+/// @type color
+/// @pattern alert
+$alert-warning-border: 1px solid $alert-warning-border-color !default;
+
+/// The background color of a subtle alert.
+/// @type color
+/// @pattern alert
+$alert-subtle-background: #FFF !default;
+
+/// The border color of a subtle alert.
+/// @type color
+/// @pattern alert
+$alert-subtle-border-color: #DFDFDF !default;
+
+/// The border of a subtle alert.
+/// @type color
+/// @pattern alert
+$alert-subtle-border: 1px solid $alert-subtle-border-color !default;
+
+/// The icon character that is used for dangerous alerts.
+/// @type string
+/// @pattern alert
+$alert-font-icon-danger: "\f10c" !default;
+
+/// The icon character that is used for information alerts.
+/// @type string
+/// @pattern alert
+$alert-font-icon-info: "\f118" !default;
+
+/// The icon character that is used for success alerts.
+/// @type string
+/// @pattern alert
+$alert-font-icon-success: "\f109" !default;
+
+/// The icon character that is used for warning alerts.
+/// @type string
+/// @pattern alert
+$alert-font-icon-warning: "\f130" !default;
+
+/// The icon character that is used for warning alerts.
+/// @type string
+/// @pattern alert
+$alert-font-icon-subtle: "\f118" !default;
+
+.zui-alert {
+    background: $alert-info-background;
+    border: $alert-info-border;
+    border-radius: 3px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+    overflow-wrap: break-word;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 20px;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    &:before {
+        background-color: $alert-info-border-color;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 40px;
+    }
+
+    &:after {
+        color: #FFF;
+        content: $alert-font-icon-info;
+        font-family: zui;
+        font-size: 18px;
+        left: 12px;
+        line-height: 1;
+        margin-top: -8px;
+        position: absolute;
+        speak: none;
+        top: 50%;
+    }
+
+    &.zui-alert-danger {
+        background: $alert-danger-background;
+        border: $alert-danger-border;
+        
+        &:before {
+            background-color: $alert-danger-border-color;
+        }
+        
+        &:after {
+            content: $alert-font-icon-danger;
+        }
+    }
+    
+    &.zui-alert-success {
+        background: $alert-success-background;
+        border: $alert-success-border;
+        
+        &:before {
+            background-color: $alert-success-border-color;
+        }
+        
+        &:after {
+            content: $alert-font-icon-success;
+        }
+    }
+    
+    &.zui-alert-warning {
+        background: $alert-warning-background;
+        border: $alert-warning-border;
+        
+        &:before {
+            background-color: $alert-warning-border-color;
+        }
+        
+        &:after {
+            content: $alert-font-icon-warning;
+        }
+    }
+    
+    &.zui-alert-subtle {
+        background: $alert-subtle-background;
+        border: $alert-subtle-border;
+        
+        &:before {
+            background-color: $alert-subtle-border-color;
+        }
+        
+        &:after {
+            content: $alert-font-icon-subtle;
+        }
+    }
+
+    .zui-alert-title {
+        font-weight: 700;
+    }
+    
+    p:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .zui-icon-x[role="button"] {
+        color: #707070;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    .zui-icon-x[role="button"]:hover {
+        color: #000;
+    }
+}

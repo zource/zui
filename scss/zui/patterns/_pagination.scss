@@ -1,0 +1,47 @@
+/// The margin of the pagination box.
+/// @type rectangle
+/// @pattern pagination
+$pagination-margin: 20px 0px 0px 0px !default;
+
+/// The margin of the anchors in the pagination box.
+/// @type rectangle
+/// @pattern pagination
+$pagination-anchor-margin: 0px 0px 0px 5px !default;
+
+.zui-pagination {
+    display: table;
+    margin: $pagination-margin;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.zui-pagination-primary {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.zui-pagination-secondary {
+    display: table-cell;
+    vertical-align: top;
+    width: 20%;
+}
+
+.zui-pagination div + div {
+    text-align: right;
+}
+
+.zui-pagination a {
+    height: 16px;
+    display: inline-block;
+    margin: $pagination-anchor-margin;
+}
+
+.zui-pagination a.selected {
+    font-weight: bold;
+}
+
+.zui-pagination-from, 
+.zui-pagination-till,
+.zui-pagination-total {
+    font-weight: bold;
+}

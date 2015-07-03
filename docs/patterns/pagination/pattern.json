@@ -1,0 +1,42 @@
+{
+    "name": "Pagination",
+    "examples": [
+        "Pagination"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-pagination",
+                "description": "The class that identifies an HTML element as a pagination element."
+            },
+            {
+                "name": "zui-pagination-primary",
+                "description": "The primary container which is the left side of a the pagination box."
+            },
+            {
+                "name": "zui-pagination-secondary",
+                "description": "The secondary container which is the right side of a the pagination box."
+            },
+            {
+                "name": "zui-pagination-from",
+                "description": "The from part in the pager has this class so it can be populated via JavaScript."
+            },
+            {
+                "name": "zui-pagination-till",
+                "description": "The till part in the pager has this class so it can be populated via JavaScript."
+            },
+            {
+                "name": "zui-pagination-total",
+                "description": "The total part in the pager has this class so it can be populated via JavaScript."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

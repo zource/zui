@@ -1,0 +1,28 @@
+{
+    "name": "Layout",
+    "examples": [
+        "Fluid",
+        "Fixed",
+        "Hybrid"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-page-fixed",
+                "description": "When the <code>zui-page-fixed</code> class is set to the body element, the page gets a fixed layout."
+            },
+            {
+                "name": "zui-page-hybrid",
+                "description": "When the <code>zui-page-hybrid</code> class is set to the body element, the page gets a hybrid layout."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

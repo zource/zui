@@ -1,0 +1,28 @@
+.status-bar {
+    -webkit-animation: progressSlide 1s infinite linear;
+    animation: progressSlide 1s infinite linear;
+    background-color: #E9E9E9;
+    background-image: linear-gradient(90deg,#CCC 50%,rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0) 100%);
+    background-position: 0 0;
+    background-size: 20px 5px;
+    border-radius: 3px;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+    width: 100%;
+
+    .status-bar-value {
+        background: $color-primary;
+        border-radius: 3px;
+        display: block;
+        height: 5px;
+        -webkit-transform: skewX(0);
+        transform: skewX(0);
+        -webkit-transition: width .5s;
+        transition: width .5s;
+        position: absolute;
+        width: 100%;
+    }
+}

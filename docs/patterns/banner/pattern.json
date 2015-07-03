@@ -1,0 +1,42 @@
+{
+    "name": "Banner",
+    "examples": [
+        "Banner"
+    ],
+    "html": {
+        "attributes": [
+            {
+                "name": "role",
+                "description": "The <a href=\"http://www.w3.org/TR/wai-aria/roles#banner\">role</a> attribute is required and should be set to <em>banner</em>."
+            },
+            {
+                "name": "aria-hidden",
+                "description": "The <em>aria-hidden</em> attribute is optional. It tells if the banner is visible or not. The value should be set to either <em>false</em> or <em>true</em>."
+            }
+        ],
+        "classes": [
+            {
+                "name": "zui-banner",
+                "description": "The zui-banner class identifies an HTML element as a banner."
+            },
+            {
+                "name": "zui-banner-danger",
+                "description": "The zui-banner-danger class should be set on the same element that has the zui-banner class set. By setting the zui-banner-danger class you identity the banner as a dangerous message."
+            },
+            {
+                "name": "zui-banner-success",
+                "description": "The zui-banner-success class should be set on the same element that has the zui-banner class set. By setting the zui-banner-success class you identity the banner as a successful message."
+            },
+            {
+                "name": "zui-banner-warning",
+                "description": "The zui-banner-warning class should be set on the same element that has the zui-banner class set. By setting the zui-banner-warning class you identity the banner as a warning."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

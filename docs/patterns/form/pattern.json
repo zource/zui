@@ -1,0 +1,24 @@
+{
+    "name": "Form",
+    "examples": [
+        "Input",
+        "Checkbox",
+        "Radio",
+        "Disabled",
+        "Select",
+        "Textarea",
+        "Button Container"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

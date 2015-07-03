@@ -1,0 +1,30 @@
+<div class="zui-tabs zui-horizontal-tabs" style="margin-top: 20px;">
+    <ul class="zui-tabs-menu" role="tablist">
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab1" role="tab" aria-selected="false"><strong>Item 1</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab2" role="tab" aria-selected="true">
+                <strong>Item 2</strong>
+                <span class="zui-badge">12</span>
+            </a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab3" role="tab" aria-selected="false"><strong>Item 3</strong></a>
+        </li>
+    </ul>
+
+    <div class="zui-tabs-content">
+        <div role="tabpanel" aria-hidden="true" id="tab1" class="zui-tabs-pane">
+            Hello Item 1
+        </div>
+
+        <div role="tabpanel" aria-hidden="false" id="tab2" class="zui-tabs-pane zui-active-pane">
+            Hello Item 2
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="tab3" class="zui-tabs-pane">
+            Hello Item 3
+        </div>
+    </div>
+</div>

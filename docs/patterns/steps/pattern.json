@@ -1,0 +1,30 @@
+{
+    "name": "Steps",
+    "examples": [
+        "Steps"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-steps",
+                "description": "The <code>zui-steps</code> turns an ordered list into a steps overview."
+            },
+            {
+                "name": "zui-steps-step",
+                "description": "The <code>zui-steps-step</code> class should be set on a list item element. It tells the pattern that the list item is a single step and makes the step active by default. All steps that come after the <code>zui-steps-current</code> will be inactive."
+            },
+            {
+                "name": "zui-steps-step-current",
+                "description": "The <code>zui-steps-step-current</code> class is a trigger to tell the pattern that all <code>zui-steps-step</code> that come after this element will be inactive."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

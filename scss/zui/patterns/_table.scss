@@ -1,0 +1,76 @@
+table > tbody > tr > td, 
+table > tbody > tr > th, 
+table > tfoot > tr > td, 
+table > thead > tr > td, 
+table > thead > tr > th {
+    padding: 7px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+table > thead {
+    border-bottom: 2px solid #DDD;
+}
+
+table > tbody > tr, 
+table > tfoot > tr {
+    background: #FFF;
+    border-bottom: 1px solid #CCC;
+    color: #333;
+}
+
+.zui-table-bordered {
+    border: 1px solid #DDD;
+}
+
+.zui-table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #F9F9F9;
+}
+
+.zui-table-hover > tbody > tr:hover {
+    background-color: #F5F5F5;
+}
+
+.zui-table-sortable th.zui-table-col-asc,
+.zui-table-sortable th.zui-table-col-desc,
+.zui-table-sortable th:hover {
+    background-color: #F5F5F5;
+    color: #333;
+    cursor: $cursor-pointer-value;
+    position: relative;
+}
+
+.zui-table-sortable th.zui-table-col-asc .zui-table-header-content:after,
+.zui-table-sortable th:hover .zui-table-header-content:after {
+    border-top-color: #333;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    top: 2px;
+}
+
+.zui-table-sortable .zui-table-col-desc .zui-table-header-content:after, 
+.zui-table-sortable .zui-table-col-desc:hover .zui-table-header-content:after {
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #333;
+    opacity: 1;
+    top: -2px;
+}
+
+.zui-table-sortable .zui-table-header-content:after {
+    border: 4px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    width: 0;
+}
+
+.zui-table-list tr td:first-child {
+    width: 275px;
+}

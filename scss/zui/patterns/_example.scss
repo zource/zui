@@ -1,0 +1,38 @@
+$example-content: false !default;
+
+$example-border: 1px solid #CCC !default;
+$example-border-radius: 3px !default;
+$example-margin: 10px 0 20px 0 !default;
+$example-padding: 20px !default;
+
+@if $example-content {
+    $example-padding: 45px 20px 20px !default;
+}
+
+.zui-example {
+    border: $example-border;
+    border-radius: $example-border-radius;
+    margin: $example-margin;
+    padding: $example-padding;
+    position: relative;
+
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+@if $example-content {
+    .zui-example:after {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #959595;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        content: $example-content;
+    }
+}

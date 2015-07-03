@@ -1,0 +1,30 @@
+{
+    "maxerr": 50,
+
+    // Enforcing
+	"boss": true,
+    "camelcase": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"expr": true,
+	"immed": true,
+    "maxlen": 120,
+	"noarg": true,
+	"quotmark": "double",
+	"undef": true,
+	"unused": true,
+
+    // Environments
+	"browser": true,
+	"node": true,
+
+    // Globals:
+    "globals": {
+        "alert": true,
+        "define": true,
+        "noGlobal": true,
+        "zui": true,
+        "$": true
+    }
+}

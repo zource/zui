@@ -1,0 +1,283 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Summary</h2>
+
+{% if pattern.summary %}
+{% include pattern.summary %}
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There is no summary defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>HTML Attributes</h2>
+
+{% if pattern.html.attributes.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for htmlAttribute in pattern.html.attributes %}
+        <tr>
+            <td><code>{{ htmlAttribute.name }}</code></td>
+            <td>
+                {{ htmlAttribute.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no attributes defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>HTML Classes</h2>
+
+{% if pattern.html.classes.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for htmlClass in pattern.html.classes %}
+        <tr>
+            <td><code>{{ htmlClass.name }}</code></td>
+            <td>
+                {{ htmlClass.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no classes defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>JavaScript Events</h2>
+
+{% if pattern.js.events.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for jsEvent in pattern.js.events %}
+        <tr>
+            <td><code>{{ jsEvent.name }}</code></td>
+            <td>
+                {{ jsEvent.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no events defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>JavaScript Methods</h2>
+
+{% if pattern.js.methods.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for jsMethod in pattern.js.methods %}
+        <tr>
+            <td><code>{{ jsMethod.name }}</code></td>
+            <td>
+                {{ jsMethod.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no methods defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>Sass Functions</h2>
+
+{% if pattern.sass.functions.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sassFunction in pattern.sass.functions %}
+        <tr>
+            <td><code>{{ sassFunction.context.name }}</code></td>
+            <td>
+                {{ sassFunction.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no functions defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>Sass Mixins</h2>
+
+{% if pattern.sass.mixins.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sassMixin in pattern.sass.mixins %}
+        <tr>
+            <td><code>{{ sassMixin.context.name }}</code></td>
+            <td>
+                {{ sassMixin.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no mixins defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>Sass Variables</h2>
+
+{% if pattern.sass.variables.length > 0 %}
+<table class="zui-table-list zui-table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sassVariable in pattern.sass.variables %}
+        <tr>
+            <td><code>{{ sassVariable.context.name }}</code></td>
+            <td>
+                {{ sassVariable.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There are no variables defined for this pattern.
+    </p>
+</div>
+{% endif %}
+
+<h2>Markup</h2>
+
+{% if pattern.examples.length === 0 %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There is no markup defined for this pattern.
+    </p>
+</div>
+{% elif pattern.examples.length === 1 %}
+{{ pattern.exampleData[pattern.examples[0]].markupHtml|highlight }}
+{% else %}
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        {% for example in pattern.examples %}
+        <li role="presentation" class="zui-menu-item{% if loop.first %} zui-active-tab{% endif %}">
+            <a href="#tab-markup-{{ example|lower|replace(' ', '-') }}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}"><strong>{{ example }}</strong></a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <div class="zui-tabs-content">
+        {% for example in pattern.examples %}
+        <div role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" id="tab-markup-{{ example|lower|replace(' ', '-') }}" class="zui-tabs-pane{% if loop.first %} zui-active-pane{% endif %}">
+{{ pattern.exampleData[example].markupHtml|highlight }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+<h2>Example</h2>
+
+{% if pattern.examples.length === 0 %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There is no example defined for this pattern.
+    </p>
+</div>
+{% elif pattern.examples.length == 1 %}
+<div class="zui-example">
+{{ pattern.exampleData[pattern.examples[0]].exampleHtml|raw }}
+</div>
+{% else %}
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        {% for example in pattern.examples %}
+        <li role="presentation" class="zui-menu-item{% if loop.first %} zui-active-tab{% endif %}">
+            <a href="#tab-example-{{ example|lower|replace(' ', '-') }}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}"><strong>{{ example }}</strong></a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <div class="zui-tabs-content">
+        {% for example in pattern.examples %}
+        <div role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" id="tab-example-{{ example|lower|replace(' ', '-') }}" class="zui-tabs-pane{% if loop.first %} zui-active-pane{% endif %}">
+            <div class="zui-example">
+{{ pattern.exampleData[example].exampleHtml|raw }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

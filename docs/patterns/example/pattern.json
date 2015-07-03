@@ -1,0 +1,22 @@
+{
+    "name": "Example",
+    "examples": [
+        "Example"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-example",
+                "description": "The class that defines an HTML element as an example box."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

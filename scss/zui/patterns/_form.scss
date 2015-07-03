@@ -1,0 +1,124 @@
+@import "zui/patterns/form/checkbox";
+@import "zui/patterns/form/fieldset";
+@import "zui/patterns/form/input";
+@import "zui/patterns/form/radio";
+@import "zui/patterns/form/select";
+@import "zui/patterns/form/textarea";
+
+form .zui-icon-required {
+    left: 100%;
+    position: absolute;
+    top: 5px;
+}
+
+.zui-buttons-container {
+    @include box-sizing(border-box);
+
+    clear: both;
+    margin: 1px 0 0;
+    padding: 4px 0 4px 145px;
+    position: relative;
+    width: 100%;
+}
+
+.zui-field-group {
+    @include box-sizing(border-box);
+
+    clear: both;
+    padding: 4px 0 4px 145px;
+    position: relative;
+    margin: 1px 0;
+    width: 100%;
+
+    &:after, 
+        &:before {
+        content: " ";
+        display: table;
+    }
+
+    .zui-error {
+        clear: both;
+        color: #D04437;
+        display: block;
+        margin: 5px 0 0;
+    }
+
+    .zui-description {
+        color: #707070;
+        font-size: 12px;
+        line-height: 1.66666666666667;
+        margin: 5px 0 0;
+    }
+
+    label {
+        color: #707070;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: -145px;
+        position: relative;
+        text-align: right;
+        width: 130px;
+        word-wrap: break-word;
+    }
+}
+
+.zui-top-label {
+    .zui-field-group {
+        margin-bottom: 15px;
+        padding: 0px;
+    }
+    
+    .zui-field-group > label {
+        display: block;
+        float: none;
+        margin: 0 0 5px;
+        padding: 0;
+        text-align: left;
+        width: auto;
+    }
+}
+
+.zui-form-long {
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="time"],
+    input[type="week"],
+    input[type="month"],
+    input[type="number"],
+    input[type="color"],
+    input[type="range"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="url"],
+    select,
+    textarea {
+        max-width: 500px;
+    }
+}
+
+.zui-form-short {
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="time"],
+    input[type="week"],
+    input[type="month"],
+    input[type="number"],
+    input[type="color"],
+    input[type="range"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="url"],
+    select,
+    textarea {
+        max-width: 75px;
+    }
+}

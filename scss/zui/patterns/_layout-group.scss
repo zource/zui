@@ -1,0 +1,43 @@
+$page-header-bg: #f5f5f5 !default;
+$page-header-border-bottom: 1px solid #CCC !default;
+$page-header-border-left: none !default;
+$page-header-border-right: none !default;
+$page-header-border-top: none !default;
+
+.zui-layout-group {
+    @include box-sizing(border-box);
+
+    display: table;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+
+    > .zui-layout-item {
+        @include box-sizing(border-box);
+
+        display: table-cell;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    > .zui-layout-item + .zui-layout-item {
+        padding-left: 20px;
+    }
+
+    &.zui-layout-group-2col > .zui-layout-item:first-child, 
+    &.zui-layout-group-3col > .zui-layout-item {
+        text-align: left;
+    }
+
+    &.zui-layout-group-2col > .zui-layout-item {
+        text-align: right;
+    }
+    
+    &.zui-layout-group-3col > .zui-layout-item + .zui-layout-item {
+        text-align: center;
+    }
+    
+    &.zui-layout-group-3col > .zui-layout-item + .zui-layout-item + .zui-layout-item {
+        text-align: right;
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "name": "Alert",
+    "examples": [
+        "Information",
+        "Danger",
+        "Success",
+        "Warning",
+        "Subtle"
+    ],
+    "html": {
+        "attributes": [
+            {
+                "name": "data-zui-alert-timeout",
+                "description": "When this attribute is set, it will close the alert after the given timeout. The value is in milliseconds."
+            },
+            {
+                "name": "data-zui-alert-fade-speed",
+                "description": "When the data-zui-alert-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds."
+            },
+            {
+                "name": "role",
+                "description": "Depending on the type of alert the role attribute must be set. If the alert is an information message, the role attribute must be set to <em>status</em>. If the alert is a dangerous message or a warning message, the role attribute must be set to <em>alert</em>."
+            }
+        ],
+        "classes": [
+            {
+                "name": "zui-alert",
+                "description": "The zui-alert class identifies an HTML element as an alert.The zui-alert class identifies an HTML element as an alert."
+            },
+            {
+                "name": "zui-alert-danger",
+                "description": "The zui-alert-danger class should be set on the same element that has the zui-alert class set. By setting the zui-alert-danger class you identity the alert as a dangerous message."
+            },
+            {
+                "name": "zui-alert-subtle",
+                "description": "The zui-alert-subtle class should be set on the same element that has the zui-alert class set. By setting the zui-alert-subtle class you identity the alert as a subtle message."
+            },
+            {
+                "name": "zui-alert-success",
+                "description": "The zui-alert-success class should be set on the same element that has the zui-alert class set. By setting the zui-alert-success class you identity the alert as a successful message."
+            },
+            {
+                "name": "zui-alert-title",
+                "description": "The zui-alert-title class should be set on the element that acts as the title of an alert."
+            },
+            {
+                "name": "zui-alert-warning",
+                "description": "The zui-alert-warning class should be set on the same element that has the zui-alert class set. By setting the zui-alert-warning class you identity the alert as a warning."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+            {
+                "name": "zui-alert-closed",
+                "description": "The event that is triggered once an alert is closed."
+            }
+        ],
+        "methods": [
+        ]
+    }
+}

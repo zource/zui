@@ -1,0 +1,32 @@
+{
+    "name": "Page",
+    "examples": [
+        "No Sidebar",
+        "Left Sidebar",
+        "Right Sidebar"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-page-panel",
+                "description": "The container class of the page should have the zui-page-panel class."
+            },
+            {
+                "name": "zui-page-content",
+                "description": "The element that contains the main content of the page."
+            },
+            {
+                "name": "zui-page-sidebar",
+                "description": "The element that contains the sidebar content of the page."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

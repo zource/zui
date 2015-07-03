@@ -1,0 +1,168 @@
+/// The background color of the top-bar.
+/// @type color
+/// @pattern top-bar
+$top-bar-background: $color-primary !default;
+
+/// The bottom border of the top-bar.
+/// @type border
+/// @pattern top-bar
+$top-bar-border-bottom: 1px solid $color-primary-border !default;
+
+/// The textual color of the top-bar.
+/// @type color
+/// @pattern top-bar
+$top-bar-color: #FFF !default;
+
+/// The background color of links.
+/// @type color
+/// @pattern top-bar
+$top-bar-link-background: $color-primary-hover !default;
+
+.zui-top-bar {
+    @include box-sizing(border-box);
+
+    background: $top-bar-background;
+    border-bottom: $top-bar-border-bottom;
+    clear: both;
+    color: $top-bar-color;
+    float: left;
+    padding: 0 10px;
+    width: 100%;
+
+    .zui-top-bar-logo {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 0;
+        padding: 0;
+        float: left;
+
+        a {
+            @include box-sizing(border-box);
+
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+        }
+
+        .zui-top-bar-logo-device {
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            background-size: 100%;
+            display: block;
+            float: left;
+            height: 40px;
+            text-indent: -9999px;
+            text-align: left;
+        }
+    }
+
+    .zui-top-bar-logo:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    a {
+        color: #FFF;
+        display: block;
+        line-height: 1;
+        padding: 13px 10px;
+        text-decoration: none;
+
+        &:active, &:hover, &.zui-button-active {
+            background-color: $top-bar-link-background;
+        }
+    }
+    
+    .zui-nav > li.selected a {
+        background-color: $top-bar-link-background;
+    }
+
+    .zui-nav > li {
+        float: left;
+        padding: 0;
+    }
+
+    .zui-nav .zui-button-primary, 
+    .zui-nav .zui-button-primary:link, 
+    .zui-nav .zui-button-primary:visited {
+        box-shadow: none;
+        border: 0;
+        line-height: 1.57142857;
+        margin: 5px 10px 0;
+        padding: 4px 10px;
+    }
+
+    .zui-top-bar-secondary .zui-nav {
+        float: right;
+    }
+
+    .zui-top-bar-quicksearch {
+        padding: 0 10px;
+        position: relative;
+
+        input {
+            @include appearance(textfield);
+            @include box-sizing(border-box);
+            
+            background: #F5F5F5;
+            border: 0;
+            border-radius: 5em;
+            box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.3);
+            color: #333;
+            font-family: inherit;
+            font-size: inherit;
+            height: 1.71428571428571em;
+            line-height: 1.42857142857143;
+            margin: 8px 0;
+            padding: 2px 10px;
+            vertical-align: baseline;
+            width: 170px;
+        }
+
+        input[type=text] {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            box-shadow: none;
+            color: rgba(255, 255, 255, 0.6);
+            height: 30px;
+            margin: 5px 0;
+            padding-right: 26px;
+        }
+
+        input[type=text]:focus {
+            background: rgba(0, 0, 0, 0.25);
+            color: #FFF;
+        }
+    }
+    
+    .zui-button-dropdown:before {
+        content: none;
+    }
+    
+    .zui-button-dropdown:after {
+        border-top-color: #FFF;
+        margin-left: -18px;
+        margin-top: -2px;
+        top: 50%;
+    }
+    
+    .button-dropdown.button-active:after,
+    .button-dropdown:hover:after {
+        opacity: 1;
+    }
+}
+
+.zui-top-bar .zui-top-bar-logo a:after, 
+.zui-top-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}

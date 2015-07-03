@@ -1,0 +1,21 @@
+{
+    "name": "Dialog",
+    "examples": [
+        "Trigger",
+        "Inline",
+        "Small",
+        "Ajax"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

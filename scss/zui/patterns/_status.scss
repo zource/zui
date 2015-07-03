@@ -1,0 +1,247 @@
+/// The background color of a filled status.
+/// @type color
+/// @pattern status
+$status-default-filled-background: #CCC !default;
+
+/// The border of a filled status.
+/// @type color
+/// @pattern status
+$status-default-filled-border: 1px solid #CCC !default;
+
+/// The color of a filled status.
+/// @type color
+/// @pattern status
+$status-default-filled-color: #333 !default;
+
+/// The background color of a subtle status.
+/// @type color
+/// @pattern status
+$status-default-subtle-background: #FFF !default;
+
+/// The border of a subtle status.
+/// @type color
+/// @pattern status
+$status-default-subtle-border: 1px solid #CCC !default;
+
+/// The color of a subtle status.
+/// @type color
+/// @pattern status
+$status-default-subtle-color: #333 !default;
+
+/// The background color of a blue filled status.
+/// @type color
+/// @pattern status
+$status-blue-filled-background: #4A6785 !default;
+
+/// The border of a blue filled status.
+/// @type color
+/// @pattern status
+$status-blue-filled-border: 1px solid #4A6785 !default;
+
+/// The color of a blue filled status.
+/// @type color
+/// @pattern status
+$status-blue-filled-color: #FFF !default;
+
+/// The background color of a blue subtle status.
+/// @type color
+/// @pattern status
+$status-blue-subtle-background: #FFF !default;
+
+/// The border of a blue subtle status.
+/// @type color
+/// @pattern status
+$status-blue-subtle-border: 1px solid #4A6785 !default;
+
+/// The color of a blue subtle status.
+/// @type color
+/// @pattern status
+$status-blue-subtle-color: #4A6785 !default;
+
+/// The background color of a brown filled status.
+/// @type color
+/// @pattern status
+$status-brown-filled-background: #815B3A !default;
+
+/// The border of a brown filled status.
+/// @type color
+/// @pattern status
+$status-brown-filled-border: 1px solid #815B3A !default;
+
+/// The color of a brown filled status.
+/// @type color
+/// @pattern status
+$status-brown-filled-color: #FFF !default;
+
+/// The background color of a brown subtle status.
+/// @type color
+/// @pattern status
+$status-brown-subtle-background: #FFF !default;
+
+/// The border of a brown subtle status.
+/// @type color
+/// @pattern status
+$status-brown-subtle-border: 1px solid #815B3A !default;
+
+/// The color of a brown subtle status.
+/// @type color
+/// @pattern status
+$status-brown-subtle-color: #815B3A !default;
+
+/// The background color of a green filled status.
+/// @type color
+/// @pattern status
+$status-green-filled-background: #14892C !default;
+
+/// The border of a green filled status.
+/// @type color
+/// @pattern status
+$status-green-filled-border: 1px solid #14892C !default;
+
+/// The color of a green filled status.
+/// @type color
+/// @pattern status
+$status-green-filled-color: #FFF !default;
+
+/// The background color of a green subtle status.
+/// @type color
+/// @pattern status
+$status-green-subtle-background: #FFF !default;
+
+/// The border of a green subtle status.
+/// @type color
+/// @pattern status
+$status-green-subtle-border: 1px solid #14892C !default;
+
+/// The color of a green subtle status.
+/// @type color
+/// @pattern status
+$status-green-subtle-color: #14892C !default;
+
+/// The background color of a red filled status.
+/// @type color
+/// @pattern status
+$status-red-filled-background: #D04437 !default;
+
+/// The border of a red filled status.
+/// @type color
+/// @pattern status
+$status-red-filled-border: 1px solid #D04437 !default;
+
+/// The color of a red filled status.
+/// @type color
+/// @pattern status
+$status-red-filled-color: #FFF !default;
+
+/// The background color of a red subtle status.
+/// @type color
+/// @pattern status
+$status-red-subtle-background: #FFF !default;
+
+/// The border of a red subtle status.
+/// @type color
+/// @pattern status
+$status-red-subtle-border: 1px solid #D04437 !default;
+
+/// The color of a red subtle status.
+/// @type color
+/// @pattern status
+$status-red-subtle-color: #D04437 !default;
+
+/// The background color of a yellow filled status.
+/// @type color
+/// @pattern status
+$status-yellow-filled-background: #F6C342 !default;
+
+/// The border of a yellow filled status.
+/// @type color
+/// @pattern status
+$status-yellow-filled-border: 1px solid #F6C342 !default;
+
+/// The color of a yellow filled status.
+/// @type color
+/// @pattern status
+$status-yellow-filled-color: #594300 !default;
+
+/// The background color of a yellow subtle status.
+/// @type color
+/// @pattern status
+$status-yellow-subtle-background: #FFF !default;
+
+/// The border of a yellow subtle status.
+/// @type color
+/// @pattern status
+$status-yellow-subtle-border: 1px solid #F6C342 !default;
+
+/// The color of a yellow subtle status.
+/// @type color
+/// @pattern status
+$status-yellow-subtle-color: #594300 !default;
+
+.zui-status {
+    background: $status-default-filled-background;
+    border: $status-default-filled-border;
+    border-radius: 3px;
+    color: $status-default-filled-color;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 99%;
+    margin: 0;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.zui-status.zui-status-subtle {
+    background: $status-default-subtle-background;
+    border: $status-default-subtle-border;
+    color: $status-default-subtle-color;
+}
+
+@mixin zui-status($background, $border, $color) {
+    background: $background;
+    border: $border;
+    color: $color;
+}
+
+.zui-status-blue {
+    @include zui-status($status-blue-filled-background, $status-blue-filled-border, $status-blue-filled-color);
+}
+
+.zui-status-blue.zui-status-subtle {
+    @include zui-status($status-blue-subtle-background, $status-blue-subtle-border, $status-blue-subtle-color);
+}
+
+.zui-status-brown {
+    @include zui-status($status-brown-filled-background, $status-brown-filled-border, $status-brown-filled-color);
+}
+
+.zui-status-brown.zui-status-subtle {
+    @include zui-status($status-brown-subtle-background, $status-brown-subtle-border, $status-brown-subtle-color);
+}
+
+.zui-status-green {
+    @include zui-status($status-green-filled-background, $status-green-filled-border, $status-green-filled-color);
+}
+
+.zui-status-green.zui-status-subtle {
+    @include zui-status($status-green-subtle-background, $status-green-subtle-border, $status-green-subtle-color);
+}
+
+.zui-status-red {
+    @include zui-status($status-red-filled-background, $status-red-filled-border, $status-red-filled-color);
+}
+
+.zui-status-red.zui-status-subtle {
+    @include zui-status($status-red-subtle-background, $status-red-subtle-border, $status-red-subtle-color);
+}
+
+.zui-status-yellow {
+    @include zui-status($status-yellow-filled-background, $status-yellow-filled-border, $status-yellow-filled-color);
+}
+
+.zui-status-yellow.zui-status-subtle {
+    @include zui-status($status-yellow-subtle-background, $status-yellow-subtle-border, $status-yellow-subtle-color);
+}

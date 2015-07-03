@@ -1,0 +1,37 @@
+$body-bg: #fff !default;
+$body-font-color: #333 !default;
+$body-font-family: arial,sans-serif !default;
+$body-font-size: 14px !default;
+$body-font-style: normal !default;
+$body-font-weight: normal !default;
+
+$body-line-height: 1.25 !default;
+
+$body-overflow-x: auto !default;
+$body-overflow-y: scroll !default;
+$body-overflow-wrap: inherit !default;
+
+html {
+    @include box-sizing(border-box);
+}
+
+html, body {
+    font-size: $body-font-size;
+    height: 100%;
+}
+
+body {
+    background: $body-bg;
+    color: $body-font-color;
+    cursor: $cursor-auto-value;
+    font-family: $body-font-family;
+    font-style: $body-font-style;
+    font-weight: $body-font-weight;
+    line-height: $body-line-height;
+    margin: 0;
+    overflow-x: $body-overflow-x;
+    overflow-y: $body-overflow-y;
+    overflow-wrap: $body-overflow-wrap;
+    padding: 0;
+    position: relative;
+}

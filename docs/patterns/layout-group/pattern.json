@@ -1,0 +1,28 @@
+{
+    "name": "Layout Group",
+    "examples": [
+        "Default",
+        "2 Column",
+        "3 Column"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-layout-group",
+                "description": "The class that describes a row of elements that have the class zui-layout-item."
+            },
+            {
+                "name": "zui-layout-item",
+                "description": "The class that describes a cell within an element that has the zui-layout-group class."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

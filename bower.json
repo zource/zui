@@ -1,0 +1,36 @@
+{
+  "name": "zource-ui",
+  "version": "0.0.0",
+  "description": "The pattern library of Zource.",
+  "main": "dist/**/*",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "zource",
+    "patterns",
+    "ui"
+  ],
+  "license": "proprietary",
+  "homepage": "http://github.com/zource/zui",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "docs",
+    "grunt",
+    "Gruntfile.js",
+    "js/",
+    "LICENSE",
+    "node_modules",
+    "test",
+    "package.json",
+    "README.md",
+    "sache.json",
+    "src",
+    "svg",
+    "vendor"
+  ],
+  "dependencies": {
+    "jquery": "2.*"
+  }
+}

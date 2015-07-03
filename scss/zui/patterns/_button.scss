@@ -1,0 +1,238 @@
+$button-background: $color-secondary !default;
+$button-border-color: #CCC !default;
+$button-border-radius: 4px !default;
+$button-color: #333 !default;
+
+$button-active-background: #F5F5F5 !default;
+
+$button-hover-background: $color-secondary-hover !default;
+$button-hover-border-color: #999 !default;
+$button-hover-color: #333 !default;
+
+$button-disabled-background: #F5F5F5 !default;
+$button-disabled-border-color: #DDD !default;
+$button-disabled-color: #999 !default;
+
+$button-primary-background: $color-primary !default;
+$button-primary-border-color: $color-primary-border !default;
+$button-primary-color: $color-white !default;
+
+$button-primary-hover-background: $color-primary-hover !default;
+$button-primary-hover-border-color: $color-primary-border !default;
+$button-primary-hover-color: $color-white !default;
+
+a.zui-button, 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    @include box-sizing(border-box);
+
+    background: $button-background;
+    border: 1px solid #CCC;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    height: 2.14285714em;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 4px 10px;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    &.zui-button-primary, 
+    &.zui-button-primary:visited {
+        @include font-smooth(antialiased);
+    
+        background: $button-primary-background;
+        border-color: $button-primary-border-color;
+        color: $button-primary-color;
+        font-weight: 700;
+
+        &:focus, &:hover {
+            background: $button-primary-hover-background;
+            border-color: $button-primary-hover-border-color;
+            color: $button-primary-hover-color;
+        }
+    }
+    
+    &.zui-button-subtle {
+        background: 0 0;
+        border-color: rgba(0, 0, 0, 0);
+        color: #707070;
+    }
+
+    &.zui-button-link {
+        background: 0 0;
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        color: $color-primary;
+        padding: 4px 0;
+        text-decoration: none;
+
+        &:active {
+            background: 0 0;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            text-decoration: underline;
+        }
+
+        &:focus {
+            background: 0 0;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            background: 0 0;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            text-decoration: underline;
+        }
+    }
+    
+    &.zui-button-active,
+    &:active {
+        box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+        background: $button-active-background;
+    }
+    
+    &.zui-button-active,
+    &:focus,
+    &:hover {
+        background: $button-hover-background;
+        border-color: $button-hover-border-color;
+        color: $button-hover-color;
+    }
+
+    &[disabled],
+    &.disabled {
+        background: $button-disabled-background;
+        border-color: $button-disabled-border-color;
+        box-shadow: none;
+        color: $button-disabled-color;
+        cursor: $cursor-disabled-value;
+    }
+}
+
+.zui-button-group {
+    display: inline-block;
+    font-size: 0;
+    
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    button, 
+    .zui-button {
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    button ~ button,
+    .zui-button ~ .zui-button {
+        border-left-width: 0;
+    }
+    
+    .zui-button:first-child,
+    button:first-child {
+        border-bottom-left-radius: $button-border-radius;
+        border-top-left-radius: $button-border-radius;
+    }
+    
+    .zui-button:last-child,
+    button:last-child {
+        border-bottom-right-radius: $button-border-radius;
+        border-top-right-radius: $button-border-radius;
+    }
+    
+    button ~ button:hover,
+    .zui-button ~ .zui-button:hover {
+        border-width: 1px;
+        margin-left: -1px;
+        position: relative;
+    }
+    
+    .zui-button-split-more {
+        padding-right: 15px !important;
+        position: relative;
+        text-align: left;
+        text-indent: -9999em;
+    }
+    
+    .zui-button-split-main + .zui-button-split-more:before {
+        content: '';
+        border-left: 1px solid #CCC;
+        bottom: 4px;
+        display: block;
+        left: -1px;
+        position: absolute;
+        top: 4px;
+    }
+    
+    .zui-button-split-main + .zui-button-split-more:after {
+        border: 4px solid rgba(0, 0, 0, 0);
+        border-top-color: #333;
+        content: "";
+        height: 0;
+        left: 100%;
+        margin-left: -16px;
+        top: 13px;
+        opacity: .8;
+        position: absolute;
+        width: 0;
+    }
+    
+
+    .zui-button-split-main:not(.zui-button-primary) + .zui-button-split-more:active:before, 
+    .zui-button-split-main:not(.zui-button-primary) + .zui-button-split-more:focus:before, 
+    .zui-button-split-main:not(.zui-button-primary) + .zui-button-split-more:hover:before, 
+    .zui-button-split-main:not(.zui-button-primary):active + .zui-button-split-more:before, 
+    .zui-button-split-main:not(.zui-button-primary):focus + .zui-button-split-more:before, 
+    .zui-button-split-main:not(.zui-button-primary):hover + .zui-button-split-more:before {
+        visibility: hidden;
+    }
+}
+
+.zui-button-dropdown {
+    padding-right: 24px !important;
+    position: relative;
+}
+
+.zui-button-dropdown:active:before,
+.zui-button-dropdown:focus:before,
+.zui-button-dropdown:hover:before {
+    visibility: hidden;
+}
+
+.zui-button-dropdown:before {
+    content: '';
+    border-left: 1px solid #CCC;
+    bottom: 4px;
+    display: block;
+    left: -1px;
+    position: absolute;
+    top: 4px;
+}
+
+.zui-button-dropdown:after {
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-top-color: #333;
+    content: "";
+    height: 0;
+    left: 100%;
+    margin-left: -16px;
+    top: 13px;
+    opacity: .8;
+    position: absolute;
+    width: 0;
+}

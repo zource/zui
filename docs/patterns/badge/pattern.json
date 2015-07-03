@@ -1,0 +1,25 @@
+{
+    "name": "Badge",
+    "examples": [
+        "Badge",
+        "Button",
+        "Navigation",
+        "Tab"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-badge",
+                "description": "The <code>zui-badge</code> class identifies an HTML element as a badge. It is recommended that you use this class on a span element."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

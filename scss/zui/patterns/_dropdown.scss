@@ -1,0 +1,98 @@
+.zui-dropdown-menu {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 300px;
+    min-width: 160px;
+    
+    ul {
+        list-style: none;
+        margin: 2px 0;
+        padding-left: 0;
+    }
+    
+    a,
+    span {
+        color: #333;
+        cursor: $cursor-pointer-value;
+        display: block;
+        overflow: hidden;
+        padding: 5px 10px;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    li:not(.zui-dropdown-no-matches) a:hover, 
+    li:not(.zui-dropdown-no-matches) span:hover, 
+    li:not(.zui-dropdown-no-matches).zui-dropdown-item-highlighted a, 
+    li:not(.zui-dropdown-no-matches).zui-dropdown-item-highlighted span {
+        background: $color-primary;
+        color: #FFF;
+    }
+    
+    > ul + h1,
+    > ul + h2,
+    > ul + h3,
+    > ul + h4,
+    > ul + h5,
+    > ul + h6,
+    > ul + .zui-nav-heading,
+    .zui-dropdown-scroll > ul + h1,
+    .zui-dropdown-scroll > ul + h2,
+    .zui-dropdown-scroll > ul + h3,
+    .zui-dropdown-scroll > ul + h4,
+    .zui-dropdown-scroll > ul + h5,
+    .zui-dropdown-scroll > ul + h6,
+    .zui-dropdown-scroll > ul + .zui-nav-heading,
+    ul + ul:before {
+        border-top: 1px solid #CCC;
+        content: "";
+        display: list-item;
+        list-style-type: none;
+        margin-bottom: 2px;
+    }
+
+    
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6,
+    > .zui-nav-heading,
+    .zui-dropdown-scroll > h1,
+    .zui-dropdown-scroll > h2,
+    .zui-dropdown-scroll > h3,
+    .zui-dropdown-scroll > h4,
+    .zui-dropdown-scroll > h5,
+    .zui-dropdown-scroll > h6,
+    .zui-dropdown-scroll > .zui-nav-heading {
+        color: #707070;
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 7px 10px 2px 10px;
+        text-transform: uppercase;
+    }
+}
+
+.zui-dropdown-menu .zui-dropdown-field {
+    padding: 5px;
+}
+
+.zui-dropdown-menu .zui-dropdown-scroll {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.zui-dropdown-menu .zui-dropdown-item-hidden {
+    display: none;
+}

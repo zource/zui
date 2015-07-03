@@ -1,0 +1,20 @@
+{
+    "name": "Tag",
+    "examples": [
+        "Text",
+        "Anchor",
+        "Removable"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

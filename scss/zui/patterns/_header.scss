@@ -1,0 +1,108 @@
+$header-h1-color: #333 !default;
+$header-h2-color: #333 !default;
+$header-h3-color: #333 !default;
+$header-h4-color: #333 !default;
+$header-h5-color: #333 !default;
+$header-h6-color: #333 !default;
+
+$header-h1-font-size: rem-calc(38) !default;
+$header-h2-font-size: rem-calc(34) !default;
+$header-h3-font-size: rem-calc(30) !default;
+$header-h4-font-size: rem-calc(26) !default;
+$header-h5-font-size: rem-calc(22) !default;
+$header-h6-font-size: rem-calc(18) !default;
+
+$header-small-color: #6F6F6F !default;
+$header-small-font-size: 60% !default;
+
+$subheader-h1-color: #6F6F6F !default;
+$subheader-h2-color: #6F6F6F !default;
+$subheader-h3-color: #6F6F6F !default;
+$subheader-h4-color: #6F6F6F !default;
+$subheader-h5-color: #6F6F6F !default;
+$subheader-h6-color: #6F6F6F !default;
+
+$subheader-h1-font-size: $header-h1-font-size !default;
+$subheader-h2-font-size: $header-h2-font-size !default;
+$subheader-h3-font-size: $header-h3-font-size !default;
+$subheader-h4-font-size: $header-h4-font-size !default;
+$subheader-h5-font-size: $header-h5-font-size !default;
+$subheader-h6-font-size: $header-h6-font-size !default;
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.25;
+    text-transform: none;
+    margin: 0px 0px 20px 0px;
+}
+
+h1 {
+    color: $header-h1-color;
+    font-size: $header-h1-font-size;
+
+    &.zui-subheader {
+        color: $subheader-h1-color;
+        font-size: $subheader-h1-font-size;
+    }
+}
+
+h2 {
+    color: $header-h2-color;
+    font-size: $header-h2-font-size;
+
+    &.zui-subheader {
+        color: $subheader-h2-color;
+        font-size: $subheader-h2-font-size;
+    }
+}
+
+h3 {
+    color: $header-h3-color;
+    font-size: $header-h3-font-size;
+
+    &.zui-subheader {
+        color: $subheader-h3-color;
+        font-size: $subheader-h3-font-size;
+    }
+}
+
+h4 {
+    color: $header-h4-color;
+    font-size: $header-h4-font-size;
+
+    &.zui-subheader {
+        color: $subheader-h4-color;
+        font-size: $subheader-h4-font-size;
+    }
+}
+
+h5 {
+    color: $header-h5-color;
+    font-size: $header-h5-font-size;
+    
+    &.zui-subheader {
+        color: $subheader-h5-color;
+        font-size: $subheader-h5-font-size;
+    }
+}
+
+h6 {
+    color: $header-h6-color;
+    font-size: $header-h6-font-size;
+
+    &.zui-subheader {
+        color: $subheader-h6-color;
+        font-size: $subheader-h6-font-size;
+    }
+}
+
+h1 small, 
+h2 small, 
+h3 small, 
+h4 small, 
+h5 small, 
+h6 small {
+    font-size: $header-small-font-size;
+    color: $header-small-color;
+    line-height: 0;
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Toolbar",
+    "examples": [
+        "Toolbar"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+$anchor-color: $color-primary !default;
+$anchor-color-disabled: #999 !default;
+$anchor-text-decoration: none !default;
+$anchor-text-decoration-hover: underline !default;
+
+a {
+    color: $anchor-color;
+    text-decoration: $anchor-text-decoration;
+}
+
+a:active, a:focus, a:hover {
+    text-decoration: $anchor-text-decoration-hover;
+}
+
+a.disabled {
+    color: $anchor-color-disabled;
+    cursor: $cursor-disabled-value;
+}
+
+a.disabled:active, 
+a.disabled:focus, 
+a.disabled:hover {
+    text-decoration: $anchor-text-decoration;
+}

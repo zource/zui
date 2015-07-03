@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ page.title|title }} - ZUI Documentation</title>
+
+        <link href="css/docs.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="zui-top-bar" role="banner">
+            <nav role="navigation">
+                <div class="zui-header-primary">
+                    <h1 class="zui-top-bar-logo">
+                        <a href="index.html">
+                            ZUI Docs
+                        </a>
+                    </h1>
+                    <ul class="zui-nav">
+                        <li>
+                            <a href="index.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zource/zui">Repository</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="zui-page-header">
+            <div class="zui-page-header-inner">
+                <div class="zui-page-header-main">
+                    <h1>{{ page.title }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="zui-page-panel">
+            <div class="zui-page-sidebar">
+                <nav class="zui-navgroup zui-navgroup-vertical">
+                    <div class="zui-navgroup-inner">
+                        <div class="zui-nav-heading">
+                            <strong>Patterns</strong>
+                        </div>
+
+                        <ul class="zui-nav">
+                            {% for pattern in patterns %}
+                            <li><a href="{{ pattern.htmlName }}.html">{{ pattern.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="zui-page-content zui-text-justify">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        
+        <a href="https://github.com/zource/zui"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>        
+        <script type="text/javascript" src="js/zui.js"></script>
+        <script type="text/javascript" src="js/docs.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+$splitter-min-height: 300px !default;
+$splitter-min-width: 250px !default;
+$splitter-bar-width: 10px !default;
+
+.splitter {
+    display: table;
+    min-width: 600px;
+    min-height: $splitter-min-height;
+    position: relative;
+    table-layout: fixed;
+
+    .splitter-bar {
+        background-color: #FFF;
+        background-image: url('data:image/gif;base64,R0lGODlhBQAXAIABAHNxbf///yH5BAEAAAEALAAAAAAFABcAAAIUDBypeJvXHHQP0Xmt1Avv2HHKVAAAOw==');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-left: 1px solid #DDD;
+        cursor: ew-resize;
+        display: table-cell;
+        height: $splitter-min-height;
+        overflow: auto;
+        width: $splitter-bar-width;
+        vertical-align: top;
+    }
+
+    .splitter-pane1,
+    .splitter-pane2 {
+        display: table-cell;
+        min-width: $splitter-min-width;
+        overflow: auto;
+        vertical-align: top;
+    }
+    
+    .splitter-pane1 {
+        width: $splitter-min-width;
+    }
+}

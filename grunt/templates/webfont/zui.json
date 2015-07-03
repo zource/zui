@@ -1,0 +1,5 @@
+{
+	"baseClass": "zui-icon",
+	"classPrefix": "zui-icon-",
+	"mixinPrefix": "zui-icon-"
+}

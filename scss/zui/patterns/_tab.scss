@@ -1,0 +1,95 @@
+.zui-tabs {
+    font-size: 14px;
+    line-height: 1.46;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.zui-tabs > .zui-tabs-menu .zui-menu-item a, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item a:link, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item a:visited {
+    background: #E9E9E9;
+    color: #333;
+}
+
+.zui-tabs > .zui-tabs-menu > .zui-menu-item > a, 
+.zui-tabs > .zui-tabs-menu > .zui-menu-item > a strong {
+    background: 0 0;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.zui-tabs > .zui-tabs-menu .zui-menu-item a:focus, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item a:hover, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item.zui-active-tab a, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item.zui-active-tab a:active, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item.zui-active-tab a:focus, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item.zui-active-tab a:hover, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item.zui-active-tab a:link, 
+.zui-tabs > .zui-tabs-menu .zui-menu-item.zui-active-tab a:visited {
+    background: #FFF;
+    color: #333;
+}
+
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+}
+
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-menu-item {
+    background: #EEE;
+    display: block;
+    float: left;
+    margin: 0;
+    
+    &:first-child {
+        margin-left: 20px;
+    }
+}
+
+.zui-tabs.zui-tabs-disabled.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab:active, 
+.zui-tabs.zui-tabs-disabled.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab:focus, 
+.zui-tabs.zui-tabs-disabled.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab:hover, 
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-menu-item.zui-active-tab, 
+.zui-tabs.zui-horizontal-tabs[data-responsive] > .zui-tabs-menu > .zui-menu-item.zui-active-tab {
+    border-bottom: 1px solid #FFF;
+    margin-bottom: -1px;
+    position: relative;
+}
+
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-menu-item:first-child a {
+    border-top-left-radius: 3px;
+    border-left: 1px solid #CCC;
+}
+
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab > a, 
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab > a strong {
+    font-weight: 400;
+}
+
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-menu-item > a {
+    display: block;
+    border-right: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    padding: 5px 10px 4px;
+    text-decoration: none;
+}
+
+.zui-tabs .zui-tabs-content > .zui-tabs-pane {
+    display: none;
+}
+
+.zui-tabs .zui-tabs-content > .zui-tabs-pane.zui-active-pane {
+    display: block;
+}
+
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-content {
+    border-top: 1px solid #CCC;
+}

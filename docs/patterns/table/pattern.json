@@ -1,0 +1,23 @@
+{
+    "name": "Table",
+    "examples": [
+        "Table",
+        "Sortable",
+        "Striped",
+        "Bordered",
+        "Hover",
+        "List"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

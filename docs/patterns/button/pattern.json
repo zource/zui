@@ -1,0 +1,58 @@
+{
+    "name": "Button",
+    "examples": [
+        "Button",
+        "Primary",
+        "Link",
+        "Disabled",
+        "Split",
+        "Dropdown",
+        "Icon",
+        "Subtle",
+        "Button Group"
+    ],
+    "html": {
+        "attributes": [
+            {
+                "name": "role",
+                "description": "The role attribute must be set to the value <em>button</em>. It is used to identify the element as a command button the the browser. This is especially needed for anchor elements that are turned into buttons."
+            }
+        ],
+        "classes": [
+            {
+                "name": "zui-button",
+                "description": "The zui-button class turns a non-button element into a button. This class should be used on anchors."
+            },
+            {
+                "name": "zui-button-dropdown",
+                "description": "The zui-button-dropdown class turns a button into a button with a dropdown menu."
+            },
+            {
+                "name": "zui-button-link",
+                "description": "The zui-button-link class turns a button into a link. This is useful for tertiary buttons such as cancel links."
+            },
+            {
+                "name": "zui-button-primary",
+                "description": "The zui-button-primary class turns a button into a primary button. A primary button is the button that is the most important button."
+            },
+            {
+                "name": "zui-button-split-main",
+                "description": "The zui-button-split-main class identifies the left part of a split button. It should always be used in combination with the zui-button-split-more class."
+            },
+            {
+                "name": "zui-button-split-more",
+                "description": "The zui-button-split-more class identifies the button that will show the dropdown menu. It should always be used in combination with the zui-button-split-main class."
+            },
+            {
+                "name": "zui-button-subtle",
+                "description": "The zui-button-subtle class turns a button into a subtle button. It looks like a link but when you hover the button it looks like a normal button. Subtle buttons should always be used in combination with icons."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

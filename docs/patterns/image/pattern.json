@@ -1,0 +1,18 @@
+{
+    "name": "Image",
+    "examples": [
+        "Image"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

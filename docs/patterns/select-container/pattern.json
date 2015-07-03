@@ -1,0 +1,36 @@
+{
+    "name": "Select Container",
+    "examples": [
+        "Default",
+        "Smart",
+        "Multiple"
+    ],
+    "html": {
+        "attributes": [
+            {
+                "name": "data-zui-addable",
+                "description": "By setting the <code>data-zui-addable</code> attribute, the user is able to add new items to the select box."
+            },
+            {
+                "name": "data-zui-no-matches",
+                "description": "By setting the <code>data-zui-no-matches</code> you can translate the \"no matches\" text."
+            },
+            {
+                "name": "data-zui-no-matches",
+                "description": "When the <code>multiple</code> attribute is set, the select box turns into a tokenized select container."
+            }
+        ],
+        "classes": [
+            {
+                "name": "zui-select-container",
+                "description": "The <code>zui-select-container</code> class turns a select box into a smart select container."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

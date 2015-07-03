@@ -1,0 +1,92 @@
+/// The background color of an information banner.
+/// @type color
+/// @pattern banner
+$banner-info-background: $color-info !default;
+
+/// The text color of an information banner.
+/// @type color
+/// @pattern banner
+$banner-info-color: $color-white !default;
+
+/// The anchor color of an information banner.
+/// @type color
+/// @pattern banner
+$banner-info-link-color: $color-white !default;
+
+/// The background color of a dangerous banner.
+/// @type color
+/// @pattern banner
+$banner-danger-background: $color-alert !default;
+
+/// The text color of a dangerous banner.
+/// @type color
+/// @pattern banner
+$banner-danger-color: $color-white !default;
+
+/// The anchor color of a dangerous banner.
+/// @type color
+/// @pattern banner
+$banner-danger-link-color: $color-white !default;
+
+/// The background color of a success banner.
+/// @type color
+/// @pattern banner
+$banner-success-background: $color-success !default;
+
+/// The text color of a success banner.
+/// @type color
+/// @pattern banner
+$banner-success-color: $color-white !default;
+
+/// The anchor color of a success banner.
+/// @type color
+/// @pattern banner
+$banner-success-link-color: $color-white !default;
+
+/// The background color of a warning banner.
+/// @type color
+/// @pattern banner
+$banner-warning-background: $color-warning !default;
+
+/// The text color of a warning banner.
+/// @type color
+/// @pattern banner
+$banner-warning-color: $color-white !default;
+
+/// The anchor color of a warning banner.
+/// @type color
+/// @pattern banner
+$banner-warning-link-color: $color-white !default;
+
+.zui-banner {
+    background: $banner-info-background;
+    color: $banner-info-color;
+    padding: 10px 10px;
+    position: relative;
+
+    a {
+        color: $banner-info-link-color;
+        text-decoration: underline;
+    }
+
+    &.zui-banner-danger {
+        background: $banner-danger-background;
+        color: $banner-danger-color;
+
+        a { color: $banner-danger-link-color; }
+    }
+
+    &.zui-banner-success {
+        background: $banner-success-background;
+        color: $banner-success-color;
+
+        a { color: $banner-success-link-color; }
+    }
+
+    &.zui-banner-warning {
+        background: $banner-warning-background;
+        color: $banner-warning-color;
+
+        a { color: $banner-warning-link-color; }
+    }
+}

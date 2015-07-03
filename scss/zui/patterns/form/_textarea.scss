@@ -1,0 +1,16 @@
+textarea {
+    @include box-sizing(border-box);
+    
+    border: 1px solid #CCC;
+    border-radius: 3.01px;
+    font-family: inherit;
+    font-size: inherit;
+    height: auto;
+    line-height: 1.4285714285714;
+    margin: 0;
+    max-width: 250px;
+    overflow-y: auto;
+    padding: 4px 5px;
+    vertical-align: baseline;
+    width: 100%;
+}

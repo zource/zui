@@ -1,0 +1,46 @@
+{
+    "name": "Status",
+    "examples": [
+        "Status"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-status",
+                "description": "The <code>zui-status</code> class identifies an HTML element as a status label. It is recommended that you use this class on a span element."
+            },
+            {
+                "name": "zui-status-blue",
+                "description": "The <code>zui-status-blue</code> class turns a status label into a blue status."
+            },
+            {
+                "name": "zui-status-brown",
+                "description": "The <code>zui-status-brown</code> class turns a status label into a brown status."
+            },
+            {
+                "name": "zui-status-green",
+                "description": "The <code>zui-status-green</code> class turns a status label into a green status."
+            },
+            {
+                "name": "zui-status-red",
+                "description": "The <code>zui-status-red</code> class turns a status label into a red status."
+            },
+            {
+                "name": "zui-status-subtle",
+                "description": "The <code>zui-status-subtle</code> class turns a status label into a subtle status. This means that the background color is set to white which draws less attention to the status label."
+            },
+            {
+                "name": "zui-status-yellow",
+                "description": "The <code>zui-status-yellow</code> class turns a status label into a yellow status."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="week"],
+input[type="month"],
+input[type="number"],
+input[type="color"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="url"] {
+    @include box-sizing(border-box);
+
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    margin: 0;
+    max-width: 250px;
+    padding: 6px 5px;
+    vertical-align: baseline;
+    width: 100%;
+
+    &[disabled] {
+        background-color: #F5F5F5;
+        color: #999;
+        cursor: $cursor-disabled-value;
+    }
+}
+
+input[type="range"],
+input[type="color"],
+input[type="time"],
+input[type="date"],
+input[type="datetime"], 
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"] {
+    height: 30px;
+}

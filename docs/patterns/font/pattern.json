@@ -1,0 +1,22 @@
+{
+    "name": "Font",
+    "examples": [
+        "Font"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-icon",
+                "description": "The <code>zui-icon</code> class should be used with all icons."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+.zui-toolbar {
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .zui-button-group {
+        margin-right: 10px;
+    }
+
+    .zui-toolbar-primary {
+        float: left;
+    }
+
+    .zui-toolbar-secondary {
+        float: right;
+        
+        > .zui-button-group:last-child {
+            margin-right: 0px;
+        }
+    }
+}

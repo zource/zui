@@ -1,0 +1,13 @@
+$blockquote-border-size: 1px !default;
+$blockquote-border-style: solid !default;
+$blockquote-border-color: #CCC !default;
+$blockquote-color: #707070 !default;
+$blockquote-margin: 0px 0px 20px 20px !default;
+$blockquote-padding: 10px 20px !default;
+
+blockquote {
+    border-left: $blockquote-border-size $blockquote-border-style $blockquote-border-color;
+    color: $blockquote-color;
+    margin: $blockquote-margin;
+    padding: $blockquote-padding;
+}

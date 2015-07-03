@@ -1,0 +1,125 @@
+pre code {
+    background: #F2F2F2;
+    color: #333;
+    display: block;
+    overflow: auto;
+    padding: 10px;
+}
+
+pre .hljs-comment,
+pre .hljs-template_comment,
+pre .hljs-diff .hljs-header,
+pre .hljs-javadoc {
+    color: #998;
+    font-style: italic;
+}
+
+pre .hljs-keyword,
+pre .hljs-css .hljs-rule .hljs-keyword,
+pre .hljs-winutils,
+pre .hljs-javascript .hljs-title,
+pre .hljs-nginx .hljs-title,
+pre .hljs-subst,
+pre .hljs-request,
+pre .hljs-status {
+    color: #333;
+    font-weight: bold;
+}
+
+pre .hljs-number,
+pre .hljs-hexcolor,
+pre .hljs-ruby .hljs-constant {
+    color: #099;
+}
+
+pre .hljs-string,
+pre .hljs-tag .hljs-value,
+pre .hljs-phpdoc,
+pre .hljs-tex .hljs-formula {
+    color: #d14;
+}
+
+pre .hljs-title,
+pre .hljs-id,
+pre .hljs-coffeescript .hljs-params,
+pre .hljs-scss .hljs-preprocessor {
+    color: #900;
+    font-weight: bold;
+}
+
+pre .hljs-javascript .hljs-title,
+pre .hljs-lisp .hljs-title,
+pre .hljs-clojure .hljs-title,
+pre .hljs-subst {
+    font-weight: normal;
+}
+
+pre .hljs-class .hljs-title,
+pre .hljs-haskell .hljs-type,
+pre .hljs-vhdl .hljs-literal,
+pre .hljs-tex .hljs-command {
+    color: #458;
+    font-weight: bold;
+}
+
+pre .hljs-tag,
+pre .hljs-tag .hljs-title,
+pre .hljs-rules .hljs-property,
+pre .hljs-django .hljs-tag .hljs-keyword {
+    color: #000080;
+    font-weight: normal;
+}
+
+pre .hljs-attribute,
+pre .hljs-variable,
+pre .hljs-lisp .hljs-body {
+    color: #008080;
+}
+
+pre .hljs-regexp {
+    color: #009926;
+}
+
+pre .hljs-class {
+    color: #458;
+    font-weight: bold;
+}
+
+pre .hljs-symbol,
+pre .hljs-ruby .hljs-symbol .hljs-string,
+pre .hljs-lisp .hljs-keyword,
+pre .hljs-tex .hljs-special,
+pre .hljs-prompt {
+    color: #990073;
+}
+
+pre .hljs-built_in,
+pre .hljs-lisp .hljs-title,
+pre .hljs-clojure .hljs-built_in {
+    color: #0086b3;
+}
+
+pre .hljs-preprocessor,
+pre .hljs-pi,
+pre .hljs-doctype,
+pre .hljs-shebang,
+pre .hljs-cdata {
+    color: #999;
+    font-weight: bold;
+}
+
+pre .hljs-deletion {
+    background: #fdd;
+}
+
+pre .hljs-addition {
+    background: #dfd;
+}
+
+pre .hljs-diff .hljs-change {
+    background: #0086b3;
+}
+
+pre .hljs-chunk {
+    color: #aaa;
+}

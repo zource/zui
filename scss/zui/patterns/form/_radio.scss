@@ -1,0 +1,28 @@
+fieldset {
+    legend + .radio {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+
+    div.radio {
+        margin: 5px 0 0;
+        padding: 0 0 0 20px;
+        position: relative;
+    }
+}
+
+input.radio {
+    @include box-sizing(border-box);
+
+    font-size: 14px;
+    height: 15px;
+    left: 0;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    vertical-align: baseline;
+
+    & > label {
+        color: #333;
+    }
+}

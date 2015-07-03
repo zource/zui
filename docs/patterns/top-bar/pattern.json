@@ -1,0 +1,20 @@
+{
+    "name": "Top Bar",
+    "examples": [
+        "Markup",
+        "Image Logo",
+        "Textual Logo"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}
