@@ -26,6 +26,7 @@
     "package.json",
     "README.md",
     "sache.json",
+    "spec",
     "src",
     "svg",
     "vendor"
