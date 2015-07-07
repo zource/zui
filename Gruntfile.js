@@ -33,5 +33,6 @@ module.exports = function(grunt) {
     grunt.loadTasks("grunt/tasks");
     grunt.registerTask("docs", ["copy:docs", "sass:docs", "docs-scss", "docs-build"]);
     grunt.registerTask("lint", ["jsonlint", "jshint", "jscs"]);
-    grunt.registerTask("default", ["lint", "build", "uglify", "webfont", "sass:src", "sass:dist", "docs"]);
+    grunt.registerTask("build", ["build-js", "uglify", "webfont", "sass:src", "sass:dist"]);
+    grunt.registerTask("default", ["lint", "build"]);
 };

@@ -43,7 +43,7 @@ module.exports = function( grunt ) {
 		return contents;
 	}
 
-	grunt.registerMultiTask("build", "Create the zui.js library.", function() {
+	grunt.registerMultiTask("build-js", "Create the zui.js library.", function() {
         var done, version, name = this.data.dest;
 
 		requirejsConfig.out = function( compiled ) {
