@@ -22,7 +22,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 return false;
             });
 
-            $("[data-zui-alert-timeout").each(function() {
+            $("[data-zui-alert-timeout]").each(function() {
                 var $this = $(this);
 
                 setTimeout(function() {
