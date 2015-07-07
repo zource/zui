@@ -1,6 +1,7 @@
 {
   "name": "zource-ui",
   "description": "The user interface library used in Zource.",
+  "license": "proprietary",
   "version": "0.0.0",
   "devDependencies": {
     "grunt": "~0.4.5",
