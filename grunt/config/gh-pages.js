@@ -31,9 +31,9 @@ module.exports = {
                 ret += 'Range SHA: ' + process.env.TRAVIS_COMMIT_RANGE + '\n';
                 ret += 'Build ID: ' + process.env.TRAVIS_BUILD_ID + '\n';
                 ret += 'Build number: ' + process.env.TRAVIS_BUILD_NUMBER + '\n';
+
                 return ret;
-            })(),
-            silent: true
+            })()
         },
         src: ['**']
     }
