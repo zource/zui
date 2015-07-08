@@ -14,7 +14,7 @@ module.exports = function(config) {
         files: [
             {pattern: 'vendor/jquery/dist/jquery.js', watched: true, served: true, included: true},
             {pattern: 'vendor/jasmine-jquery/lib/jasmine-jquery.js', watched: true, served: true, included: true},
-            {pattern: 'dist/js/zui.js', watched: true, served: true, included: true},
+            {pattern: 'build/dist/js/zui.js', watched: true, served: true, included: true},
             {pattern: 'spec/**/*.html', watched: true, served: true, included: true},
             {pattern: 'spec/helpers.js', watched: true, served: true, included: true},
             {pattern: 'spec/**/*Spec.js', watched: true, served: true, included: true}
