@@ -21,7 +21,8 @@ after_success:
 - echo -e "Published the documentation.\n"
 - git clone https://waltertamboer:${GH_TOKEN}@github.com/zource/zui-bower.git zui-bower
 - rm -rf zui-bower/*
-- cp -r dist/* zui-bower/
+- mkdir zuibower/dist
+- cp -r dist/* zui-bower/dist/*
 - cd zui-bower
 - git remote rm origin
 - git remote add origin https://waltertamboer:${GH_TOKEN}@github.com/zource/zui-bower.git
