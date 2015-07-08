@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2015-07-03T08:37Z
+ * Date: 2015-07-07T20:05Z
  */
 
 (function(global, factory) {
@@ -257,7 +257,7 @@
                 return false;
             });
 
-            $("[data-zui-alert-timeout").each(function() {
+            $("[data-zui-alert-timeout]").each(function() {
                 var $this = $(this);
 
                 setTimeout(function() {
