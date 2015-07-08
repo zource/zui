@@ -1,41 +1,25 @@
 {
-  "name": "zource-ui",
-  "version": "0.0.0",
-  "description": "The pattern library of Zource.",
-  "main": "dist/**/*",
-  "moduleType": [
-    "amd"
-  ],
-  "keywords": [
-    "zource",
-    "patterns",
-    "ui"
-  ],
-  "license": "proprietary",
-  "homepage": "http://github.com/zource/zui",
-  "ignore": [
-    "**/.*",
-    "bower_components",
-    "docs",
-    "grunt",
-    "Gruntfile.js",
-    "js/",
-    "karma.conf.js",
-    "LICENSE",
-    "node_modules",
-    "test",
-    "package.json",
-    "README.md",
-    "sache.json",
-    "spec",
-    "src",
-    "svg",
-    "vendor"
-  ],
-  "dependencies": {
-    "jquery": "2.*"
-  },
-  "devDependencies": {
-    "jasmine-jquery": "~2.1.0"
-  }
+    "name": "zource-ui",
+    "version": "0.0.0",
+    "private": "true",
+    "description": "The pattern library of Zource.",
+    "main": [
+        "dist/scss/zui.scss",
+        "dist/js/zui.js"
+    ],
+    "keywords": [
+        "zource",
+        "patterns",
+        "ui"
+    ],
+    "license": "proprietary",
+    "homepage": "http://github.com/zource/zui-bower",
+    "ignore": [
+    ],
+    "dependencies": {
+        "jquery": "2.*"
+    },
+    "devDependencies": {
+        "jasmine-jquery": "~2.1.0"
+    }
 }

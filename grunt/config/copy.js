@@ -31,5 +31,22 @@ module.exports = {
                 filter: 'isFile'
             }
         ]
+    },
+    build: {
+        files: [
+            {
+                src: ['bower.json'],
+                dest: '<%= paths.build %>/'
+            },
+            {
+                expand: true,
+                flatten: false,
+                src: [
+                    '<%= paths.scss %>/**/*.scss'
+                ],
+                dest: '<%= paths.build %>/',
+                filter: 'isFile'
+            }
+        ]
     }
 };

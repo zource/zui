@@ -2,7 +2,7 @@
 module.exports = {
     dist: {
         src: [
-            "<%= paths.dist %>/**/*",
+            "<%= paths.build %>/**/*",
             "<%= paths.docs %>/build/**/*",
             "<%= paths.docs %>/patterns/font/examples/font/zui.html"
         ]

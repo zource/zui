@@ -2,7 +2,7 @@
 module.exports = {
     dist: {
         src: 'svg/*.svg',
-        dest: 'dist/fonts',
+        dest: '<%= paths.dist %>/fonts',
         destCss: 'scss/zui/patterns/font/',
         options: {
             destHtml: 'docs/patterns/font/examples/font/',

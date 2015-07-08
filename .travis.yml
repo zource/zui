@@ -21,14 +21,16 @@ after_success:
 - echo -e "Published the documentation.\n"
 - git clone https://waltertamboer:${GH_TOKEN}@github.com/zource/zui-bower.git zui-bower
 - rm -rf zui-bower/*
-- mkdir zuibower/dist
+- mkdir zui-bower/dist
+- mkdir zui-bower/scss
 - cp -r dist/* zui-bower/dist/*
+- cp -r scss/* zui-bower/scss/*
 - cd zui-bower
 - git remote rm origin
 - git remote add origin https://waltertamboer:${GH_TOKEN}@github.com/zource/zui-bower.git
 - git add -A
 - ZUI_VER=$(git diff bower.json | grep version | cut -d':' -f2 | cut -d'"' -f2 | sort -g -r | head -1) && if [ $(echo $ZUI_VER | wc -m | tr -d ' ') = '1' ]; then echo 'The version number did not change.'; else git tag -a $ZUI_VER -m "Version $ZUI_VER"; fi
-- git commit -m "ZUI build to zui-bower"
+- git commit -m "New build made by Travis CI."
 - git push -fq origin master
 - git push -fq origin --tags
 - echo -e "Published the library to bower.\n"

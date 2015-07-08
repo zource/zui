@@ -15,7 +15,7 @@
 .yardoc
 .sass-cache/
 
-dist/
+build/
 bower_components/
 node_modules/
 vendor/

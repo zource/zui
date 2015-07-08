@@ -7,7 +7,8 @@ module.exports = function(grunt) {
             get config() {
                 return this.grunt + "config/";
             },
-            dist: "dist/",
+            build: "build/",
+            dist: "build/dist/",
             docs: "docs/",
             grunt: "grunt/",
             js: "js/",
@@ -33,6 +34,6 @@ module.exports = function(grunt) {
     grunt.loadTasks("grunt/tasks");
     grunt.registerTask("docs", ["copy:docs", "sass:docs", "docs-scss", "docs-build"]);
     grunt.registerTask("lint", ["jsonlint", "jshint", "jscs"]);
-    grunt.registerTask("build", ["build-js", "uglify", "webfont", "sass:src", "sass:dist"]);
+    grunt.registerTask("build", ["build-js", "uglify", "webfont", "sass:src", "sass:dist", "copy:build"]);
     grunt.registerTask("default", ["lint", "build"]);
 };

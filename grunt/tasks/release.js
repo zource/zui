@@ -50,21 +50,15 @@ module.exports = function(grunt) {
         grunt.file.write('package.json', JSON.stringify(pkg, null, 2));
         grunt.file.write('bower.json', JSON.stringify(bowerJson, null, 2));
 
+        // Also copy the bower file to the dist folder:
+        grunt.file.copy("bower.json", "dist/bower.json");
+
         // Commit the new package.json
         shell.exec('git add package.json bower.json');
         shell.exec('git commit -m "Set the version to ' + pkg.version + '"');
 
-        // We release from the master:
+        // Create the new tag:
         shell.exec('git checkout master');
-        shell.exec('git checkout -b release/' + pkg.version);
-
-        // Add all generated files and create the tag:
-        shell.exec('git add --all --force dist/');
-        shell.exec('git commit -m "Added generated files for release ' + pkg.version + '"');
         shell.exec('git tag -a -m "Release ' + pkg.version + '" -f ' + pkg.version);
-
-        // We're done, move back to the master and push:
-        shell.exec('git checkout master');
-        shell.exec('git branch -D release/' + pkg.version);
     });
 };
