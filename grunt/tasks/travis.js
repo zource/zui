@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         shell.exec('git push -fq origin --tags');
     }
 
-    grunt.registerTask("travis", "Executed after a successful Travis CI build.", function() {
+    grunt.registerTask("travis", "Executed after a successful Travis CI build.", function(type) {
         if (process.env.TRAVIS !== "true") {
             grunt.log.error("No Travis CI environment available.");
             return;
@@ -96,11 +96,18 @@ module.exports = function(grunt) {
             return;
         }
 
-        publishDocs();
+        switch (type) {
+            case "docs":
+                publishDocs();
+                break;
 
-        console.log(shell.pwd());
-        shell.exec("../../");
+            case "bower":
+                publishBower();
+                break;
 
-        publishBower();
+            default:
+                grunt.log.error("Invalid process type provided.");
+                break;
+        }
     });
 };

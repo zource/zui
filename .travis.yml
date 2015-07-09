@@ -17,7 +17,8 @@ script: grunt karma:travis
 
 after_success:
 - grunt docs
-- grunt travis
+- grunt travis:docs
+- grunt travis:bower
 
 env:
   global:
