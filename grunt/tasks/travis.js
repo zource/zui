@@ -97,7 +97,10 @@ module.exports = function(grunt) {
         }
 
         publishDocs();
+
+        console.log(shell.pwd());
         shell.exec("../../");
+
         publishBower();
     });
 };
