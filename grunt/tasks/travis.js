@@ -16,30 +16,6 @@ module.exports = function(grunt) {
         return ret;
     }
 
-    function publishDocs() {
-        var url = 'https://' + access + '@github.com/zource/zui.git';
-
-        if (grunt.file.exists('.grunt/gh-pages')) {
-            shell.cd('.grunt/gh-pages');
-
-            shell.exec('git remote rm origin');
-            shell.exec('git remote add origin ' + url);
-
-            shell.exec('git pull origin gh-pages');
-            shell.cd('../..');
-        } else {
-            shell.exec('git clone ' + url + ' --branch gh-pages .grunt/gh-pages');
-        }
-
-        shell.exec('rm -rf .grunt/gh-pages/*');
-        shell.exec('cp -R docs/build/* .grunt/gh-pages/');
-
-        shell.cd('.grunt/gh-pages');
-        shell.exec('git add -A');
-        shell.exec('git commit -m "' + createCommitMessage() + '"');
-        shell.exec('git push -fq origin gh-pages');
-    }
-
     function createTag() {
         var version = grunt.config("pkg.version");
         var sha1 = shell.exec('git rev-parse HEAD', {silent: true});
@@ -56,6 +32,30 @@ module.exports = function(grunt) {
         shell.exec('git tag -a ' + version + ' -m "Version ' + version + '"');
     }
 
+    function publishDocs() {
+        var url = 'https://' + access + '@github.com/zource/zui.git';
+
+        if (grunt.file.exists('.grunt/gh-pages')) {
+            shell.cd('.grunt/gh-pages');
+
+            shell.exec('git remote rm origin');
+            shell.exec('git remote add origin ' + url);
+
+            shell.exec('git pull origin gh-pages');
+            shell.cd('../../');
+        } else {
+            shell.exec('git clone ' + url + ' --branch gh-pages .grunt/gh-pages');
+        }
+
+        shell.exec('rm -rf .grunt/gh-pages/*');
+        shell.exec('cp -R docs/build/* .grunt/gh-pages/');
+
+        shell.cd('.grunt/gh-pages');
+        shell.exec('git add -A');
+        shell.exec('git commit -m "' + createCommitMessage() + '"');
+        shell.exec('git push -fq origin gh-pages');
+    }
+
     function publishBower() {
         var url = 'https://' + access + '@github.com/zource/zui-bower.git';
 
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
             shell.exec('git remote add origin ' + url);
 
             shell.exec('git pull origin master');
-            shell.cd('../..');
+            shell.cd('../../');
         } else {
             shell.exec('git clone ' + url + ' --branch master .grunt/zui-bower');
         }
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         shell.exec('git push -fq origin --tags');
     }
 
-    grunt.registerTask("travis", "Executed after a successful Travis CI build.", function(type) {
+    grunt.registerTask("travis", "Executed after a successful Travis CI build.", function() {
         if (process.env.TRAVIS !== "true") {
             grunt.log.error("No Travis CI environment available.");
             return;
@@ -97,6 +97,7 @@ module.exports = function(grunt) {
         }
 
         publishDocs();
+        shell.exec("../../");
         publishBower();
     });
 };
