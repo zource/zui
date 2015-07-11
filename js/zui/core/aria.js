@@ -33,6 +33,7 @@ define(["jquery", "../core/core"], function($, zui) {
                 var id = $(this).attr("id"), controls = zui.Aria.getOwnedValue(this);
 
                 if (!id) {
+                    zui.error("No id attribute found for element ", this);
                     return;
                 }
 
