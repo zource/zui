@@ -15,7 +15,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
             $("body").on("mouseenter", "[aria-expanded='false']", function() {
                 if (isCurrentlyOpen) {
-                    zui.Dropdown.open(this);
+                    zui.Dropdown.open(this, this);
                 }
             });
 
