@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2015-07-09T21:06Z
+ * Date: 2015-07-11T16:00Z
  */
 
 (function(global, factory) {
@@ -76,6 +76,7 @@
                 var id = $(this).attr("id"), controls = zui.Aria.getOwnedValue(this);
 
                 if (!id) {
+                    zui.error("No id attribute found for element ", this);
                     return;
                 }
 
@@ -602,7 +603,7 @@
 
             $("body").on("mouseenter", "[aria-expanded='false']", function() {
                 if (isCurrentlyOpen) {
-                    zui.Dropdown.open(this);
+                    zui.Dropdown.open(this, this);
                 }
             });
 
