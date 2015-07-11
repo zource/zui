@@ -11,18 +11,18 @@ $cursor-help-value: help !default;
 $cursor-text-value: text !default;
 
 // The colors used throughout the patterns:
-$color-primary: #AA2D4C;
-$color-primary-hover: #DC163F;
-$color-primary-border: #E0658C;
+$color-primary: #AA2D4C !default;
+$color-primary-hover: #DC163F !default;
+$color-primary-border: #E0658C !default;
 
-$color-secondary: #F5F5F5;
-$color-secondary-hover: #E9E9E9;
-$color-alert: #D04437;
-$color-success: #8EB021;
-$color-warning: #FF8D1C;
-$color-info: $color-primary;
-$color-black: #000000;
-$color-white: #FFFFFF;
-$color-red: #FF0000;
-$color-blue: #0000FF;
-$color-green: #00FF00;
+$color-secondary: #F5F5F5 !default;
+$color-secondary-hover: #E9E9E9 !default;
+$color-alert: #D04437 !default;
+$color-success: #8EB021 !default;
+$color-warning: #FF8D1C !default;
+$color-info: $color-primary !default;
+$color-black: #000000 !default;
+$color-white: #FFFFFF !default;
+$color-red: #FF0000 !default;
+$color-blue: #0000FF !default;
+$color-green: #00FF00 !default;
