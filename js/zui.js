@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2015-07-11T22:26Z
+ * Date: 2015-08-13T17:45Z
  */
 
 (function(global, factory) {
