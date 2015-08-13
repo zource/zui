@@ -1,7 +1,6 @@
 {
-    "name": "zource-ui",
+    "name": "zource-zui",
     "version": "0.0.0",
-    "private": "true",
     "description": "The pattern library of Zource.",
     "main": [
         "dist/scss/zui.scss",
