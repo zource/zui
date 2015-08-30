@@ -1,0 +1,54 @@
+{
+    "name": "Note",
+    "examples": [
+        "Floating"
+    ],
+    "html": {
+        "attributes": [
+            {
+                "name": "data-zui-note-timeout",
+                "description": "When this attribute is set, it will close the note after the given timeout. The value is in milliseconds."
+            },
+            {
+                "name": "data-zui-note-fade-speed",
+                "description": "When the data-zui-note-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds."
+            },
+            {
+                "name": "data-zui-note-selector",
+                "description": "The selector of the element to which the note should be bound."
+            },
+            {
+                "name": "data-zui-note-offset-x",
+                "description": "An additional horizontal offset to add to the note."
+            },
+            {
+                "name": "data-zui-note-offset-y",
+                "description": "An additional vertical offset to add to the note."
+            }
+        ],
+        "classes": [
+            {
+                "name": "zui-note",
+                "description": "The zui-note class identifies an HTML element as a note."
+            },
+            {
+                "name": "zui-note-title",
+                "description": "The zui-note-title class identifies an HTML element as the title part of a note."
+            },
+            {
+                "name": "zui-note-content",
+                "description": "The zui-note-content class identifies an HTML that contains the content of a note."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+            {
+                "name": "zui-note-closed",
+                "description": "The event that is triggered once a note is closed."
+            }
+        ],
+        "methods": [
+        ]
+    }
+}

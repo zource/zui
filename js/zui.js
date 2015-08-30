@@ -13,6 +13,7 @@ define([
     "zui/patterns/dropdown",
     "zui/patterns/id",
     "zui/patterns/select-container",
+    "zui/patterns/note",
     "zui/patterns/splitter",
     "zui/patterns/tabs",
     "zui/patterns/table",
@@ -31,6 +32,7 @@ define([
     zui.Button.bind();
     zui.Dialog.bind();
     zui.Dropdown.bind();
+    zui.Note.bind();
     zui.SelectContainer.bind();
     zui.Screen.bind();
     zui.Splitter.bind();
