@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2015-08-30T20:31Z
+ * Date: 2015-08-30T20:47Z
  */
 
 (function(global, factory) {
@@ -1343,14 +1343,12 @@
                 var offsetY = parseInt($(this).attr("data-zui-note-offset-y")) || 10;
 
                 // Add this element to the body so we can position it better.
-                $(this).appendTo("body");
+                $(".zui-note").appendTo("body");
 
                 $(this).css({
                     left: element.offset().left + offsetX,
                     top: element.offset().top + offsetY
                 });
-
-                $(this).fadeIn();
             });
 
             $("[data-zui-note-timeout]").each(function() {
@@ -1360,6 +1358,8 @@
                     removeNote($this);
                 }, $this.data("zui-note-timeout"));
             });
+
+            $(".zui-note").fadeIn();
         }
     };
 
