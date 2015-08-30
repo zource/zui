@@ -51,14 +51,12 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 var offsetY = parseInt($(this).attr("data-zui-note-offset-y")) || 10;
 
                 // Add this element to the body so we can position it better.
-                $(this).appendTo("body");
+                $(".zui-note").appendTo("body");
 
                 $(this).css({
                     left: element.offset().left + offsetX,
                     top: element.offset().top + offsetY
                 });
-
-                $(this).fadeIn();
             });
 
             $("[data-zui-note-timeout]").each(function() {
@@ -68,6 +66,8 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                     removeNote($this);
                 }, $this.data("zui-note-timeout"));
             });
+
+            $(".zui-note").fadeIn();
         }
     };
 
