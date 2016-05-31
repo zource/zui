@@ -118,7 +118,7 @@ input[type="submit"] {
         border-color: $button-disabled-border-color;
         box-shadow: none;
         color: $button-disabled-color;
-        cursor: $cursor-disabled-value;
+        cursor: $cursor-not-allowed-value;
     }
 }
 

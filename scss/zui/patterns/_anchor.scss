@@ -14,7 +14,7 @@ a:active, a:focus, a:hover {
 
 a.disabled {
     color: $anchor-color-disabled;
-    cursor: $cursor-disabled-value;
+    cursor: $cursor-not-allowed-value;
 }
 
 a.disabled:active, 

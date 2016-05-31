@@ -1,0 +1,161 @@
+{
+    "name": "Cursor",
+    "examples": [
+        "Cursors"
+    ],
+    "html": {
+        "attributes": [],
+        "classes": [
+            {
+                "name": "zui-cursor-all-scroll",
+                "description": "Cursor showing that something can be scrolled in any direction (panned)."
+            },
+            {
+                "name": "zui-cursor-alias",
+                "description": "Indicating an alias or shortcut is to be created."
+            },
+            {
+                "name": "zui-cursor-auto",
+                "description": "The browser determines the cursor to display based on the current context."
+            },
+            {
+                "name": "zui-cursor-cell",
+                "description": "Indicating that cells can be selected."
+            },
+            {
+                "name": "zui-cursor-col-resize",
+                "description": "The item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating."
+            },
+            {
+                "name": "zui-cursor-context-menu",
+                "description": "A context menu is available under the cursor."
+            },
+            {
+                "name": "zui-cursor-copy",
+                "description": "Indicating that something can be copied."
+            },
+            {
+                "name": "zui-cursor-crosshair",
+                "description": "Cross cursor, often used to indicate selection in a bitmap."
+            },
+            {
+                "name": "zui-cursor-default",
+                "description": "Default cursor, typically an arrow."
+            },
+            {
+                "name": "zui-cursor-e-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-ew-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-grab",
+                "description": "Indicates that something can be grabbed (dragged to be moved)."
+            },
+            {
+                "name": "zui-cursor-grabbing",
+                "description": "Indicates that something can be grabbed (dragged to be moved)."
+            },
+            {
+                "name": "zui-cursor-help",
+                "description": "Indicating help is available."
+            },
+            {
+                "name": "zui-cursor-move",
+                "description": "The hovered object may be moved."
+            },
+            {
+                "name": "zui-cursor-n-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-ne-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-nesw-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-no-drop",
+                "description": "Cursor showing that a drop is not allowed at the current location."
+            },
+            {
+                "name": "zui-cursor-none",
+                "description": "No cursor is rendered."
+            },
+            {
+                "name": "zui-cursor-not-allowed",
+                "description": "Cursor showing that something cannot be done."
+            },
+            {
+                "name": "zui-cursor-ns-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-nw-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-nwse-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-pointer",
+                "description": "E.g. used when hovering over links, typically a hand."
+            },
+            {
+                "name": "zui-cursor-progress",
+                "description": "The program is busy in the background but the user can still interact with the interface (unlike for wait)."
+            },
+            {
+                "name": "zui-cursor-row-resize",
+                "description": "The item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them."
+            },
+            {
+                "name": "zui-cursor-s-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-se-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-sw-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-text",
+                "description": "Indicating text can be selected, typically an I-beam."
+            },
+            {
+                "name": "zui-cursor-vertical-text",
+                "description": "Indicating that vertical text can be selected, typically a sideways I-beam."
+            },
+            {
+                "name": "zui-cursor-w-resize",
+                "description": "Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box."
+            },
+            {
+                "name": "zui-cursor-wait",
+                "description": "The program is busy (sometimes an hourglass or a watch)."
+            },
+            {
+                "name": "zui-cursor-zoom-in",
+                "description": "Indicates that something can be zoomed (magnified) in."
+            },
+            {
+                "name": "zui-cursor-zoom-out",
+                "description": "Indicates that something can be zoomed (magnified) out."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

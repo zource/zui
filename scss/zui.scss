@@ -4,6 +4,10 @@
 @import "zui/functions";
 @import "zui/settings";
 
+// First we include the patterns that are used by other patterns.
+@import "zui/patterns/color";
+@import "zui/patterns/cursor";
+
 @import "zui/patterns/all";
 @import "zui/patterns/body";
 @import "zui/patterns/aria";

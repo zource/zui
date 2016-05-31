@@ -30,7 +30,7 @@ input[type="url"] {
     &[disabled] {
         background-color: #F5F5F5;
         color: #999;
-        cursor: $cursor-disabled-value;
+        cursor: $cursor-not-allowed-value;
     }
 }
 
