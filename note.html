@@ -125,202 +125,230 @@
 
 
 
-<h2>HTML Attributes</h2>
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#html-attributes" role="tab" aria-selected="true"><strong>HTML Attributes</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#html-classes" role="tab" aria-selected="false"><strong>HTML Classes</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#js-events" role="tab" aria-selected="false"><strong>JavaScript Events</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#js-methods" role="tab" aria-selected="false"><strong>JavaScript Methods</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-functions" role="tab" aria-selected="false"><strong>SASS Functions</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-mixins" role="tab" aria-selected="false"><strong>SASS Mixins</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-variables" role="tab" aria-selected="false"><strong>SASS Variables</strong></a>
+        </li>
+    </ul>
 
+    <div class="zui-tabs-content">
+        <div role="tabpanel" aria-hidden="false" id="html-attributes" class="zui-tabs-pane zui-docs-tab zui-active-pane">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>data-zui-note-timeout</code></td>
+                    <td>
+                        When this attribute is set, it will close the note after the given timeout. The value is in milliseconds.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-note-fade-speed</code></td>
+                    <td>
+                        When the data-zui-note-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-note-selector</code></td>
+                    <td>
+                        The selector of the element to which the note should be bound.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-note-offset-x</code></td>
+                    <td>
+                        An additional horizontal offset to add to the note.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-note-offset-y</code></td>
+                    <td>
+                        An additional vertical offset to add to the note.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
 
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>data-zui-note-timeout</code></td>
-            <td>
-                When this attribute is set, it will close the note after the given timeout. The value is in milliseconds.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>data-zui-note-fade-speed</code></td>
-            <td>
-                When the data-zui-note-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>data-zui-note-selector</code></td>
-            <td>
-                The selector of the element to which the note should be bound.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>data-zui-note-offset-x</code></td>
-            <td>
-                An additional horizontal offset to add to the note.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>data-zui-note-offset-y</code></td>
-            <td>
-                An additional vertical offset to add to the note.
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
+        <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-note</code></td>
+                    <td>
+                        The zui-note class identifies an HTML element as a note.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-note-title</code></td>
+                    <td>
+                        The zui-note-title class identifies an HTML element as the title part of a note.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-note-content</code></td>
+                    <td>
+                        The zui-note-content class identifies an HTML that contains the content of a note.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
 
+        <div role="tabpanel" aria-hidden="true" id="js-events" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-note-closed</code></td>
+                    <td>
+                        The event that is triggered once a note is closed.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
 
-<h2>HTML Classes</h2>
+        <div role="tabpanel" aria-hidden="true" id="js-methods" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no methods defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
 
+        <div role="tabpanel" aria-hidden="true" id="sass-functions" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no functions defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
 
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>zui-note</code></td>
-            <td>
-                The zui-note class identifies an HTML element as a note.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-note-title</code></td>
-            <td>
-                The zui-note-title class identifies an HTML element as the title part of a note.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-note-content</code></td>
-            <td>
-                The zui-note-content class identifies an HTML that contains the content of a note.
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
+        <div role="tabpanel" aria-hidden="true" id="sass-mixins" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no mixins defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
 
+        <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>note-background</code></td>
+                    <td>
+                        The background color of a note.
 
-<h2>JavaScript Events</h2>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>note-border</code></td>
+                    <td>
+                        The border of a note.
 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>note-border-radius</code></td>
+                    <td>
+                        The border radius of a note.
 
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>zui-note-closed</code></td>
-            <td>
-                The event that is triggered once a note is closed.
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>note-max-width</code></td>
+                    <td>
+                        The maximum width of a note.
 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>note-padding</code></td>
+                    <td>
+                        The padding used within a note.
 
-<h2>JavaScript Methods</h2>
-
-
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There are no methods defined for this pattern.
-    </p>
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
 </div>
-
-
-<h2>Sass Functions</h2>
-
-
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There are no functions defined for this pattern.
-    </p>
-</div>
-
-
-<h2>Sass Mixins</h2>
-
-
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There are no mixins defined for this pattern.
-    </p>
-</div>
-
-
-<h2>Sass Variables</h2>
-
-
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>note-background</code></td>
-            <td>
-                The background color of a note.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>note-border</code></td>
-            <td>
-                The border of a note.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>note-border-radius</code></td>
-            <td>
-                The border radius of a note.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>note-max-width</code></td>
-            <td>
-                The maximum width of a note.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>note-padding</code></td>
-            <td>
-                The padding used within a note.
-
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
-
 
 <h2>Markup</h2>
 

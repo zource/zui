@@ -135,329 +135,357 @@
 
 
 
-<h2>HTML Attributes</h2>
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#html-attributes" role="tab" aria-selected="true"><strong>HTML Attributes</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#html-classes" role="tab" aria-selected="false"><strong>HTML Classes</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#js-events" role="tab" aria-selected="false"><strong>JavaScript Events</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#js-methods" role="tab" aria-selected="false"><strong>JavaScript Methods</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-functions" role="tab" aria-selected="false"><strong>SASS Functions</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-mixins" role="tab" aria-selected="false"><strong>SASS Mixins</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-variables" role="tab" aria-selected="false"><strong>SASS Variables</strong></a>
+        </li>
+    </ul>
 
+    <div class="zui-tabs-content">
+        <div role="tabpanel" aria-hidden="false" id="html-attributes" class="zui-tabs-pane zui-docs-tab zui-active-pane">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>data-zui-alert-timeout</code></td>
+                    <td>
+                        When this attribute is set, it will close the alert after the given timeout. The value is in milliseconds.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-alert-fade-speed</code></td>
+                    <td>
+                        When the data-zui-alert-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>role</code></td>
+                    <td>
+                        Depending on the type of alert the role attribute must be set. If the alert is an information message, the role attribute must be set to <em>status</em>. If the alert is a dangerous message or a warning message, the role attribute must be set to <em>alert</em>.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
 
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>data-zui-alert-timeout</code></td>
-            <td>
-                When this attribute is set, it will close the alert after the given timeout. The value is in milliseconds.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>data-zui-alert-fade-speed</code></td>
-            <td>
-                When the data-zui-alert-fade-speed attribute is set, it will be used as the fadeout speed. The value is in milliseconds.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>role</code></td>
-            <td>
-                Depending on the type of alert the role attribute must be set. If the alert is an information message, the role attribute must be set to <em>status</em>. If the alert is a dangerous message or a warning message, the role attribute must be set to <em>alert</em>.
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
+        <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-alert</code></td>
+                    <td>
+                        The zui-alert class identifies an HTML element as an alert.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-alert-danger</code></td>
+                    <td>
+                        The zui-alert-danger class should be set on the same element that has the zui-alert class set. By setting the zui-alert-danger class you identity the alert as a dangerous message.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-alert-subtle</code></td>
+                    <td>
+                        The zui-alert-subtle class should be set on the same element that has the zui-alert class set. By setting the zui-alert-subtle class you identity the alert as a subtle message.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-alert-success</code></td>
+                    <td>
+                        The zui-alert-success class should be set on the same element that has the zui-alert class set. By setting the zui-alert-success class you identity the alert as a successful message.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-alert-title</code></td>
+                    <td>
+                        The zui-alert-title class should be set on the element that acts as the title of an alert.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-alert-warning</code></td>
+                    <td>
+                        The zui-alert-warning class should be set on the same element that has the zui-alert class set. By setting the zui-alert-warning class you identity the alert as a warning.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
 
+        <div role="tabpanel" aria-hidden="true" id="js-events" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-alert-closed</code></td>
+                    <td>
+                        The event that is triggered once an alert is closed.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
 
-<h2>HTML Classes</h2>
+        <div role="tabpanel" aria-hidden="true" id="js-methods" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no methods defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
 
+        <div role="tabpanel" aria-hidden="true" id="sass-functions" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no functions defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
 
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>zui-alert</code></td>
-            <td>
-                The zui-alert class identifies an HTML element as an alert.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-alert-danger</code></td>
-            <td>
-                The zui-alert-danger class should be set on the same element that has the zui-alert class set. By setting the zui-alert-danger class you identity the alert as a dangerous message.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-alert-subtle</code></td>
-            <td>
-                The zui-alert-subtle class should be set on the same element that has the zui-alert class set. By setting the zui-alert-subtle class you identity the alert as a subtle message.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-alert-success</code></td>
-            <td>
-                The zui-alert-success class should be set on the same element that has the zui-alert class set. By setting the zui-alert-success class you identity the alert as a successful message.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-alert-title</code></td>
-            <td>
-                The zui-alert-title class should be set on the element that acts as the title of an alert.
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>zui-alert-warning</code></td>
-            <td>
-                The zui-alert-warning class should be set on the same element that has the zui-alert class set. By setting the zui-alert-warning class you identity the alert as a warning.
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
+        <div role="tabpanel" aria-hidden="true" id="sass-mixins" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no mixins defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
 
+        <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>alert-danger-background</code></td>
+                    <td>
+                        The background color of a dangerous alert.
 
-<h2>JavaScript Events</h2>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-danger-border-color</code></td>
+                    <td>
+                        The border color of a dangerous alert.
 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-danger-border</code></td>
+                    <td>
+                        The border of a dangerous alert.
 
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>zui-alert-closed</code></td>
-            <td>
-                The event that is triggered once an alert is closed.
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-info-background</code></td>
+                    <td>
+                        The background color of an information alert.
 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-info-border-color</code></td>
+                    <td>
+                        The border color of an information alert.
 
-<h2>JavaScript Methods</h2>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-info-border</code></td>
+                    <td>
+                        The border of an information alert.
 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-success-background</code></td>
+                    <td>
+                        The background color of a success alert.
 
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There are no methods defined for this pattern.
-    </p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-success-border-color</code></td>
+                    <td>
+                        The border color of a success alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-success-border</code></td>
+                    <td>
+                        The border of a success alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-warning-background</code></td>
+                    <td>
+                        The background color of a warning alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-warning-border-color</code></td>
+                    <td>
+                        The border color of a warning alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-warning-border</code></td>
+                    <td>
+                        The border of a warning alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-subtle-background</code></td>
+                    <td>
+                        The background color of a subtle alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-subtle-border-color</code></td>
+                    <td>
+                        The border color of a subtle alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-subtle-border</code></td>
+                    <td>
+                        The border of a subtle alert.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-font-icon-danger</code></td>
+                    <td>
+                        The icon character that is used for dangerous alerts.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-font-icon-info</code></td>
+                    <td>
+                        The icon character that is used for information alerts.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-font-icon-success</code></td>
+                    <td>
+                        The icon character that is used for success alerts.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-font-icon-warning</code></td>
+                    <td>
+                        The icon character that is used for warning alerts.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>alert-font-icon-subtle</code></td>
+                    <td>
+                        The icon character that is used for warning alerts.
+
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
 </div>
-
-
-<h2>Sass Functions</h2>
-
-
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There are no functions defined for this pattern.
-    </p>
-</div>
-
-
-<h2>Sass Mixins</h2>
-
-
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There are no mixins defined for this pattern.
-    </p>
-</div>
-
-
-<h2>Sass Variables</h2>
-
-
-<table class="zui-table-list zui-table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><code>alert-danger-background</code></td>
-            <td>
-                The background color of a dangerous alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-danger-border-color</code></td>
-            <td>
-                The border color of a dangerous alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-danger-border</code></td>
-            <td>
-                The border of a dangerous alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-info-background</code></td>
-            <td>
-                The background color of an information alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-info-border-color</code></td>
-            <td>
-                The border color of an information alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-info-border</code></td>
-            <td>
-                The border of an information alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-success-background</code></td>
-            <td>
-                The background color of a success alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-success-border-color</code></td>
-            <td>
-                The border color of a success alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-success-border</code></td>
-            <td>
-                The border of a success alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-warning-background</code></td>
-            <td>
-                The background color of a warning alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-warning-border-color</code></td>
-            <td>
-                The border color of a warning alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-warning-border</code></td>
-            <td>
-                The border of a warning alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-subtle-background</code></td>
-            <td>
-                The background color of a subtle alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-subtle-border-color</code></td>
-            <td>
-                The border color of a subtle alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-subtle-border</code></td>
-            <td>
-                The border of a subtle alert.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-font-icon-danger</code></td>
-            <td>
-                The icon character that is used for dangerous alerts.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-font-icon-info</code></td>
-            <td>
-                The icon character that is used for information alerts.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-font-icon-success</code></td>
-            <td>
-                The icon character that is used for success alerts.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-font-icon-warning</code></td>
-            <td>
-                The icon character that is used for warning alerts.
-
-            </td>
-        </tr>
-        
-        <tr>
-            <td><code>alert-font-icon-subtle</code></td>
-            <td>
-                The icon character that is used for warning alerts.
-
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
-
 
 <h2>Markup</h2>
 
