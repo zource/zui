@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Cursor - ZUI Documentation</title>
+
+        <link href="css/docs.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="zui-top-bar" role="banner">
+            <nav role="navigation">
+                <div class="zui-header-primary">
+                    <h1 class="zui-top-bar-logo">
+                        <a href="index.html">
+                            ZUI Docs
+                        </a>
+                    </h1>
+                    <ul class="zui-nav">
+                        <li>
+                            <a href="index.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zource/zui">Repository</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="zui-page-header">
+            <div class="zui-page-header-inner">
+                <div class="zui-page-header-main">
+                    <h1>Cursor</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="zui-page-panel">
+            <div class="zui-page-sidebar">
+                <nav class="zui-navgroup zui-navgroup-vertical">
+                    <div class="zui-navgroup-inner">
+                        <div class="zui-nav-heading">
+                            <strong>Patterns</strong>
+                        </div>
+
+                        <ul class="zui-nav">
+                            
+                            <li><a href="alert.html">Alert</a></li>
+                            
+                            <li><a href="badge.html">Badge</a></li>
+                            
+                            <li><a href="banner.html">Banner</a></li>
+                            
+                            <li><a href="button.html">Button</a></li>
+                            
+                            <li><a href="cursor.html">Cursor</a></li>
+                            
+                            <li><a href="dialog.html">Dialog</a></li>
+                            
+                            <li><a href="example.html">Example</a></li>
+                            
+                            <li><a href="font.html">Font</a></li>
+                            
+                            <li><a href="form.html">Form</a></li>
+                            
+                            <li><a href="header.html">Header</a></li>
+                            
+                            <li><a href="image.html">Image</a></li>
+                            
+                            <li><a href="keyboard.html">Keyboard</a></li>
+                            
+                            <li><a href="layout-group.html">Layout Group</a></li>
+                            
+                            <li><a href="layout.html">Layout</a></li>
+                            
+                            <li><a href="navigation.html">Navigation</a></li>
+                            
+                            <li><a href="note.html">Note</a></li>
+                            
+                            <li><a href="page-header.html">Page Header</a></li>
+                            
+                            <li><a href="page.html">Page</a></li>
+                            
+                            <li><a href="pagination.html">Pagination</a></li>
+                            
+                            <li><a href="select-container.html">Select Container</a></li>
+                            
+                            <li><a href="splitter.html">Splitter</a></li>
+                            
+                            <li><a href="status-bar.html">Status Bar</a></li>
+                            
+                            <li><a href="status.html">Status</a></li>
+                            
+                            <li><a href="steps.html">Steps</a></li>
+                            
+                            <li><a href="tab.html">Tab</a></li>
+                            
+                            <li><a href="table.html">Table</a></li>
+                            
+                            <li><a href="tag.html">Tag</a></li>
+                            
+                            <li><a href="toolbar.html">Toolbar</a></li>
+                            
+                            <li><a href="top-bar.html">Top Bar</a></li>
+                            
+                            <li><a href="typography.html">Typography</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="zui-page-content zui-text-justify">
+                
+<h2>Summary</h2>
+
+
+<p>
+    A collection of classes and SASS variables that can be used to set a specific cursor to an HTML element.
+</p>
+
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#html-attributes" role="tab" aria-selected="true"><strong>HTML Attributes</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#html-classes" role="tab" aria-selected="false"><strong>HTML Classes</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#js-events" role="tab" aria-selected="false"><strong>JavaScript Events</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#js-methods" role="tab" aria-selected="false"><strong>JavaScript Methods</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-functions" role="tab" aria-selected="false"><strong>SASS Functions</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-mixins" role="tab" aria-selected="false"><strong>SASS Mixins</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#sass-variables" role="tab" aria-selected="false"><strong>SASS Variables</strong></a>
+        </li>
+    </ul>
+
+    <div class="zui-tabs-content">
+        <div role="tabpanel" aria-hidden="false" id="html-attributes" class="zui-tabs-pane zui-docs-tab zui-active-pane">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no attributes defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-cursor-all-scroll</code></td>
+                    <td>
+                        Cursor showing that something can be scrolled in any direction (panned).
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-alias</code></td>
+                    <td>
+                        Indicating an alias or shortcut is to be created.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-auto</code></td>
+                    <td>
+                        The browser determines the cursor to display based on the current context.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-cell</code></td>
+                    <td>
+                        Indicating that cells can be selected.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-col-resize</code></td>
+                    <td>
+                        The item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-context-menu</code></td>
+                    <td>
+                        A context menu is available under the cursor.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-copy</code></td>
+                    <td>
+                        Indicating that something can be copied.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-crosshair</code></td>
+                    <td>
+                        Cross cursor, often used to indicate selection in a bitmap.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-default</code></td>
+                    <td>
+                        Default cursor, typically an arrow.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-e-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-ew-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-grab</code></td>
+                    <td>
+                        Indicates that something can be grabbed (dragged to be moved).
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-grabbing</code></td>
+                    <td>
+                        Indicates that something can be grabbed (dragged to be moved).
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-help</code></td>
+                    <td>
+                        Indicating help is available.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-move</code></td>
+                    <td>
+                        The hovered object may be moved.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-n-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-ne-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-nesw-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-no-drop</code></td>
+                    <td>
+                        Cursor showing that a drop is not allowed at the current location.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-none</code></td>
+                    <td>
+                        No cursor is rendered.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-not-allowed</code></td>
+                    <td>
+                        Cursor showing that something cannot be done.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-ns-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-nw-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-nwse-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-pointer</code></td>
+                    <td>
+                        E.g. used when hovering over links, typically a hand.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-progress</code></td>
+                    <td>
+                        The program is busy in the background but the user can still interact with the interface (unlike for wait).
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-row-resize</code></td>
+                    <td>
+                        The item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-s-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-se-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-sw-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-text</code></td>
+                    <td>
+                        Indicating text can be selected, typically an I-beam.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-vertical-text</code></td>
+                    <td>
+                        Indicating that vertical text can be selected, typically a sideways I-beam.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-w-resize</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-wait</code></td>
+                    <td>
+                        The program is busy (sometimes an hourglass or a watch).
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-zoom-in</code></td>
+                    <td>
+                        Indicates that something can be zoomed (magnified) in.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-cursor-zoom-out</code></td>
+                    <td>
+                        Indicates that something can be zoomed (magnified) out.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="js-events" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no events defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="js-methods" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no methods defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="sass-functions" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no functions defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="sass-mixins" class="zui-tabs-pane zui-docs-tab">
+            
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no mixins defined for this pattern.
+                </p>
+            </div>
+            
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
+            
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>cursor-all-scroll-value</code></td>
+                    <td>
+                        Cursor showing that something can be scrolled in any direction (panned).
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-alias-value</code></td>
+                    <td>
+                        Indicating an alias or shortcut is to be created.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-auto-value</code></td>
+                    <td>
+                        The browser determines the cursor to display based on the current context.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-cell-value</code></td>
+                    <td>
+                        Indicating that cells can be selected.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-col-resize-value</code></td>
+                    <td>
+                        The item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-context-menu-value</code></td>
+                    <td>
+                        A context menu is available under the cursor.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-copy-value</code></td>
+                    <td>
+                        Indicating that something can be copied.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-crosshair-value</code></td>
+                    <td>
+                        Cross cursor, often used to indicate selection in a bitmap.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-default-value</code></td>
+                    <td>
+                        Default cursor, typically an arrow.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-e-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-ew-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-grab-value</code></td>
+                    <td>
+                        Indicates that something can be grabbed (dragged to be moved).
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-grabbing-value</code></td>
+                    <td>
+                        Indicates that something can be grabbed (dragged to be moved).
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-help-value</code></td>
+                    <td>
+                        Indicating help is available.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-move-value</code></td>
+                    <td>
+                        The hovered object may be moved.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-n-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-ne-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-nesw-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-no-drop-value</code></td>
+                    <td>
+                        Cursor showing that a drop is not allowed at the current location.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-none-value</code></td>
+                    <td>
+                        No cursor is rendered.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-not-allowed-value</code></td>
+                    <td>
+                        Cursor showing that something cannot be done.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-ns-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-nw-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-nwse-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-pointer-value</code></td>
+                    <td>
+                        E.g. used when hovering over links, typically a hand.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-progress-value</code></td>
+                    <td>
+                        The program is busy in the background but the user can still interact with the interface (unlike for wait).
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-row-resize-value</code></td>
+                    <td>
+                        The item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-s-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-se-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-sw-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-text-value</code></td>
+                    <td>
+                        Indicating text can be selected, typically an I-beam.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-vertical-text-value</code></td>
+                    <td>
+                        Indicating that vertical text can be selected, typically a sideways I-beam.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-w-resize-value</code></td>
+                    <td>
+                        Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-wait-value</code></td>
+                    <td>
+                        The program is busy (sometimes an hourglass or a watch).
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-zoom-in-value</code></td>
+                    <td>
+                        Indicates that something can be zoomed (magnified) in.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>cursor-zoom-out-value</code></td>
+                    <td>
+                        Indicates that something can be zoomed (magnified) out.
+
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
+
+<h2>Markup</h2>
+
+
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-cursor-wait"</span>&gt;</span>This is the waiting line.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+
+
+<h2>Example</h2>
+
+
+<div class="zui-example">
+<div class="zui-docs-cursor zui-cursor-all-scroll">zui-cursor-all-scroll</div>
+<div class="zui-docs-cursor zui-cursor-alias">zui-cursor-alias</div>
+<div class="zui-docs-cursor zui-cursor-auto">zui-cursor-auto</div>
+<div class="zui-docs-cursor zui-cursor-cell">zui-cursor-cell</div>
+<div class="zui-docs-cursor zui-cursor-col-resize">zui-cursor-col-resize</div>
+<div class="zui-docs-cursor zui-cursor-context-menu">zui-cursor-context-menu</div>
+<div class="zui-docs-cursor zui-cursor-copy">zui-cursor-copy</div>
+<div class="zui-docs-cursor zui-cursor-crosshair">zui-cursor-crosshair</div>
+<div class="zui-docs-cursor zui-cursor-default">zui-cursor-default</div>
+<div class="zui-docs-cursor zui-cursor-e-resize">zui-cursor-e-resize</div>
+<div class="zui-docs-cursor zui-cursor-ew-resize">zui-cursor-ew-resize</div>
+<div class="zui-docs-cursor zui-cursor-grab">zui-cursor-grab</div>
+<div class="zui-docs-cursor zui-cursor-grabbing">zui-cursor-grabbing</div>
+<div class="zui-docs-cursor zui-cursor-help">zui-cursor-help</div>
+<div class="zui-docs-cursor zui-cursor-move">zui-cursor-move</div>
+<div class="zui-docs-cursor zui-cursor-n-resize">zui-cursor-n-resize</div>
+<div class="zui-docs-cursor zui-cursor-ne-resize">zui-cursor-ne-resize</div>
+<div class="zui-docs-cursor zui-cursor-nesw-resize">zui-cursor-nesw-resize</div>
+<div class="zui-docs-cursor zui-cursor-no-drop">zui-cursor-no-drop</div>
+<div class="zui-docs-cursor zui-cursor-none">zui-cursor-none</div>
+<div class="zui-docs-cursor zui-cursor-not-allowed">zui-cursor-not-allowed</div>
+<div class="zui-docs-cursor zui-cursor-ns-resize">zui-cursor-ns-resize</div>
+<div class="zui-docs-cursor zui-cursor-nw-resize">zui-cursor-nw-resize</div>
+<div class="zui-docs-cursor zui-cursor-nwse-resize">zui-cursor-nwse-resize</div>
+<div class="zui-docs-cursor zui-cursor-pointer">zui-cursor-pointer</div>
+<div class="zui-docs-cursor zui-cursor-progress">zui-cursor-progress</div>
+<div class="zui-docs-cursor zui-cursor-row-resize">zui-cursor-row-resize</div>
+<div class="zui-docs-cursor zui-cursor-s-resize">zui-cursor-s-resize</div>
+<div class="zui-docs-cursor zui-cursor-se-resize">zui-cursor-se-resize</div>
+<div class="zui-docs-cursor zui-cursor-sw-resize">zui-cursor-sw-resize</div>
+<div class="zui-docs-cursor zui-cursor-text">zui-cursor-text</div>
+<div class="zui-docs-cursor zui-cursor-vertical-text">zui-cursor-vertical-text</div>
+<div class="zui-docs-cursor zui-cursor-w-resize">zui-cursor-w-resize</div>
+<div class="zui-docs-cursor zui-cursor-wait">zui-cursor-wait</div>
+<div class="zui-docs-cursor zui-cursor-zoom-in">zui-cursor-zoom-in</div>
+<div class="zui-docs-cursor zui-cursor-zoom-out">zui-cursor-zoom-out</div>
+
+</div>
+
+
+
+            </div>
+        </div>
+        
+        <a href="https://github.com/zource/zui"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>        
+        <script type="text/javascript" src="js/zui.js"></script>
+        <script type="text/javascript" src="js/docs.js"></script>
+    </body>
+</html>
