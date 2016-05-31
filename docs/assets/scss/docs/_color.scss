@@ -1,0 +1,75 @@
+.zui-docs-color {
+    background-color: #F2F2F2;
+    border: 1px solid #CCC;
+    float: left;
+    text-align: center;
+    margin: 0px 10px 10px 0px;
+    padding-bottom: 5px;
+    width: 175px;
+
+    div {
+        border-bottom: 1px solid #CCC;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .zui-docs-color-white {
+        background-color: $color-white;
+    }
+
+    .zui-docs-color-black {
+        background-color: $color-black;
+    }
+
+    .zui-docs-color-red {
+        background-color: $color-red;
+    }
+
+    .zui-docs-color-blue {
+        background-color: $color-blue;
+    }
+
+    .zui-docs-color-green {
+        background-color: $color-green;
+    }
+
+    .zui-docs-color-yellow {
+        background-color: $color-yellow;
+    }
+
+    .zui-docs-color-primary {
+        background-color: $color-primary;
+    }
+
+    .zui-docs-color-primary-hover {
+        background-color: $color-primary-hover;
+    }
+
+    .zui-docs-color-primary-border {
+        background-color: $color-primary-border;
+    }
+
+    .zui-docs-color-secondary {
+        background-color: $color-secondary;
+    }
+
+    .zui-docs-color-secondary-hover {
+        background-color: $color-secondary-hover;
+    }
+
+    .zui-docs-color-alert {
+        background-color: $color-alert;
+    }
+
+    .zui-docs-color-success {
+        background-color: $color-success;
+    }
+
+    .zui-docs-color-warning {
+        background-color: $color-warning;
+    }
+
+    .zui-docs-color-info {
+        background-color: $color-info;
+    }
+}

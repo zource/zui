@@ -1,15 +1,74 @@
+/// The primary color white.
+/// @type color
+/// @pattern color
+$color-white: #FFFFFF !default;
+
+/// The primary color black.
+/// @type color
+/// @pattern color
+$color-black: #000000 !default;
+
+/// The primary color red.
+/// @type color
+/// @pattern color
+$color-red: #FF0000 !default;
+
+/// The primary color blue.
+/// @type color
+/// @pattern color
+$color-blue: #0000FF !default;
+
+/// The primary color green.
+/// @type color
+/// @pattern color
+$color-green: #00FF00 !default;
+
+/// The primary color yellow.
+/// @type color
+/// @pattern color
+$color-yellow: #FFFF00 !default;
+
+/// The primary color used throughout the library.
+/// @type color
+/// @pattern color
 $color-primary: #AA2D4C !default;
+
+/// The primary color used throughout the library when hovered over elements.
+/// @type color
+/// @pattern color
 $color-primary-hover: #DC163F !default;
+
+/// The primary color for borders used throughout the library.
+/// @type color
+/// @pattern color
 $color-primary-border: #E0658C !default;
 
+/// The secondary color used throughout the library.
+/// @type color
+/// @pattern color
 $color-secondary: #F5F5F5 !default;
+
+/// The secondary color used throughout the library when hovered over elements.
+/// @type color
+/// @pattern color
 $color-secondary-hover: #E9E9E9 !default;
+
+/// The color used for alerts. This is used for the "top bar" and "alert" patterns.
+/// @type color
+/// @pattern color
 $color-alert: #D04437 !default;
+
+/// The color used for success. This is used for the "top bar" and "alert" patterns.
+/// @type color
+/// @pattern color
 $color-success: #8EB021 !default;
+
+/// The color used for warnings. This is used for the "top bar" and "alert" patterns.
+/// @type color
+/// @pattern color
 $color-warning: #FF8D1C !default;
+
+/// The color used for information. This is used for the "top bar" and "alert" patterns.
+/// @type color
+/// @pattern color
 $color-info: $color-primary !default;
-$color-black: #000000 !default;
-$color-white: #FFFFFF !default;
-$color-red: #FF0000 !default;
-$color-blue: #0000FF !default;
-$color-green: #00FF00 !default;
