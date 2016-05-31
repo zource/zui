@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Layout - ZUI Documentation</title>
+        <title>Color - ZUI Documentation</title>
 
         <link href="css/docs.css" rel="stylesheet">
     </head>
@@ -35,7 +35,7 @@
         <div class="zui-page-header">
             <div class="zui-page-header-inner">
                 <div class="zui-page-header-main">
-                    <h1>Layout</h1>
+                    <h1>Color</h1>
                 </div>
             </div>
         </div>
@@ -123,10 +123,7 @@
 
 
 <p>
-    The layout pattern defines how a page looks like. There are three layout types. The first layout is a fluid
-    layout. The fluid layout is set by default. The second layout is a fixed layout. The fixed layout sets the width
-    of the content to a fixed width. Third there is a hybrid layout, it's a layout where the top bar acts as a fluid 
-    layout but the content has a fixed width.
+    A collection of SASS variables that can be used to set colors of elements.
 </p>
 
 
@@ -169,31 +166,11 @@
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             
-            <table class="zui-table-list zui-table-bordered">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <td><code>zui-page-fixed</code></td>
-                    <td>
-                        When the <code>zui-page-fixed</code> class is set to the body element, the page gets a fixed layout.
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td><code>zui-page-hybrid</code></td>
-                    <td>
-                        When the <code>zui-page-hybrid</code> class is set to the body element, the page gets a hybrid layout.
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no classes defined for this pattern.
+                </p>
+            </div>
             
         </div>
 
@@ -239,11 +216,137 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no variables defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>color-white</code></td>
+                    <td>
+                        The primary color white.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-black</code></td>
+                    <td>
+                        The primary color black.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-red</code></td>
+                    <td>
+                        The primary color red.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-blue</code></td>
+                    <td>
+                        The primary color blue.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-green</code></td>
+                    <td>
+                        The primary color green.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-yellow</code></td>
+                    <td>
+                        The primary color yellow.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-primary</code></td>
+                    <td>
+                        The primary color used throughout the library.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-primary-hover</code></td>
+                    <td>
+                        The primary color used throughout the library when hovered over elements.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-primary-border</code></td>
+                    <td>
+                        The primary color for borders used throughout the library.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-secondary</code></td>
+                    <td>
+                        The secondary color used throughout the library.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-secondary-hover</code></td>
+                    <td>
+                        The secondary color used throughout the library when hovered over elements.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-alert</code></td>
+                    <td>
+                        The color used for alerts. This is used for the "top bar" and "alert" patterns.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-success</code></td>
+                    <td>
+                        The color used for success. This is used for the "top bar" and "alert" patterns.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-warning</code></td>
+                    <td>
+                        The color used for warnings. This is used for the "top bar" and "alert" patterns.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>color-info</code></td>
+                    <td>
+                        The color used for information. This is used for the "top bar" and "alert" patterns.
+
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
     </div>
@@ -252,94 +355,89 @@
 <h2>Markup</h2>
 
 
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-markup-fluid" role="tab" aria-selected="true"><strong>Fluid</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-markup-fixed" role="tab" aria-selected="false"><strong>Fixed</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-markup-hybrid" role="tab" aria-selected="false"><strong>Hybrid</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-markup-fluid" class="zui-tabs-pane zui-active-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-    
-<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<div class="code-container"><pre><code lang="html">There is no markup for this pattern.
 </code></pre></div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-markup-fixed" class="zui-tabs-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">body</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-page-fixed"</span>&gt;</span>
-    
-<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-</code></pre></div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-markup-hybrid" class="zui-tabs-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">body</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-page-hybrid"</span>&gt;</span>
-    
-<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-</code></pre></div>
-        </div>
-        
-    </div>
-</div>
 
 
 <h2>Example</h2>
 
 
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-fluid" role="tab" aria-selected="true"><strong>Fluid</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-fixed" role="tab" aria-selected="false"><strong>Fixed</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-hybrid" role="tab" aria-selected="false"><strong>Hybrid</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-fluid" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-<button id="layoutSetFluid">Set fluid</button>
+<div class="zui-example">
+<div class="zui-docs-color">
+    <div class="zui-docs-color-white"></div>
+    $color-white
+</div>
 
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-fixed" class="zui-tabs-pane">
-            <div class="zui-example">
-<button id="layoutSetFixed">Set fixed</button>
+<div class="zui-docs-color">
+    <div class="zui-docs-color-black"></div>
+    $color-black
+</div>
 
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-hybrid" class="zui-tabs-pane">
-            <div class="zui-example">
-<button id="layoutSetHybrid">Set hybrid</button>
+<div class="zui-docs-color">
+    <div class="zui-docs-color-red"></div>
+    $color-red
+</div>
 
-            </div>
-        </div>
-        
-    </div>
+<div class="zui-docs-color">
+    <div class="zui-docs-color-blue"></div>
+    $color-blue
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-green"></div>
+    $color-green
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-yellow"></div>
+    $color-yellow
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-primary"></div>
+    $color-primary
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-primary-hover"></div>
+    $color-primary-hover
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-primary-border"></div>
+    $color-primary-border
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-secondary"></div>
+    $color-secondary
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-secondary-hover"></div>
+    $color-secondary-hover
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-alert"></div>
+    $color-alert
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-success"></div>
+    $color-success
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-warning"></div>
+    $color-warning
+</div>
+
+<div class="zui-docs-color">
+    <div class="zui-docs-color-info"></div>
+    $color-info
+</div>
+
 </div>
 
 
