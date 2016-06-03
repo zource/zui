@@ -1,0 +1,152 @@
+/// The name of the class used to define a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-container-class: '.zui-container' !default;
+
+/// The name of the class used to define a fluid flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-container-fluid-class: '.zui-container-fluid' !default;
+
+/// The name of the class used to define a row in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-row-class: '.zui-row' !default;
+
+/// The prefix of the class used to define an extra small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-column-xs-class: '.zui-column-xs-' !default;
+
+/// The prefix of the class used to define a small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-column-sm-class: '.zui-column-sm-' !default;
+
+/// The prefix of the class used to define a medium size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-column-md-class: '.zui-column-md-' !default;
+
+/// The prefix of the class used to define a large size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-column-lg-class: '.zui-column-lg-' !default;
+
+/// The amount of columns to use in the grid.
+/// @type integer
+/// @pattern flexgrid
+$flexgrid-column-count: 12 !default;
+
+/// The media query used to match extra small screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-xs: 'only screen and (max-width: #{$screen-xs-max})' !default;
+
+/// The media query used to match small screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-sm: 'only screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})' !default;
+
+/// The media query used to match medium screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-md: 'only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})' !default;
+
+/// The media query used to match large screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !default;
+
+@mixin zui-flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin zui-flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+}
+
+@mixin zui-flex-wrap($values) {
+    -webkit-flex-wrap: $values;
+    -ms-flex-wrap: $values;
+    flex-wrap: $values;
+}
+
+@mixin zui-order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+    order: $val;
+}
+
+#{$flexgrid-container-class},
+#{$flexgrid-container-fluid-class} {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#{$flexgrid-container-fluid-class} {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+#{$flexgrid-row-class} {
+    @include zui-flexbox();
+    @include zui-flex-wrap(wrap);
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+#{$flexgrid-row-class}-reverse {
+    @extend #{$flexgrid-row-class};
+
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+@for $i from 1 through $flexgrid-column-count {
+    $percentage: percentage(1 / $flexgrid-column-count * $i);
+
+    @media #{$flexgrid-media-query-lg} {
+        .zui-column-lg-#{$i} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+    }
+
+    @media #{$flexgrid-media-query-md} {
+        .zui-column-md-#{$i} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+    }
+
+    @media #{$flexgrid-media-query-sm} {
+        .zui-column-sm-#{$i} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+    }
+
+    @media #{$flexgrid-media-query-xs} {
+        .zui-column-xs-#{$i} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+    }
+}
