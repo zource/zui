@@ -1,0 +1,22 @@
+{
+    "name": "Footer",
+    "examples": [
+        "Footer"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-footer",
+                "description": "The class that defines an element as a footer. Usually placed on the &lt;footer&gt; element."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

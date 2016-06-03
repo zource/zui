@@ -1,0 +1,85 @@
+/// The name of the class used to define a footer.
+/// @type string
+/// @pattern footer
+$zui-footer-class: '.zui-footer' !default;
+
+/// The background color of the footer.
+/// @type color
+/// @pattern footer
+$zui-footer-background-color: #F5F5F5 !default;
+
+/// The top border of the footer.
+/// @type border
+/// @pattern footer
+$zui-footer-border-top: 1px solid #CCC !default;
+
+/// The padding of the footer.
+/// @type border
+/// @pattern footer
+$zui-footer-padding: 20px 20px 40px 20px !default;
+
+/// The alignment of the footer.
+/// @type alignment
+/// @pattern footer
+$zui-footer-text-align: center !default;
+
+/// The alignment of the footer.
+/// @type color
+/// @pattern footer
+$zui-footer-anchor-color: #707070 !default;
+
+/// The font (usually just the size) of the footer.
+/// @type font
+/// @pattern footer
+$zui-footer-font: 1em !default;
+
+/// The line height of the footer.
+/// @type size
+/// @pattern footer
+$zui-footer-line-height: 1em !default;
+
+/// The separator used in between the list items.
+/// @type string
+/// @pattern footer
+$zui-footer-separator: "\b7" !default;
+
+/// The size left and right from the separator.
+/// @type size
+/// @pattern footer
+$zui-footer-margin-size: 10px !default;;
+
+#{$zui-footer-class} {
+    background-color: $zui-footer-background-color;
+    border-top: $zui-footer-border-top;
+    display: block;
+    padding: $zui-footer-padding;
+    text-align: $zui-footer-text-align;
+
+    a {
+        color: $zui-footer-anchor-color;
+    }
+
+    ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            font: $zui-footer-font;
+            line-height: $zui-footer-line-height;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        li + li {
+            margin-left: $zui-footer-margin-size;
+        }
+
+        li + li:before {
+            content: $zui-footer-separator;
+            margin-right: $zui-footer-margin-size;
+            speak: none;
+        }
+    }
+}
