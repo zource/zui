@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-06-03T19:53Z
+ * Date: 2016-06-03T20:16Z
  */
 
 (function(global, factory) {
@@ -486,7 +486,7 @@
                 currentDialog.trigger("zui-dialog-closed", [this]);
             }
 
-            $(".zui-blanket").remove();
+            $("#zui-blanket").remove();
         },
 
         open: function(id) {
@@ -497,7 +497,7 @@
 
             currentDialog.trigger("zui-dialog-opening", [this]);
 
-            $("<div class='zui-blanket' aria-hidden='false'>").appendTo("body").on("click", function() {
+            $("<div id='zui-blanket' aria-hidden='false'>").appendTo("body").on("click", function() {
                 zui.Dialog.close();
             });
 

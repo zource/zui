@@ -203,6 +203,18 @@ function initSelectContainer() {
     });
 }
 
+function initBlanket() {
+    $("#zui-docs-blanket-show").on("click", function(e) {
+        $("<div id='zui-blanket' aria-hidden='false'>").appendTo("body");
+
+        setTimeout(function() {
+            $("#zui-blanket").remove();
+        }, 5000);
+
+        e.preventDefault();
+    });
+}
+
 $(document).ready(function() {
     initDialog();
     initTabs();
@@ -210,4 +222,5 @@ $(document).ready(function() {
     initLayout();
     initPage();
     initSelectContainer();
+    initBlanket();
 });

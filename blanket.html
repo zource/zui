@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Tag - ZUI Documentation</title>
+        <title>Blanket - ZUI Documentation</title>
 
         <link href="css/docs.css" rel="stylesheet">
     </head>
@@ -35,7 +35,7 @@
         <div class="zui-page-header">
             <div class="zui-page-header-inner">
                 <div class="zui-page-header-main">
-                    <h1>Tag</h1>
+                    <h1>Blanket</h1>
                 </div>
             </div>
         </div>
@@ -129,7 +129,9 @@
 
 
 <p>
-    The tag pattern can be used to bind labels to elements. This pattern is used in the select container for example.
+    A blanket is a screen wide overlay that is used by dialogs for example to disable all input on the screen.<br />
+    There can only be one blanket on a page, therefor there is no class for this element. You define the blanket by
+    setting the id <em>zui-blanket</em> to an element.
 </p>
 
 
@@ -162,11 +164,24 @@
     <div class="zui-tabs-content">
         <div role="tabpanel" aria-hidden="false" id="html-attributes" class="zui-tabs-pane zui-docs-tab zui-active-pane">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no attributes defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>id</code></td>
+                    <td>
+                        The id of the element that represents a blanket must be set to 'zui-blanket'.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
@@ -222,11 +237,65 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no variables defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-blanket-selector</code></td>
+                    <td>
+                        The name of the class used for the blanket.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-blanket-background-color</code></td>
+                    <td>
+                        The background color of the blanket.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-blanket-opacity</code></td>
+                    <td>
+                        The opacity value which is a vlaue between 0 and 1.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-blanket-z-index</code></td>
+                    <td>
+                        The background color of the blanket.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-blanket-transition</code></td>
+                    <td>
+                        The transition of the blanket.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-blanket-transition-delay</code></td>
+                    <td>
+                        The transition delay before the blanket is shown.
+
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
     </div>
@@ -235,95 +304,17 @@
 <h2>Example</h2>
 
 
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-text" role="tab" aria-selected="true"><strong>Text</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-anchor" role="tab" aria-selected="false"><strong>Anchor</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-removable" role="tab" aria-selected="false"><strong>Removable</strong></a>
-        </li>
-        
-    </ul>
+<div class="zui-example">
+    <a href="" class="zui-button" id="zui-docs-blanket-show">Show</a>
 
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-text" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-                <span class="zui-tag">Tag text</span>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-anchor" class="zui-tabs-pane">
-            <div class="zui-example">
-                <a class="zui-tag" href="#">Tag link</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-removable" class="zui-tabs-pane">
-            <div class="zui-example">
-                <span class="zui-tag zui-tag-removable">
-    <a href="#">Removable tag link</a>
-    <i class="zui-icon zui-icon-x"></i>
-</span>
-
-            </div>
-        </div>
-        
-    </div>
 </div>
 
 
 <h2>Markup</h2>
 
 
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-markup-text" role="tab" aria-selected="true"><strong>Text</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-markup-anchor" role="tab" aria-selected="false"><strong>Anchor</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-markup-removable" role="tab" aria-selected="false"><strong>Removable</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-markup-text" class="zui-tabs-pane zui-active-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-tag"</span>&gt;</span>Tag text<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"zui-blanket"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-markup-anchor" class="zui-tabs-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-tag"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Tag link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-</code></pre></div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-markup-removable" class="zui-tabs-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-tag zui-tag-removable"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Removable tag link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-</code></pre></div>
-        </div>
-        
-    </div>
-</div>
 
 
 
