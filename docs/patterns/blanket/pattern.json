@@ -1,0 +1,22 @@
+{
+    "name": "Blanket",
+    "examples": [
+        "Blanket"
+    ],
+    "html": {
+        "attributes": [
+            {
+                "name": "id",
+                "description": "The id of the element that represents a blanket must be set to 'zui-blanket'."
+            }
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

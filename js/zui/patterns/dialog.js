@@ -175,7 +175,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 currentDialog.trigger("zui-dialog-closed", [this]);
             }
 
-            $(".zui-blanket").remove();
+            $("#zui-blanket").remove();
         },
 
         open: function(id) {
@@ -186,7 +186,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
             currentDialog.trigger("zui-dialog-opening", [this]);
 
-            $("<div class='zui-blanket' aria-hidden='false'>").appendTo("body").on("click", function() {
+            $("<div id='zui-blanket' aria-hidden='false'>").appendTo("body").on("click", function() {
                 zui.Dialog.close();
             });
 

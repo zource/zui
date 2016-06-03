@@ -1,13 +1,43 @@
-.zui-blanket {
-    background: #000;
+/// The name of the class used for the blanket.
+/// @type string
+/// @pattern blanket
+$zui-blanket-selector: "#zui-blanket" !default;
+
+/// The background color of the blanket.
+/// @type color
+/// @pattern blanket
+$zui-blanket-background-color: #000 !default;
+
+/// The opacity value which is a vlaue between 0 and 1.
+/// @type float
+/// @pattern blanket
+$zui-blanket-opacity: .5 !default;
+
+/// The background color of the blanket.
+/// @type color
+/// @pattern blanket
+$zui-blanket-z-index: 2000 !default;
+
+/// The transition of the blanket.
+/// @type transition
+/// @pattern blanket
+$zui-blanket-transition: opacity .2s !default;
+
+/// The transition delay before the blanket is shown.
+/// @type time
+/// @pattern blanket
+$zui-blanket-transition-delay: .1s !default;
+
+#{$zui-blanket-selector} {
+    background: $zui-blanket-background-color;
     height: 100%;
     left: 0;
-    opacity: .5;
+    opacity: $zui-blanket-opacity;
     position: fixed;
     top: 0;
-    transition: opacity .2s;
-    transition-delay: .1s;
+    transition: $zui-blanket-transition;
+    transition-delay: $zui-blanket-transition-delay;
     visibility: visible;
     width: 100%;
-    z-index: 2000;
+    z-index: $zui-blanket-z-index;
 }
