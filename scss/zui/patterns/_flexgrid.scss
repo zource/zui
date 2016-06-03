@@ -83,6 +83,8 @@ $flexgrid-media-query-md: 'only screen and (min-width: #{$screen-md-min}) and (m
 /// @pattern flexgrid
 $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !default;
 
+/// A mixin that sets the flex display mode on an element.
+/// @pattern flexgrid
 @mixin zui-flexbox() {
     display: -webkit-box;
     display: -moz-box;
@@ -91,6 +93,8 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     display: flex;
 }
 
+/// A mixin that sets the flex mode on an element.
+/// @pattern flexgrid
 @mixin zui-flex($values) {
     -webkit-box-flex: $values;
     -moz-box-flex: $values;
@@ -99,12 +103,16 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     flex: $values;
 }
 
+/// A mixin that sets the flex-wrap mode on an element.
+/// @pattern flexgrid
 @mixin zui-flex-wrap($values) {
     -webkit-flex-wrap: $values;
     -ms-flex-wrap: $values;
     flex-wrap: $values;
 }
 
+/// A mixin that sets the order on a flex element.
+/// @pattern flexgrid
 @mixin zui-order($val) {
     -webkit-box-ordinal-group: $val;
     -moz-box-ordinal-group: $val;
@@ -113,6 +121,8 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     order: $val;
 }
 
+/// A mixin that defines a cell in the flexgrid.
+/// @pattern flexgrid
 @mixin zui-flexgrid-cell($class-column, $class-push, $i, $percentage) {
     #{$class-column}#{$i} {
         flex-basis: $percentage;
@@ -129,6 +139,8 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     }
 }
 
+/// A mixin that defines a row of cells in the flexgrid.
+/// @pattern flexgrid
 @mixin zui-flexgrid-cells($class-column, $class-push) {
     @for $i from 1 through $flexgrid-column-count {
         $percentage: percentage(1 / $flexgrid-column-count * $i);
