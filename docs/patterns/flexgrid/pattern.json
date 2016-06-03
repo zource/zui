@@ -7,6 +7,54 @@
         "attributes": [
         ],
         "classes": [
+            {
+                "name": "zui-grid-container",
+                "description": "The class that defines a grid container."
+            },
+            {
+                "name": "zui-grid-container-fluid",
+                "description": "The class that defines a fluid grid container."
+            },
+            {
+                "name": "zui-grid-row",
+                "description": "The class that defines a row in the fluid grid."
+            },
+            {
+                "name": "zui-grid-row-reverse",
+                "description": "The class that defines a row in the fluid grid which is reversed."
+            },
+            {
+                "name": "zui-grid-xs-column-*",
+                "description": "A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on extra small screens."
+            },
+            {
+                "name": "zui-grid-sm-column-*",
+                "description": "A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on small screens."
+            },
+            {
+                "name": "zui-grid-md-column-*",
+                "description": "A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on medium screens."
+            },
+            {
+                "name": "zui-grid-lg-column-*",
+                "description": "A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on large screens."
+            },
+            {
+                "name": "zui-grid-xs-push-*",
+                "description": "Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on extra small screens."
+            },
+            {
+                "name": "zui-grid-sm-push-*",
+                "description": "Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on small screens."
+            },
+            {
+                "name": "zui-grid-md-push-*",
+                "description": "Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on medium screens."
+            },
+            {
+                "name": "zui-grid-lg-push-*",
+                "description": "Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on large screens."
+            }
         ]
     },
     "js": {

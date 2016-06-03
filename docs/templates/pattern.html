@@ -244,6 +244,40 @@
     </div>
 </div>
 
+<h2>Example</h2>
+
+{% if pattern.examples.length === 0 %}
+<div class="zui-alert zui-alert-subtle">
+    <p>
+        There is no example defined for this pattern.
+    </p>
+</div>
+{% elif pattern.examples.length == 1 %}
+<div class="zui-example">
+    {{ pattern.exampleData[pattern.examples[0]].exampleHtml|raw }}
+</div>
+{% else %}
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        {% for example in pattern.examples %}
+        <li role="presentation" class="zui-menu-item{% if loop.first %} zui-active-tab{% endif %}">
+            <a href="#tab-example-{{ example|lower|replace(' ', '-') }}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}"><strong>{{ example }}</strong></a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div class="zui-tabs-content">
+        {% for example in pattern.examples %}
+        <div role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" id="tab-example-{{ example|lower|replace(' ', '-') }}" class="zui-tabs-pane{% if loop.first %} zui-active-pane{% endif %}">
+            <div class="zui-example">
+                {{ pattern.exampleData[example].exampleHtml|raw }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
 <h2>Markup</h2>
 
 {% if pattern.examples.length === 0 %}
@@ -268,40 +302,6 @@
         {% for example in pattern.examples %}
         <div role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" id="tab-markup-{{ example|lower|replace(' ', '-') }}" class="zui-tabs-pane{% if loop.first %} zui-active-pane{% endif %}">
 {{ pattern.exampleData[example].markupHtml|highlight }}
-        </div>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
-
-<h2>Example</h2>
-
-{% if pattern.examples.length === 0 %}
-<div class="zui-alert zui-alert-subtle">
-    <p>
-        There is no example defined for this pattern.
-    </p>
-</div>
-{% elif pattern.examples.length == 1 %}
-<div class="zui-example">
-{{ pattern.exampleData[pattern.examples[0]].exampleHtml|raw }}
-</div>
-{% else %}
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        {% for example in pattern.examples %}
-        <li role="presentation" class="zui-menu-item{% if loop.first %} zui-active-tab{% endif %}">
-            <a href="#tab-example-{{ example|lower|replace(' ', '-') }}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}"><strong>{{ example }}</strong></a>
-        </li>
-        {% endfor %}
-    </ul>
-    
-    <div class="zui-tabs-content">
-        {% for example in pattern.examples %}
-        <div role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" id="tab-example-{{ example|lower|replace(' ', '-') }}" class="zui-tabs-pane{% if loop.first %} zui-active-pane{% endif %}">
-            <div class="zui-example">
-{{ pattern.exampleData[example].exampleHtml|raw }}
-            </div>
         </div>
         {% endfor %}
     </div>
