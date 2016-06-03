@@ -1,37 +1,62 @@
 /// The name of the class used to define a flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-container-class: '.zui-container' !default;
+$flexgrid-class-container: '.zui-grid-container' !default;
 
 /// The name of the class used to define a fluid flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-container-fluid-class: '.zui-container-fluid' !default;
+$flexgrid-class-container-fluid: '.zui-grid-container-fluid' !default;
 
 /// The name of the class used to define a row in a flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-row-class: '.zui-row' !default;
+$flexgrid-class-row: '.zui-grid-row' !default;
+
+/// The name of the class used to define a row in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-row-reverse: '.zui-grid-row-reverse' !default;
 
 /// The prefix of the class used to define an extra small size column in a flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-column-xs-class: '.zui-column-xs-' !default;
+$flexgrid-class-xs-column: '.zui-grid-xs-column' !default;
+
+/// The prefix of the class used to push an element in an extra small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-xs-push: '.zui-grid-xs-push' !default;
 
 /// The prefix of the class used to define a small size column in a flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-column-sm-class: '.zui-column-sm-' !default;
+$flexgrid-class-sm-column: '.zui-grid-sm-column' !default;
+
+/// The prefix of the class used to push an element in a small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-sm-push: '.zui-grid-sm-push' !default;
 
 /// The prefix of the class used to define a medium size column in a flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-column-md-class: '.zui-column-md-' !default;
+$flexgrid-class-md-column: '.zui-grid-md-column' !default;
+
+/// The prefix of the class used to push an element in a mediumn size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-md-push: '.zui-grid-md-push' !default;
 
 /// The prefix of the class used to define a large size column in a flexgrid container.
 /// @type string
 /// @pattern flexgrid
-$flexgrid-column-lg-class: '.zui-column-lg-' !default;
+$flexgrid-class-lg-column: '.zui-grid-lg-column' !default;
+
+/// The prefix of the class used to push an element in a large size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-lg-push: '.zui-grid-lg-push' !default;
 
 /// The amount of columns to use in the grid.
 /// @type integer
@@ -88,18 +113,37 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     order: $val;
 }
 
-#{$flexgrid-container-class},
-#{$flexgrid-container-fluid-class} {
+@mixin zui-flexgrid-cell($class-column, $class-push, $i, $percentage) {
+    #{$class-column}#{$i} {
+        flex-basis: $percentage;
+        max-width: $percentage;
+    }
+
+    #{$class-push}#{$i} {
+        margin-left: $percentage;
+    }
+}
+
+@mixin zui-flexgrid-cells($class-column, $class-push) {
+    @for $i from 1 through $flexgrid-column-count {
+        $percentage: percentage(1 / $flexgrid-column-count * $i);
+
+        @include zui-flexgrid-cell($class-column, $class-push, $i, $percentage);
+    }
+}
+
+#{$flexgrid-class-container},
+#{$flexgrid-class-container-fluid} {
     margin-right: auto;
     margin-left: auto;
 }
 
-#{$flexgrid-container-fluid-class} {
+#{$flexgrid-class-container-fluid} {
     padding-right: 2rem;
     padding-left: 2rem;
 }
 
-#{$flexgrid-row-class} {
+#{$flexgrid-class-row} {
     @include zui-flexbox();
     @include zui-flex-wrap(wrap);
 
@@ -110,8 +154,8 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     flex-direction: row;
 }
 
-#{$flexgrid-row-class}-reverse {
-    @extend #{$flexgrid-row-class};
+#{$flexgrid-class-row-reverse} {
+    @extend #{$flexgrid-class-row};
 
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
@@ -119,34 +163,30 @@ $flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !defa
     flex-direction: row-reverse;
 }
 
-@for $i from 1 through $flexgrid-column-count {
-    $percentage: percentage(1 / $flexgrid-column-count * $i);
+@media #{$flexgrid-media-query-lg} {
+    @include zui-flexgrid-cells(
+            $flexgrid-class-lg-column,
+            $flexgrid-class-lg-push
+    );
+}
 
-    @media #{$flexgrid-media-query-lg} {
-        .zui-column-lg-#{$i} {
-            flex-basis: $percentage;
-            max-width: $percentage;
-        }
-    }
+@media #{$flexgrid-media-query-md} {
+    @include zui-flexgrid-cells(
+            $flexgrid-class-md-column,
+            $flexgrid-class-md-push
+    );
+}
 
-    @media #{$flexgrid-media-query-md} {
-        .zui-column-md-#{$i} {
-            flex-basis: $percentage;
-            max-width: $percentage;
-        }
-    }
+@media #{$flexgrid-media-query-sm} {
+    @include zui-flexgrid-cells(
+            $flexgrid-class-sm-column,
+            $flexgrid-class-sm-push
+    );
+}
 
-    @media #{$flexgrid-media-query-sm} {
-        .zui-column-sm-#{$i} {
-            flex-basis: $percentage;
-            max-width: $percentage;
-        }
-    }
-
-    @media #{$flexgrid-media-query-xs} {
-        .zui-column-xs-#{$i} {
-            flex-basis: $percentage;
-            max-width: $percentage;
-        }
-    }
+@media #{$flexgrid-media-query-xs} {
+    @include zui-flexgrid-cells(
+            $flexgrid-class-xs-column,
+            $flexgrid-class-xs-push
+    );
 }
