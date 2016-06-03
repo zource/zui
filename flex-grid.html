@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Color - ZUI Documentation</title>
+        <title>Flex Grid - ZUI Documentation</title>
 
         <link href="css/docs.css" rel="stylesheet">
     </head>
@@ -35,7 +35,7 @@
         <div class="zui-page-header">
             <div class="zui-page-header-inner">
                 <div class="zui-page-header-main">
-                    <h1>Color</h1>
+                    <h1>Flex Grid</h1>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
 
 
 <p>
-    A collection of SASS variables that can be used to set colors of elements.
+    A flexbox grid system which makes it possible to create responsive pages.
 </p>
 
 
@@ -228,121 +228,137 @@
                 <tbody>
                 
                 <tr>
-                    <td><code>color-white</code></td>
+                    <td><code>flexgrid-class-container</code></td>
                     <td>
-                        The primary color white.
+                        The name of the class used to define a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-black</code></td>
+                    <td><code>flexgrid-class-container-fluid</code></td>
                     <td>
-                        The primary color black.
+                        The name of the class used to define a fluid flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-red</code></td>
+                    <td><code>flexgrid-class-row</code></td>
                     <td>
-                        The primary color red.
+                        The name of the class used to define a row in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-blue</code></td>
+                    <td><code>flexgrid-class-row-reverse</code></td>
                     <td>
-                        The primary color blue.
+                        The name of the class used to define a row in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-green</code></td>
+                    <td><code>flexgrid-class-xs-column</code></td>
                     <td>
-                        The primary color green.
+                        The prefix of the class used to define an extra small size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-yellow</code></td>
+                    <td><code>flexgrid-class-xs-push</code></td>
                     <td>
-                        The primary color yellow.
+                        The prefix of the class used to push an element in an extra small size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-primary</code></td>
+                    <td><code>flexgrid-class-sm-column</code></td>
                     <td>
-                        The primary color used throughout the library.
+                        The prefix of the class used to define a small size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-primary-hover</code></td>
+                    <td><code>flexgrid-class-sm-push</code></td>
                     <td>
-                        The primary color used throughout the library when hovered over elements.
+                        The prefix of the class used to push an element in a small size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-primary-border</code></td>
+                    <td><code>flexgrid-class-md-column</code></td>
                     <td>
-                        The primary color for borders used throughout the library.
+                        The prefix of the class used to define a medium size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-secondary</code></td>
+                    <td><code>flexgrid-class-md-push</code></td>
                     <td>
-                        The secondary color used throughout the library.
+                        The prefix of the class used to push an element in a mediumn size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-secondary-hover</code></td>
+                    <td><code>flexgrid-class-lg-column</code></td>
                     <td>
-                        The secondary color used throughout the library when hovered over elements.
+                        The prefix of the class used to define a large size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-alert</code></td>
+                    <td><code>flexgrid-class-lg-push</code></td>
                     <td>
-                        The color used for alerts. This is used for the "top bar" and "alert" patterns.
+                        The prefix of the class used to push an element in a large size column in a flexgrid container.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-success</code></td>
+                    <td><code>flexgrid-column-count</code></td>
                     <td>
-                        The color used for success. This is used for the "top bar" and "alert" patterns.
+                        The amount of columns to use in the grid.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-warning</code></td>
+                    <td><code>flexgrid-media-query-xs</code></td>
                     <td>
-                        The color used for warnings. This is used for the "top bar" and "alert" patterns.
+                        The media query used to match extra small screens.
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td><code>color-info</code></td>
+                    <td><code>flexgrid-media-query-sm</code></td>
                     <td>
-                        The color used for information. This is used for the "top bar" and "alert" patterns.
+                        The media query used to match small screens.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>flexgrid-media-query-md</code></td>
+                    <td>
+                        The media query used to match medium screens.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>flexgrid-media-query-lg</code></td>
+                    <td>
+                        The media query used to match large screens.
 
                     </td>
                 </tr>
@@ -357,7 +373,13 @@
 <h2>Markup</h2>
 
 
-<div class="code-container"><pre><code lang="html">There is no markup for this pattern.
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-column-xs-12 zui-column-sm-8 zui-column-md-6 zui-column-lg-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-column-xs-12 zui-column-sm-8 zui-column-md-6 zui-column-lg-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-column-xs-12 zui-column-sm-8 zui-column-md-6 zui-column-lg-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
 
 
@@ -365,79 +387,44 @@
 
 
 <div class="zui-example">
-<div class="zui-docs-color">
-    <div class="zui-docs-color-white"></div>
-    $color-white
-</div>
+<div class="zui-docs-flexgrid">
+    <div class="zui-grid-container">
+        <div class="zui-grid-row">
+            <div class="zui-grid-xs-column12 zui-grid-md-column4 zui-grid-lg-column6">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-xs-column12 zui-grid-md-column4 zui-grid-lg-column6">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-xs-column12 zui-grid-md-column4 zui-grid-lg-column12">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+        </div>
 
-<div class="zui-docs-color">
-    <div class="zui-docs-color-black"></div>
-    $color-black
-</div>
+        <div class="zui-grid-row">
+            <div class="zui-grid-lg-column3 zui-grid-lg-push3">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-lg-column3">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-lg-column3">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+        </div>
 
-<div class="zui-docs-color">
-    <div class="zui-docs-color-red"></div>
-    $color-red
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-blue"></div>
-    $color-blue
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-green"></div>
-    $color-green
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-yellow"></div>
-    $color-yellow
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-primary"></div>
-    $color-primary
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-primary-hover"></div>
-    $color-primary-hover
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-primary-border"></div>
-    $color-primary-border
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-secondary"></div>
-    $color-secondary
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-secondary-hover"></div>
-    $color-secondary-hover
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-alert"></div>
-    $color-alert
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-success"></div>
-    $color-success
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-warning"></div>
-    $color-warning
-</div>
-
-<div class="zui-docs-color">
-    <div class="zui-docs-color-info"></div>
-    $color-info
+        <div class="zui-grid-row">
+            <div class="zui-grid-lg-column4">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-lg-column4">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-lg-column4">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </div>
