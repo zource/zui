@@ -228,6 +228,105 @@
     </div>
 </div>
 
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-horizontal" role="tab" aria-selected="true"><strong>Horizontal</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-vertical" role="tab" aria-selected="false"><strong>Vertical</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-breadcrumb" role="tab" aria-selected="false"><strong>Breadcrumb</strong></a>
+        </li>
+        
+    </ul>
+
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-horizontal" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <nav class="zui-navgroup zui-navgroup-horizontal">
+    <div class="zui-navgroup-inner">
+        <div class="zui-navgroup-primary">
+            <ul class="zui-nav">
+                <li><a href="http://example.com">Item</a></li>
+                <li class="selected"><a href="http://example.com">Selected</a></li>
+                <li><a href="http://example.com">Item <span class="zui-badge">123</span></a></li>
+                <li><a href="http://example.com">Item</a></li>
+            </ul>
+        </div>
+
+        <div class="zui-navgroup-secondary">
+            <ul class="zui-nav">
+                <li><a href="http://example.com">Item</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-vertical" class="zui-tabs-pane">
+            <div class="zui-example">
+                <nav class="zui-navgroup zui-navgroup-vertical">
+    <div class="zui-navgroup-inner">
+        <div class="zui-nav-heading">
+            <strong>Heading</strong>
+        </div>
+        <ul class="zui-nav">
+            <li><a href="http://example.com">Item <span class="zui-badge">123</span></a></li>
+            <li><a href="http://example.com">Item</a></li>
+            <li class="selected"><a href="http://example.com">Selected Nav Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+        </ul>
+        <ul class="zui-nav">
+            <li><a href="http://example.com">Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+        </ul>
+        <ul class="zui-nav">
+            <li><a href="http://example.com">Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+        </ul>
+        <div class="zui-nav-heading">
+            <strong>Heading</strong>
+        </div>
+        <ul class="zui-nav">
+            <li><a href="http://example.com">Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+            <li><a href="http://example.com">Item</a></li>
+        </ul>
+    </div>
+</nav>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-breadcrumb" class="zui-tabs-pane">
+            <div class="zui-example">
+                <ol class="zui-nav zui-nav-breadcrumbs">
+    <li><a href="http://example.com">Homepage</a></li>
+    <li><a href="http://example.com">Sub page</a></li>
+    <li class="unavailable"><a href="http://example.com">Unavailable page <span class="zui-badge">0</span></a></li>
+    <li class="selected">Easy</li>
+</ol>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
 <h2>Markup</h2>
 
 
@@ -315,105 +414,6 @@
     <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"selected"</span>&gt;</span>Easy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
 </code></pre></div>
-        </div>
-        
-    </div>
-</div>
-
-
-<h2>Example</h2>
-
-
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-horizontal" role="tab" aria-selected="true"><strong>Horizontal</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-vertical" role="tab" aria-selected="false"><strong>Vertical</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-breadcrumb" role="tab" aria-selected="false"><strong>Breadcrumb</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-horizontal" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-<nav class="zui-navgroup zui-navgroup-horizontal">
-    <div class="zui-navgroup-inner">
-        <div class="zui-navgroup-primary">
-            <ul class="zui-nav">
-                <li><a href="http://example.com">Item</a></li>
-                <li class="selected"><a href="http://example.com">Selected</a></li>
-                <li><a href="http://example.com">Item <span class="zui-badge">123</span></a></li>
-                <li><a href="http://example.com">Item</a></li>
-            </ul>
-        </div>
-
-        <div class="zui-navgroup-secondary">
-            <ul class="zui-nav">
-                <li><a href="http://example.com">Item</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-vertical" class="zui-tabs-pane">
-            <div class="zui-example">
-<nav class="zui-navgroup zui-navgroup-vertical">
-    <div class="zui-navgroup-inner">
-        <div class="zui-nav-heading">
-            <strong>Heading</strong>
-        </div>
-        <ul class="zui-nav">
-            <li><a href="http://example.com">Item <span class="zui-badge">123</span></a></li>
-            <li><a href="http://example.com">Item</a></li>
-            <li class="selected"><a href="http://example.com">Selected Nav Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-        </ul>
-        <ul class="zui-nav">
-            <li><a href="http://example.com">Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-        </ul>
-        <ul class="zui-nav">
-            <li><a href="http://example.com">Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-        </ul>
-        <div class="zui-nav-heading">
-            <strong>Heading</strong>
-        </div>
-        <ul class="zui-nav">
-            <li><a href="http://example.com">Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-            <li><a href="http://example.com">Item</a></li>
-        </ul>
-    </div>
-</nav>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-breadcrumb" class="zui-tabs-pane">
-            <div class="zui-example">
-<ol class="zui-nav zui-nav-breadcrumbs">
-    <li><a href="http://example.com">Homepage</a></li>
-    <li><a href="http://example.com">Sub page</a></li>
-    <li class="unavailable"><a href="http://example.com">Unavailable page <span class="zui-badge">0</span></a></li>
-    <li class="selected">Easy</li>
-</ol>
-
-            </div>
         </div>
         
     </div>

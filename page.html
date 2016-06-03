@@ -255,6 +255,53 @@
     </div>
 </div>
 
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-no-sidebar" role="tab" aria-selected="true"><strong>No Sidebar</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-left-sidebar" role="tab" aria-selected="false"><strong>Left Sidebar</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-right-sidebar" role="tab" aria-selected="false"><strong>Right Sidebar</strong></a>
+        </li>
+        
+    </ul>
+
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-no-sidebar" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <button id="pageSetNoSidebar">Disable the sidebar</button>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-left-sidebar" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button id="pageSetLeftSidebar">Move sidebar to the left</button>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-right-sidebar" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button id="pageSetRightSidebar">Move sidebar to the right</button>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
 <h2>Markup</h2>
 
 
@@ -304,53 +351,6 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
 </code></pre></div>
-        </div>
-        
-    </div>
-</div>
-
-
-<h2>Example</h2>
-
-
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-no-sidebar" role="tab" aria-selected="true"><strong>No Sidebar</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-left-sidebar" role="tab" aria-selected="false"><strong>Left Sidebar</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-right-sidebar" role="tab" aria-selected="false"><strong>Right Sidebar</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-no-sidebar" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-<button id="pageSetNoSidebar">Disable the sidebar</button>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-left-sidebar" class="zui-tabs-pane">
-            <div class="zui-example">
-<button id="pageSetLeftSidebar">Move sidebar to the left</button>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-right-sidebar" class="zui-tabs-pane">
-            <div class="zui-example">
-<button id="pageSetRightSidebar">Move sidebar to the right</button>
-
-            </div>
         </div>
         
     </div>

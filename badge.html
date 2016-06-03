@@ -265,6 +265,114 @@
     </div>
 </div>
 
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-badge" role="tab" aria-selected="true"><strong>Badge</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-button" role="tab" aria-selected="false"><strong>Button</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-navigation" role="tab" aria-selected="false"><strong>Navigation</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-tab" role="tab" aria-selected="false"><strong>Tab</strong></a>
+        </li>
+        
+    </ul>
+
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-badge" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <p>
+    <span class="zui-badge">1</span>
+    <span class="zui-badge">12</span>
+    <span class="zui-badge">345</span>
+    <span class="zui-badge">67890</span>
+</p>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-button" class="zui-tabs-pane">
+            <div class="zui-example">
+                <p>
+    <button>Button <span class="zui-badge">1</span></button>
+</p>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-navigation" class="zui-tabs-pane">
+            <div class="zui-example">
+                <nav class="zui-navgroup zui-navgroup-horizontal">
+    <div class="zui-navgroup-inner">
+        <div class="zui-navgroup-primary">
+            <ul class="zui-nav">
+                <li><a href="http://example.com">Item <span class="zui-badge">123</span></a></li>
+            </ul>
+        </div>
+
+        <div class="zui-navgroup-secondary">
+            <ul class="zui-nav">
+                <li><a href="http://example.com">Item</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-tab" class="zui-tabs-pane">
+            <div class="zui-example">
+                <div class="zui-tabs zui-horizontal-tabs" style="margin-top: 20px;">
+    <ul class="zui-tabs-menu" role="tablist">
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab1" role="tab" aria-selected="false"><strong>Item 1</strong></a>
+        </li>
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab2" role="tab" aria-selected="true">
+                <strong>Item 2</strong>
+                <span class="zui-badge">12</span>
+            </a>
+        </li>
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab3" role="tab" aria-selected="false"><strong>Item 3</strong></a>
+        </li>
+    </ul>
+
+    <div class="zui-tabs-content">
+        <div role="tabpanel" aria-hidden="true" id="tab1" class="zui-tabs-pane">
+            Hello Item 1
+        </div>
+
+        <div role="tabpanel" aria-hidden="false" id="tab2" class="zui-tabs-pane zui-active-pane">
+            Hello Item 2
+        </div>
+
+        <div role="tabpanel" aria-hidden="true" id="tab3" class="zui-tabs-pane">
+            Hello Item 3
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
 <h2>Markup</h2>
 
 
@@ -346,114 +454,6 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
-        </div>
-        
-    </div>
-</div>
-
-
-<h2>Example</h2>
-
-
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-badge" role="tab" aria-selected="true"><strong>Badge</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-button" role="tab" aria-selected="false"><strong>Button</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-navigation" role="tab" aria-selected="false"><strong>Navigation</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-tab" role="tab" aria-selected="false"><strong>Tab</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-badge" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-<p>
-    <span class="zui-badge">1</span>
-    <span class="zui-badge">12</span>
-    <span class="zui-badge">345</span>
-    <span class="zui-badge">67890</span>
-</p>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-button" class="zui-tabs-pane">
-            <div class="zui-example">
-<p>
-    <button>Button <span class="zui-badge">1</span></button>
-</p>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-navigation" class="zui-tabs-pane">
-            <div class="zui-example">
-<nav class="zui-navgroup zui-navgroup-horizontal">
-    <div class="zui-navgroup-inner">
-        <div class="zui-navgroup-primary">
-            <ul class="zui-nav">
-                <li><a href="http://example.com">Item <span class="zui-badge">123</span></a></li>
-            </ul>
-        </div>
-
-        <div class="zui-navgroup-secondary">
-            <ul class="zui-nav">
-                <li><a href="http://example.com">Item</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-tab" class="zui-tabs-pane">
-            <div class="zui-example">
-<div class="zui-tabs zui-horizontal-tabs" style="margin-top: 20px;">
-    <ul class="zui-tabs-menu" role="tablist">
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab1" role="tab" aria-selected="false"><strong>Item 1</strong></a>
-        </li>
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab2" role="tab" aria-selected="true">
-                <strong>Item 2</strong>
-                <span class="zui-badge">12</span>
-            </a>
-        </li>
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab3" role="tab" aria-selected="false"><strong>Item 3</strong></a>
-        </li>
-    </ul>
-
-    <div class="zui-tabs-content">
-        <div role="tabpanel" aria-hidden="true" id="tab1" class="zui-tabs-pane">
-            Hello Item 1
-        </div>
-
-        <div role="tabpanel" aria-hidden="false" id="tab2" class="zui-tabs-pane zui-active-pane">
-            Hello Item 2
-        </div>
-
-        <div role="tabpanel" aria-hidden="true" id="tab3" class="zui-tabs-pane">
-            Hello Item 3
-        </div>
-    </div>
-</div>
-
-            </div>
         </div>
         
     </div>

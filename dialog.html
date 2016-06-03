@@ -238,6 +238,159 @@
     </div>
 </div>
 
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-trigger" role="tab" aria-selected="true"><strong>Trigger</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-inline" role="tab" aria-selected="false"><strong>Inline</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-small" role="tab" aria-selected="false"><strong>Small</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-ajax" role="tab" aria-selected="false"><strong>Ajax</strong></a>
+        </li>
+        
+    </ul>
+
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-trigger" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <a href="#" class="zui-button" data-zui-dialog-trigger="#example-dialog">Show dialog</a>
+
+<div class="zui-dialog" id="example-dialog">
+    <div class="zui-dialog-components">
+        <h2 class="zui-dialog-title">Dialog</h2>
+
+        <div class="zui-dialog-page-body">
+            <div class="zui-dialog-panel-body">
+                <p>This is the content of the dialog panel.</p>
+            </div>
+        </div>
+
+        <div class="zui-dialog-button-panel">
+            <div class="zui-dialog-button-panel-left">
+                <div class="zui-dialog-hint">
+                    This is a hint.
+                </div>
+            </div>
+
+            <div class="zui-dialog-button-panel-right">
+                <button class="zui-button-panel-button" data-zui-dialog-button="ok">OK</button>
+                <a href="#" class="zui-button-panel-link #" data-zui-dialog-button="cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-inline" class="zui-tabs-pane">
+            <div class="zui-example">
+                <div class="zui-dialog zui-dialog-inline">
+    <div class="zui-dialog-components">
+        <h2 class="zui-dialog-title">Dialog</h2>
+
+        <ul class="zui-dialog-page-menu">
+            <li class="zui-page-menu-item selected"><button class="zui-item-button">Panel 1</button></li>
+            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 2</button></li>
+            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 3</button></li>
+        </ul>
+
+        <div class="zui-dialog-page-body">
+            <div class="zui-dialog-panel-body">
+                <p>This is the content of the dialog panel.</p>
+            </div>
+
+            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
+                <p>This is the content of another dialog panel.</p>
+
+                <div style="height: 2000px;"></div>
+
+                <p>Cool eh?</p>
+            </div>
+
+            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
+                <p>This is another awesome panel.</p>
+
+                <div style="height: 2000px;"></div>
+
+                <p>Cool eh?</p>
+            </div>
+        </div>
+
+        <div class="zui-dialog-button-panel">
+            <div class="zui-dialog-button-panel-left">
+                <div class="zui-dialog-hint">
+                    This is a hint.
+                </div>
+            </div>
+
+            <div class="zui-dialog-button-panel-right">
+                <button class="zui-button-panel-button" data-zui-dialog-button="previous">Previous</button>
+                <button class="zui-button-panel-button" data-zui-dialog-button="next">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-small" class="zui-tabs-pane">
+            <div class="zui-example">
+                <a href="#" class="zui-button" data-zui-dialog-trigger="#small-example-dialog">Show dialog</a>
+
+<div class="zui-dialog zui-dialog-small" id="small-example-dialog">
+    <div class="zui-dialog-components">
+        <h2 class="zui-dialog-title">Small Dialog</h2>
+
+        <div class="zui-dialog-page-body">
+            <div class="zui-dialog-panel-body">
+                <p>This is the content of the dialog panel.</p>
+            </div>
+        </div>
+
+        <div class="zui-dialog-button-panel">
+            <div class="zui-dialog-button-panel-left">
+                <div class="zui-dialog-hint">
+                    This is a hint.
+                </div>
+            </div>
+
+            <div class="zui-dialog-button-panel-right">
+                <button class="zui-button-panel-button" data-zui-dialog-button="ok">OK</button>
+                <a href="#" class="zui-button-panel-link #" data-zui-dialog-button="cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-ajax" class="zui-tabs-pane">
+            <div class="zui-example">
+                <a href="#" class="zui-button" data-zui-dialog-trigger="ajax-dialog.html">Show dialog</a>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
 <h2>Markup</h2>
 
 
@@ -377,159 +530,6 @@
         <div role="tabpanel" aria-hidden="true" id="tab-markup-ajax" class="zui-tabs-pane">
 <div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"ajax-dialog.html"</span>&gt;</span>Show dialog<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 </code></pre></div>
-        </div>
-        
-    </div>
-</div>
-
-
-<h2>Example</h2>
-
-
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-trigger" role="tab" aria-selected="true"><strong>Trigger</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-inline" role="tab" aria-selected="false"><strong>Inline</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-small" role="tab" aria-selected="false"><strong>Small</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-ajax" role="tab" aria-selected="false"><strong>Ajax</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-trigger" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-<a href="#" class="zui-button" data-zui-dialog-trigger="#example-dialog">Show dialog</a>
-
-<div class="zui-dialog" id="example-dialog">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">Dialog</h2>
-
-        <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
-                <p>This is the content of the dialog panel.</p>
-            </div>
-        </div>
-
-        <div class="zui-dialog-button-panel">
-            <div class="zui-dialog-button-panel-left">
-                <div class="zui-dialog-hint">
-                    This is a hint.
-                </div>
-            </div>
-
-            <div class="zui-dialog-button-panel-right">
-                <button class="zui-button-panel-button" data-zui-dialog-button="ok">OK</button>
-                <a href="#" class="zui-button-panel-link #" data-zui-dialog-button="cancel">Cancel</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-inline" class="zui-tabs-pane">
-            <div class="zui-example">
-<div class="zui-dialog zui-dialog-inline">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">Dialog</h2>
-
-        <ul class="zui-dialog-page-menu">
-            <li class="zui-page-menu-item selected"><button class="zui-item-button">Panel 1</button></li>
-            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 2</button></li>
-            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 3</button></li>
-        </ul>
-
-        <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
-                <p>This is the content of the dialog panel.</p>
-            </div>
-
-            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
-                <p>This is the content of another dialog panel.</p>
-
-                <div style="height: 2000px;"></div>
-
-                <p>Cool eh?</p>
-            </div>
-
-            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
-                <p>This is another awesome panel.</p>
-
-                <div style="height: 2000px;"></div>
-
-                <p>Cool eh?</p>
-            </div>
-        </div>
-
-        <div class="zui-dialog-button-panel">
-            <div class="zui-dialog-button-panel-left">
-                <div class="zui-dialog-hint">
-                    This is a hint.
-                </div>
-            </div>
-
-            <div class="zui-dialog-button-panel-right">
-                <button class="zui-button-panel-button" data-zui-dialog-button="previous">Previous</button>
-                <button class="zui-button-panel-button" data-zui-dialog-button="next">Next</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-small" class="zui-tabs-pane">
-            <div class="zui-example">
-<a href="#" class="zui-button" data-zui-dialog-trigger="#small-example-dialog">Show dialog</a>
-
-<div class="zui-dialog zui-dialog-small" id="small-example-dialog">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">Small Dialog</h2>
-
-        <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
-                <p>This is the content of the dialog panel.</p>
-            </div>
-        </div>
-
-        <div class="zui-dialog-button-panel">
-            <div class="zui-dialog-button-panel-left">
-                <div class="zui-dialog-hint">
-                    This is a hint.
-                </div>
-            </div>
-
-            <div class="zui-dialog-button-panel-right">
-                <button class="zui-button-panel-button" data-zui-dialog-button="ok">OK</button>
-                <a href="#" class="zui-button-panel-link #" data-zui-dialog-button="cancel">Cancel</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-ajax" class="zui-tabs-pane">
-            <div class="zui-example">
-<a href="#" class="zui-button" data-zui-dialog-trigger="ajax-dialog.html">Show dialog</a>
-
-            </div>
         </div>
         
     </div>

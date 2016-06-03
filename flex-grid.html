@@ -128,6 +128,13 @@
     A flexbox grid system which makes it possible to create responsive pages.
 </p>
 
+<h3>Order of classes</h3>
+
+<p>
+    In order to make your application response you must define all four category of classes (xs, sm, md, lg). You have to
+    make this explicit so that you have to think about how your application looks like on smaller devices.
+</p>
+
 
 
 <div class="zui-tabs zui-horizontal-tabs">
@@ -168,11 +175,101 @@
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no classes defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-grid-container</code></td>
+                    <td>
+                        The class that defines a grid container.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-container-fluid</code></td>
+                    <td>
+                        The class that defines a fluid grid container.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-row</code></td>
+                    <td>
+                        The class that defines a row in the fluid grid.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-row-reverse</code></td>
+                    <td>
+                        The class that defines a row in the fluid grid which is reversed.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-xs-column-*</code></td>
+                    <td>
+                        A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on extra small screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-sm-column-*</code></td>
+                    <td>
+                        A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on small screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-md-column-*</code></td>
+                    <td>
+                        A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on medium screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-lg-column-*</code></td>
+                    <td>
+                        A column in the flex grid where the star represents a number from 1 to 12. This size is only applied on large screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-xs-push-*</code></td>
+                    <td>
+                        Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on extra small screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-sm-push-*</code></td>
+                    <td>
+                        Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on small screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-md-push-*</code></td>
+                    <td>
+                        Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on medium screens.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-grid-lg-push-*</code></td>
+                    <td>
+                        Pushed the column to the left or right depending on whether or not the column is in a reversed row. This class is only active on large screens.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
@@ -370,57 +467,44 @@
     </div>
 </div>
 
-<h2>Markup</h2>
-
-
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-column-xs-12 zui-column-sm-8 zui-column-md-6 zui-column-lg-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-column-xs-12 zui-column-sm-8 zui-column-md-6 zui-column-lg-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-column-xs-12 zui-column-sm-8 zui-column-md-6 zui-column-lg-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre></div>
-
-
 <h2>Example</h2>
 
 
 <div class="zui-example">
-<div class="zui-docs-flexgrid">
+    <div class="zui-docs-flexgrid">
     <div class="zui-grid-container">
         <div class="zui-grid-row">
-            <div class="zui-grid-xs-column12 zui-grid-md-column4 zui-grid-lg-column6">
+            <div class="zui-grid-xs-column-12 zui-grid-md-column-4 zui-grid-lg-column-6">
                 <div class="zui-docs-flexgrid-column"></div>
             </div>
-            <div class="zui-grid-xs-column12 zui-grid-md-column4 zui-grid-lg-column6">
+            <div class="zui-grid-xs-column-12 zui-grid-md-column-4 zui-grid-lg-column-6">
                 <div class="zui-docs-flexgrid-column"></div>
             </div>
-            <div class="zui-grid-xs-column12 zui-grid-md-column4 zui-grid-lg-column12">
+            <div class="zui-grid-xs-column-12 zui-grid-md-column-4 zui-grid-lg-column-12">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+        </div>
+
+        <div class="zui-grid-row-reverse">
+            <div class="zui-grid-lg-column-3 zui-grid-lg-push-3">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-lg-column-3">
+                <div class="zui-docs-flexgrid-column"></div>
+            </div>
+            <div class="zui-grid-lg-column-3">
                 <div class="zui-docs-flexgrid-column"></div>
             </div>
         </div>
 
         <div class="zui-grid-row">
-            <div class="zui-grid-lg-column3 zui-grid-lg-push3">
+            <div class="zui-grid-lg-column-4">
                 <div class="zui-docs-flexgrid-column"></div>
             </div>
-            <div class="zui-grid-lg-column3">
+            <div class="zui-grid-lg-column-4">
                 <div class="zui-docs-flexgrid-column"></div>
             </div>
-            <div class="zui-grid-lg-column3">
-                <div class="zui-docs-flexgrid-column"></div>
-            </div>
-        </div>
-
-        <div class="zui-grid-row">
-            <div class="zui-grid-lg-column4">
-                <div class="zui-docs-flexgrid-column"></div>
-            </div>
-            <div class="zui-grid-lg-column4">
-                <div class="zui-docs-flexgrid-column"></div>
-            </div>
-            <div class="zui-grid-lg-column4">
+            <div class="zui-grid-lg-column-4">
                 <div class="zui-docs-flexgrid-column"></div>
             </div>
         </div>
@@ -428,6 +512,51 @@
 </div>
 
 </div>
+
+
+<h2>Markup</h2>
+
+
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-xs-column-12 zui-grid-md-column-4 zui-grid-lg-column-6"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-xs-column-12 zui-grid-md-column-4 zui-grid-lg-column-6"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-xs-column-12 zui-grid-md-column-4 zui-grid-lg-column-12"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-row-reverse"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-lg-column-3 zui-grid-lg-push-3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-lg-column-3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-lg-column-3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-lg-column-4"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-lg-column-4"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-grid-lg-column-4"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-docs-flexgrid-column"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
 
 
 

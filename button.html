@@ -298,6 +298,210 @@
     </div>
 </div>
 
+<h2>Example</h2>
+
+
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-button" role="tab" aria-selected="true"><strong>Button</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-primary" role="tab" aria-selected="false"><strong>Primary</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-link" role="tab" aria-selected="false"><strong>Link</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-disabled" role="tab" aria-selected="false"><strong>Disabled</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-split" role="tab" aria-selected="false"><strong>Split</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-dropdown" role="tab" aria-selected="false"><strong>Dropdown</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-icon" role="tab" aria-selected="false"><strong>Icon</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-subtle" role="tab" aria-selected="false"><strong>Subtle</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-button-group" role="tab" aria-selected="false"><strong>Button Group</strong></a>
+        </li>
+        
+    </ul>
+
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-button" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <button>Button</button>
+
+<a href="#" class="zui-button">Button</a>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-primary" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button class="zui-button-primary">Primary Button </button>
+
+<a href="#" class="zui-button zui-button-primary">Button</a>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-link" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button class="zui-button-link">Link button</button>
+
+<a href="#" class="zui-button zui-button-link">Link Button</a>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-disabled" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button disabled aria-disabled="true">Disabled button</button>
+
+<a href="#" class="zui-button disabled">Button</a>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-split" class="zui-tabs-pane">
+            <div class="zui-example">
+                <div class="zui-button-group">
+    <button class="zui-button-split-main">Split button</button>
+    <button class="zui-button-split-more" 
+            id="dropdown-split-more-button" 
+            aria-controls="dropdown-split-more" 
+            aria-haspopup="true" 
+            aria-expanded="false">Split button more</button>
+</div>
+
+<div class="zui-button-group">
+    <a href="#" class="zui-button zui-button-split-main">Split button</a>
+    <a href="#" 
+       class="zui-button zui-button-split-more" 
+       id="dropdown-split-more2-button" 
+       aria-controls="dropdown-split-more2" 
+       aria-haspopup="true" 
+       aria-expanded="false">Split button more</a>
+</div>
+
+<div id="dropdown-split-more" class="zui-dropdown-menu" aria-hidden="true">
+    <ul>
+        <li><a href="http://example.com/">Menu item 1</a></li>
+        <li><a href="http://example.com/">Menu item 2</a></li>
+        <li><a href="http://example.com/">Menu item 3</a></li>
+    </ul>
+</div>
+
+<div id="dropdown-split-more2" class="zui-dropdown-menu" aria-hidden="true">
+    <ul>
+        <li><a href="http://example.com/">Menu item 1</a></li>
+        <li><a href="http://example.com/">Menu item 2</a></li>
+        <li><a href="http://example.com/">Menu item 3</a></li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-dropdown" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button id="dropdown-more-button" 
+        class="zui-button-dropdown" 
+        aria-controls="dropdown-more" 
+        aria-haspopup="true" 
+        aria-expanded="false">Dropdown button</button>
+<div id="dropdown-more" class="zui-dropdown-menu" aria-hidden="true">
+    <ul>
+        <li><a href="http://example.com/">Menu item 1</a></li>
+        <li><a href="http://example.com/">Menu item 2</a></li>
+        <li><a href="http://example.com/">Menu item 3</a></li>
+    </ul>
+</div>
+
+<a href="#" id="dropdown-more2-button" 
+   class="zui-button zui-button-dropdown"
+   aria-controls="dropdown-more2" 
+   aria-haspopup="true" 
+   aria-expanded="false">Dropdown button</a>
+<div id="dropdown-more2" class="zui-dropdown-menu" aria-hidden="true">
+    <ul>
+        <li><a href="http://example.com/">Menu item 1</a></li>
+        <li><a href="http://example.com/">Menu item 2</a></li>
+        <li><a href="http://example.com/">Menu item 3</a></li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-icon" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button>
+    <i class="zui-icon zui-icon-download"></i>
+    Button
+</button>
+
+<a href="#" class="zui-button">
+    <i class="zui-icon zui-icon-upload"></i>
+    Button
+</a>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-subtle" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button class="zui-button-subtle">
+    <i class="zui-icon zui-icon-gear"></i>
+    Subtle button
+</button>
+
+<a href="#" class="zui-button zui-button-subtle">
+    <i class="zui-icon zui-icon-gear"></i>
+    Subtle Button
+</a>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-button-group" class="zui-tabs-pane">
+            <div class="zui-example">
+                <div class="zui-button-group">
+    <button>Button</button>
+    <button>Button</button>
+    <button>Button</button>
+</div>
+
+<div class="zui-button-group">
+    <a href="#" class="zui-button">Button</a>
+    <a href="#" class="zui-button">Button</a>
+    <a href="#" class="zui-button">Button</a>
+</div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
 <h2>Markup</h2>
 
 
@@ -478,210 +682,6 @@
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
-        </div>
-        
-    </div>
-</div>
-
-
-<h2>Example</h2>
-
-
-<div class="zui-tabs zui-horizontal-tabs">
-    <ul class="zui-tabs-menu" role="tablist">
-        
-        <li role="presentation" class="zui-menu-item zui-active-tab">
-            <a href="#tab-example-button" role="tab" aria-selected="true"><strong>Button</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-primary" role="tab" aria-selected="false"><strong>Primary</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-link" role="tab" aria-selected="false"><strong>Link</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-disabled" role="tab" aria-selected="false"><strong>Disabled</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-split" role="tab" aria-selected="false"><strong>Split</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-dropdown" role="tab" aria-selected="false"><strong>Dropdown</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-icon" role="tab" aria-selected="false"><strong>Icon</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-subtle" role="tab" aria-selected="false"><strong>Subtle</strong></a>
-        </li>
-        
-        <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-button-group" role="tab" aria-selected="false"><strong>Button Group</strong></a>
-        </li>
-        
-    </ul>
-    
-    <div class="zui-tabs-content">
-        
-        <div role="tabpanel" aria-hidden="false" id="tab-example-button" class="zui-tabs-pane zui-active-pane">
-            <div class="zui-example">
-<button>Button</button>
-
-<a href="#" class="zui-button">Button</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-primary" class="zui-tabs-pane">
-            <div class="zui-example">
-<button class="zui-button-primary">Primary Button </button>
-
-<a href="#" class="zui-button zui-button-primary">Button</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-link" class="zui-tabs-pane">
-            <div class="zui-example">
-<button class="zui-button-link">Link button</button>
-
-<a href="#" class="zui-button zui-button-link">Link Button</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-disabled" class="zui-tabs-pane">
-            <div class="zui-example">
-<button disabled aria-disabled="true">Disabled button</button>
-
-<a href="#" class="zui-button disabled">Button</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-split" class="zui-tabs-pane">
-            <div class="zui-example">
-<div class="zui-button-group">
-    <button class="zui-button-split-main">Split button</button>
-    <button class="zui-button-split-more" 
-            id="dropdown-split-more-button" 
-            aria-controls="dropdown-split-more" 
-            aria-haspopup="true" 
-            aria-expanded="false">Split button more</button>
-</div>
-
-<div class="zui-button-group">
-    <a href="#" class="zui-button zui-button-split-main">Split button</a>
-    <a href="#" 
-       class="zui-button zui-button-split-more" 
-       id="dropdown-split-more2-button" 
-       aria-controls="dropdown-split-more2" 
-       aria-haspopup="true" 
-       aria-expanded="false">Split button more</a>
-</div>
-
-<div id="dropdown-split-more" class="zui-dropdown-menu" aria-hidden="true">
-    <ul>
-        <li><a href="http://example.com/">Menu item 1</a></li>
-        <li><a href="http://example.com/">Menu item 2</a></li>
-        <li><a href="http://example.com/">Menu item 3</a></li>
-    </ul>
-</div>
-
-<div id="dropdown-split-more2" class="zui-dropdown-menu" aria-hidden="true">
-    <ul>
-        <li><a href="http://example.com/">Menu item 1</a></li>
-        <li><a href="http://example.com/">Menu item 2</a></li>
-        <li><a href="http://example.com/">Menu item 3</a></li>
-    </ul>
-</div>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-dropdown" class="zui-tabs-pane">
-            <div class="zui-example">
-<button id="dropdown-more-button" 
-        class="zui-button-dropdown" 
-        aria-controls="dropdown-more" 
-        aria-haspopup="true" 
-        aria-expanded="false">Dropdown button</button>
-<div id="dropdown-more" class="zui-dropdown-menu" aria-hidden="true">
-    <ul>
-        <li><a href="http://example.com/">Menu item 1</a></li>
-        <li><a href="http://example.com/">Menu item 2</a></li>
-        <li><a href="http://example.com/">Menu item 3</a></li>
-    </ul>
-</div>
-
-<a href="#" id="dropdown-more2-button" 
-   class="zui-button zui-button-dropdown"
-   aria-controls="dropdown-more2" 
-   aria-haspopup="true" 
-   aria-expanded="false">Dropdown button</a>
-<div id="dropdown-more2" class="zui-dropdown-menu" aria-hidden="true">
-    <ul>
-        <li><a href="http://example.com/">Menu item 1</a></li>
-        <li><a href="http://example.com/">Menu item 2</a></li>
-        <li><a href="http://example.com/">Menu item 3</a></li>
-    </ul>
-</div>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-icon" class="zui-tabs-pane">
-            <div class="zui-example">
-<button>
-    <i class="zui-icon zui-icon-download"></i>
-    Button
-</button>
-
-<a href="#" class="zui-button">
-    <i class="zui-icon zui-icon-upload"></i>
-    Button
-</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-subtle" class="zui-tabs-pane">
-            <div class="zui-example">
-<button class="zui-button-subtle">
-    <i class="zui-icon zui-icon-gear"></i>
-    Subtle button
-</button>
-
-<a href="#" class="zui-button zui-button-subtle">
-    <i class="zui-icon zui-icon-gear"></i>
-    Subtle Button
-</a>
-
-            </div>
-        </div>
-        
-        <div role="tabpanel" aria-hidden="true" id="tab-example-button-group" class="zui-tabs-pane">
-            <div class="zui-example">
-<div class="zui-button-group">
-    <button>Button</button>
-    <button>Button</button>
-    <button>Button</button>
-</div>
-
-<div class="zui-button-group">
-    <a href="#" class="zui-button">Button</a>
-    <a href="#" class="zui-button">Button</a>
-    <a href="#" class="zui-button">Button</a>
-</div>
-
-            </div>
         </div>
         
     </div>
