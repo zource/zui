@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Status Bar - ZUI Documentation</title>
+        <title>Footer - ZUI Documentation</title>
 
         <link href="css/docs.css" rel="stylesheet">
     </head>
@@ -35,7 +35,7 @@
         <div class="zui-page-header">
             <div class="zui-page-header-inner">
                 <div class="zui-page-header-main">
-                    <h1>Status Bar</h1>
+                    <h1>Footer</h1>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
 
 
 <p>
-    A status bar is used to show progress.
+    A footer pattern as shown at the bottom of this page.
 </p>
 
 
@@ -170,11 +170,24 @@
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no classes defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-footer</code></td>
+                    <td>
+                        The class that defines an element as a footer. Usually placed on the &lt;footer&gt; element.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
@@ -220,11 +233,97 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no variables defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-footer-class</code></td>
+                    <td>
+                        The name of the class used to define a footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-background-color</code></td>
+                    <td>
+                        The background color of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-border-top</code></td>
+                    <td>
+                        The top border of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-padding</code></td>
+                    <td>
+                        The padding of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-text-align</code></td>
+                    <td>
+                        The alignment of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-anchor-color</code></td>
+                    <td>
+                        The alignment of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-font</code></td>
+                    <td>
+                        The font (usually just the size) of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-line-height</code></td>
+                    <td>
+                        The line height of the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-separator</code></td>
+                    <td>
+                        The separator used in between the list items.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-footer-margin-size</code></td>
+                    <td>
+                        The size left and right from the separator.
+
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
     </div>
@@ -234,8 +333,11 @@
 
 
 <div class="zui-example">
-    <div class="status-bar">
-    <span class="status-bar-value" style="width: 67%"></span>
+    <div class="zui-footer">
+    <ul>
+        <li>Hello</li>
+        <li>World</li>
+    </ul>
 </div>
 
 </div>
@@ -244,8 +346,11 @@
 <h2>Markup</h2>
 
 
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"status-bar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"status-bar-value"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 67%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-footer"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>World<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
 
