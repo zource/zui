@@ -8,12 +8,15 @@
 @import "zui/patterns/color";
 @import "zui/patterns/cursor";
 
+// Design
 @import "zui/patterns/all";
 @import "zui/patterns/body";
 @import "zui/patterns/aria";
-@import "zui/patterns/alert/pattern";
 @import "zui/patterns/anchor";
-@import "zui/patterns/badge";
+
+// Patterns
+@import "zui/patterns/alert/pattern";
+@import "zui/patterns/badge/pattern";
 @import "zui/patterns/banner";
 @import "zui/patterns/blanket";
 @import "zui/patterns/blockquote";
