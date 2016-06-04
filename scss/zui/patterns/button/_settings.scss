@@ -1,0 +1,22 @@
+$button-background: $color-secondary !default;
+$button-border-color: #CCC !default;
+$button-border-radius: 4px !default;
+$button-color: #333 !default;
+
+$button-active-background: #F5F5F5 !default;
+
+$button-hover-background: $color-secondary-hover !default;
+$button-hover-border-color: #999 !default;
+$button-hover-color: #333 !default;
+
+$button-disabled-background: #F5F5F5 !default;
+$button-disabled-border-color: #DDD !default;
+$button-disabled-color: #999 !default;
+
+$button-primary-background: $color-primary !default;
+$button-primary-border-color: $color-primary-border !default;
+$button-primary-color: $color-white !default;
+
+$button-primary-hover-background: $color-primary-hover !default;
+$button-primary-hover-border-color: $color-primary-border !default;
+$button-primary-hover-color: $color-white !default;
