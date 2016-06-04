@@ -1,3 +1,6 @@
+/// The base value used to calculate the rem value from.
+/// @type size
+/// @category functions
 $rem-base: 16px !default;
 
 @function strip-unit($num) {
