@@ -1,9 +1,14 @@
+/// The selector used to match badges.
+/// @type string
+/// @pattern badge
+$zui-badge-selector: ".zui-badge" !default;
+
 /// The background color of a badge.
 /// @type color
 /// @pattern badge
-$badge-background: rgba(0, 0, 0, 0.2) !default;
+$zui-badge-background: rgba(0, 0, 0, 0.2) !default;
 
 /// The text color of a badge.
 /// @type color
 /// @pattern badge
-$badge-color: rgba(51, 51, 51, 0.8) !default;
+$zui-badge-color: rgba(51, 51, 51, 0.8) !default;

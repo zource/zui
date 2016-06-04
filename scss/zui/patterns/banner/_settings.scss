@@ -1,0 +1,79 @@
+/// The selector that matches banners.
+/// @type string
+/// @pattern banner
+$zui-banner-selector: ".zui-banner" !default;
+
+/// The selector that matches dangerous banners.
+/// @type string
+/// @pattern banner
+$zui-banner-danger-selector: ".zui-banner-danger" !default;
+
+/// The selector that matches success banners.
+/// @type string
+/// @pattern banner
+$zui-banner-success-selector: ".zui-banner-success" !default;
+
+/// The selector that matches warning banners.
+/// @type string
+/// @pattern banner
+$zui-banner-warning-selector: ".zui-banner-warning" !default;
+
+/// The background color of an information banner.
+/// @type color
+/// @pattern banner
+$zui-banner-info-background: $color-info !default;
+
+/// The text color of an information banner.
+/// @type color
+/// @pattern banner
+$zui-banner-info-color: $color-white !default;
+
+/// The anchor color of an information banner.
+/// @type color
+/// @pattern banner
+$zui-banner-info-link-color: $color-white !default;
+
+/// The background color of a dangerous banner.
+/// @type color
+/// @pattern banner
+$zui-banner-danger-background: $color-alert !default;
+
+/// The text color of a dangerous banner.
+/// @type color
+/// @pattern banner
+$zui-banner-danger-color: $color-white !default;
+
+/// The anchor color of a dangerous banner.
+/// @type color
+/// @pattern banner
+$zui-banner-danger-link-color: $color-white !default;
+
+/// The background color of a success banner.
+/// @type color
+/// @pattern banner
+$zui-banner-success-background: $color-success !default;
+
+/// The text color of a success banner.
+/// @type color
+/// @pattern banner
+$zui-banner-success-color: $color-white !default;
+
+/// The anchor color of a success banner.
+/// @type color
+/// @pattern banner
+$zui-banner-success-link-color: $color-white !default;
+
+/// The background color of a warning banner.
+/// @type color
+/// @pattern banner
+$zui-banner-warning-background: $color-warning !default;
+
+/// The text color of a warning banner.
+/// @type color
+/// @pattern banner
+$zui-banner-warning-color: $color-white !default;
+
+/// The anchor color of a warning banner.
+/// @type color
+/// @pattern banner
+$zui-banner-warning-link-color: $color-white !default;

@@ -1,17 +1,9 @@
-/// The background color of a badge.
-/// @type color
-/// @pattern badge
-$badge-background: rgba(0, 0, 0, 0.2) !default;
+@import "settings";
 
-/// The text color of a badge.
-/// @type color
-/// @pattern badge
-$badge-color: rgba(51, 51, 51, 0.8) !default;
-
-.zui-badge {
-    background: $badge-background;
+#{$zui-badge-selector} {
+    background: $zui-badge-background;
     border-radius: 2em;
-    color: $badge-color;
+    color: $zui-badge-color;
     display: inline-block;
     font-size: 11px;
     font-weight: 700;

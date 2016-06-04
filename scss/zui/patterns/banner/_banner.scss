@@ -1,0 +1,34 @@
+@import "settings";
+
+#{$zui-banner-selector} {
+    background: $zui-banner-info-background;
+    color: $zui-banner-info-color;
+    padding: 10px 10px;
+    position: relative;
+
+    a {
+        color: $zui-banner-info-link-color;
+        text-decoration: underline;
+    }
+
+    &#{$zui-banner-danger-selector} {
+        background: $zui-banner-danger-background;
+        color: $zui-banner-danger-color;
+
+        a { color: $zui-banner-danger-link-color; }
+    }
+
+    &#{$zui-banner-success-selector} {
+        background: $zui-banner-success-background;
+        color: $zui-banner-success-color;
+
+        a { color: $zui-banner-success-link-color; }
+    }
+
+    &#{$zui-banner-warning-selector} {
+        background: $zui-banner-warning-background;
+        color: $zui-banner-warning-color;
+
+        a { color: $zui-banner-warning-link-color; }
+    }
+}
