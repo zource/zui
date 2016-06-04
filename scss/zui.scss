@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
+// Helpers
 @import "zui/mixins";
 @import "zui/functions";
 @import "zui/settings";
 
-// First we include the patterns that are used by other patterns.
-@import "zui/patterns/color";
+// Pattern used by other patterns:
 @import "zui/patterns/cursor";
 
 // Design
-@import "zui/patterns/all";
-@import "zui/patterns/body";
-@import "zui/patterns/aria";
-@import "zui/patterns/anchor";
+@import "zui/typography/color";
+@import "zui/typography/all";
+@import "zui/typography/body";
+@import "zui/typography/aria";
+@import "zui/typography/anchor";
+@import "zui/typography/typography";
+@import "zui/typography/visibility";
 
 // Patterns
 @import "zui/patterns/alert/pattern";
@@ -49,5 +52,3 @@
 @import "zui/patterns/tag";
 @import "zui/patterns/top-bar";
 @import "zui/patterns/toolbar";
-@import "zui/patterns/typography";
-@import "zui/patterns/visibility";
