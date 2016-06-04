@@ -6,7 +6,7 @@
 @import "zui/settings";
 
 // Pattern used by other patterns:
-@import "zui/patterns/cursor/pattern";
+@import "zui/patterns/cursor/cursor";
 
 // Design
 @import "zui/typography/color";
@@ -18,8 +18,8 @@
 @import "zui/typography/visibility";
 
 // Patterns
-@import "zui/patterns/alert/pattern";
-@import "zui/patterns/badge/pattern";
+@import "zui/patterns/alert/alert";
+@import "zui/patterns/badge/badge";
 @import "zui/patterns/banner/banner";
 @import "zui/patterns/blanket";
 @import "zui/patterns/blockquote";
@@ -30,7 +30,7 @@
 @import "zui/patterns/flexgrid";
 @import "zui/patterns/font/zui";
 @import "zui/patterns/footer";
-@import "zui/patterns/form";
+@import "zui/patterns/form/form";
 @import "zui/patterns/header";
 @import "zui/patterns/horizontal-line";
 @import "zui/patterns/image";
