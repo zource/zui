@@ -1,0 +1,323 @@
+/// Cursor showing that something can be scrolled in any direction (panned).
+/// @type cursor
+/// @pattern cursor
+$cursor-all-scroll-value: all-scroll !default;
+
+/// Indicating an alias or shortcut is to be created.
+/// @type cursor
+/// @pattern cursor
+$cursor-alias-value: alias !default;
+
+/// The browser determines the cursor to display based on the current context.
+/// @type cursor
+/// @pattern cursor
+$cursor-auto-value: auto !default;
+
+/// Indicating that cells can be selected.
+/// @type cursor
+/// @pattern cursor
+$cursor-cell-value: cell !default;
+
+/// The item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating.
+/// @type cursor
+/// @pattern cursor
+$cursor-col-resize-value: col-resize !default;
+
+/// A context menu is available under the cursor.
+/// @type cursor
+/// @pattern cursor
+$cursor-context-menu-value: context-menu !default;
+
+/// Indicating that something can be copied.
+/// @type cursor
+/// @pattern cursor
+$cursor-copy-value: copy !default;
+
+/// Cross cursor, often used to indicate selection in a bitmap.
+/// @type cursor
+/// @pattern cursor
+$cursor-crosshair-value: crosshair !default;
+
+/// Default cursor, typically an arrow.
+/// @type cursor
+/// @pattern cursor
+$cursor-default-value: default !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-e-resize-value: e-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-ew-resize-value: ew-resize !default;
+
+/// Indicates that something can be grabbed (dragged to be moved).
+/// @type cursor
+/// @pattern cursor
+$cursor-grab-value: grab !default;
+
+/// Indicates that something can be grabbed (dragged to be moved).
+/// @type cursor
+/// @pattern cursor
+$cursor-grabbing-value: grabbing !default;
+
+/// Indicating help is available.
+/// @type cursor
+/// @pattern cursor
+$cursor-help-value: help !default;
+
+/// The hovered object may be moved.
+/// @type cursor
+/// @pattern cursor
+$cursor-move-value: move !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-n-resize-value: n-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-ne-resize-value: ne-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-nesw-resize-value: nesw-resize !default;
+
+/// Cursor showing that a drop is not allowed at the current location.
+/// @type cursor
+/// @pattern cursor
+$cursor-no-drop-value: no-drop !default;
+
+/// No cursor is rendered.
+/// @type cursor
+/// @pattern cursor
+$cursor-none-value: none !default;
+
+/// Cursor showing that something cannot be done.
+/// @type cursor
+/// @pattern cursor
+$cursor-not-allowed-value: not-allowed !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-ns-resize-value: ns-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-nw-resize-value: nw-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-nwse-resize-value: nwse-resize !default;
+
+/// E.g. used when hovering over links, typically a hand.
+/// @type cursor
+/// @pattern cursor
+$cursor-pointer-value: pointer !default;
+
+/// The program is busy in the background but the user can still interact with the interface (unlike for wait).
+/// @type cursor
+/// @pattern cursor
+$cursor-progress-value: progress !default;
+
+/// The item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them.
+/// @type cursor
+/// @pattern cursor
+$cursor-row-resize-value: row-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-s-resize-value: s-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-se-resize-value: se-resize !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-sw-resize-value: sw-resize !default;
+
+/// Indicating text can be selected, typically an I-beam.
+/// @type cursor
+/// @pattern cursor
+$cursor-text-value: text !default;
+
+/// Indicating that vertical text can be selected, typically a sideways I-beam.
+/// @type cursor
+/// @pattern cursor
+$cursor-vertical-text-value: vertical-text !default;
+
+/// Some edge is to be moved. For example, the se-resize cursor is used when the movement starts from the south-east corner of the box.
+/// @type cursor
+/// @pattern cursor
+$cursor-w-resize-value: w-resize !default;
+
+/// The program is busy (sometimes an hourglass or a watch).
+/// @type cursor
+/// @pattern cursor
+$cursor-wait-value: wait !default;
+
+/// Indicates that something can be zoomed (magnified) in.
+/// @type cursor
+/// @pattern cursor
+$cursor-zoom-in-value: zoom-in !default;
+
+/// Indicates that something can be zoomed (magnified) out.
+/// @type cursor
+/// @pattern cursor
+$cursor-zoom-out-value: zoom-out !default;
+
+.zui-cursor-all-scroll {
+    cursor: $cursor-all-scroll-value;
+}
+
+.zui-cursor-alias {
+    cursor: $cursor-alias-value;
+}
+
+.zui-cursor-auto {
+    cursor: $cursor-auto-value;
+}
+
+.zui-cursor-cell {
+    cursor: $cursor-cell-value;
+}
+
+.zui-cursor-col-resize {
+    cursor: $cursor-col-resize-value;
+}
+
+.zui-cursor-context-menu {
+    cursor: $cursor-context-menu-value;
+}
+
+.zui-cursor-copy {
+    cursor: $cursor-copy-value;
+}
+
+.zui-cursor-crosshair {
+    cursor: $cursor-crosshair-value;
+}
+
+.zui-cursor-default {
+    cursor: $cursor-default-value;
+}
+
+.zui-cursor-e-resize {
+    cursor: $cursor-e-resize-value;
+}
+
+.zui-cursor-ew-resize {
+    cursor: $cursor-ew-resize-value;
+}
+
+.zui-cursor-grab {
+    cursor: $cursor-grab-value;
+}
+
+.zui-cursor-grabbing {
+    cursor: $cursor-grabbing-value;
+}
+
+.zui-cursor-help {
+    cursor: $cursor-help-value;
+}
+
+.zui-cursor-move {
+    cursor: $cursor-move-value;
+}
+
+.zui-cursor-n-resize {
+    cursor: $cursor-n-resize-value;
+}
+
+.zui-cursor-ne-resize {
+    cursor: $cursor-ne-resize-value;
+}
+
+.zui-cursor-nesw-resize {
+    cursor: $cursor-nesw-resize-value;
+}
+
+.zui-cursor-no-drop {
+    cursor: $cursor-no-drop-value;
+}
+
+.zui-cursor-none {
+    cursor: $cursor-none-value;
+}
+
+.zui-cursor-not-allowed {
+    cursor: $cursor-not-allowed-value;
+}
+
+.zui-cursor-ns-resize {
+    cursor: $cursor-ns-resize-value;
+}
+
+.zui-cursor-nw-resize {
+    cursor: $cursor-nw-resize-value;
+}
+
+.zui-cursor-nwse-resize {
+    cursor: $cursor-nwse-resize-value;
+}
+
+.zui-cursor-pointer {
+    cursor: $cursor-pointer-value;
+}
+
+.zui-cursor-progress {
+    cursor: $cursor-progress-value;
+}
+
+.zui-cursor-row-resize {
+    cursor: $cursor-row-resize-value;
+}
+
+.zui-cursor-s-resize {
+    cursor: $cursor-s-resize-value;
+}
+
+.zui-cursor-se-resize {
+    cursor: $cursor-se-resize-value;
+}
+
+.zui-cursor-sw-resize {
+    cursor: $cursor-sw-resize-value;
+}
+
+.zui-cursor-text {
+    cursor: $cursor-text-value;
+}
+
+.zui-cursor-vertical-text {
+    cursor: $cursor-vertical-text-value;
+}
+
+.zui-cursor-w-resize {
+    cursor: $cursor-w-resize-value;
+}
+
+.zui-cursor-wait {
+    cursor: $cursor-wait-value;
+}
+
+.zui-cursor-zoom-in {
+    cursor: $cursor-zoom-in-value;
+}
+
+.zui-cursor-zoom-out {
+    cursor: $cursor-zoom-out-value;
+}
