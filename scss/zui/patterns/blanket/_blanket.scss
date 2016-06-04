@@ -1,0 +1,15 @@
+@import "settings";
+
+#{$zui-blanket-selector} {
+    background: $zui-blanket-background-color;
+    height: 100%;
+    left: 0;
+    opacity: $zui-blanket-opacity;
+    position: fixed;
+    top: 0;
+    transition: $zui-blanket-transition;
+    transition-delay: $zui-blanket-transition-delay;
+    visibility: visible;
+    width: 100%;
+    z-index: $zui-blanket-z-index;
+}
