@@ -21,7 +21,7 @@
     }
 
     .zui-dialog-title {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #F5F5F5;
         border-bottom: 1px solid #CCC;
@@ -35,7 +35,7 @@
     }
 
     .zui-dialog-page-menu {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #FFF;
         border-right: 1px solid #CCC;
@@ -75,7 +75,7 @@
     }
 
     .zui-dialog-page-body {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #FFF;
         height: 400px;
@@ -96,7 +96,7 @@
     }
 
     .zui-dialog-button-panel {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #F5F5F5;
         border-top: 1px solid #CCC;

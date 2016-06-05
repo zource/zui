@@ -4,7 +4,7 @@
 }
 
 .zui-page-header-inner {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     border-spacing: 0;
     display: table;
@@ -22,7 +22,7 @@
 .zui-page-header-actions, 
 .zui-page-header-image, 
 .zui-page-header-main {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     display: table-cell;
     margin: 0;

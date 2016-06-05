@@ -7,7 +7,7 @@ fieldset {
     position: relative;
 
     &.zui-group {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
         
         clear: both;
         padding: 4px 0 4px 145px;

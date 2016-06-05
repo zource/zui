@@ -12,7 +12,7 @@ $body-overflow-y: scroll !default;
 $body-overflow-wrap: inherit !default;
 
 html {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 }
 
 html, body {

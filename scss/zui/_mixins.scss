@@ -1,6 +1,6 @@
 /// A mixin that sets the appearance in a browser independent way.
 /// @param {string} $appearance The type of appearance to use.
-@mixin appearance($appearance) {
+@mixin zui-appearance($appearance) {
     -moz-appearance: $appearance;
     -webkit-appearance: $appearance;
     appearance: $appearance;
@@ -8,7 +8,7 @@
 
 /// A mixin that sets the border radius in a browser independent way.
 /// @param {string} $size The size to set. You must include the size type.
-@mixin border-radius($size) {
+@mixin zui-border-radius($size) {
     -moz-border-radius: $size;
     -webkit-border-radius: $size;
     border-radius: $size;
@@ -17,7 +17,7 @@
 /// A mixin that sets the box-shadow in a browser independent way.
 /// @param {string} $hShadow The horizontal shadow to set.
 /// @param {string} $vShadow The vertical shadow to set.
-@mixin box-shadow($hShadow, $vShadow) {
+@mixin zui-box-shadow($hShadow, $vShadow) {
     -moz-box-shadow: $hShadow, $vShadow;
     -webkit-box-shadow: $hShadow, $vShadow;
     box-shadow: $hShadow, $vShadow;
@@ -25,7 +25,7 @@
 
 /// A mixin that sets the box-sizing in a browser independent way.
 /// @param {string} $type The type of box-sizing to set.
-@mixin box-sizing($type: border-box) {
+@mixin zui-box-sizing($type: border-box) {
     -webkit-box-sizing: $type;
     -moz-box-sizing: $type;
     box-sizing: $type;
@@ -33,8 +33,18 @@
 
 /// A mixin that sets the font smoothing in a browser independent way.
 /// @param {string} $type The type of smoothing to set.
-@mixin font-smooth($type: auto) {
+@mixin zui-font-smooth($type: auto) {
     -webkit-font-smoothing: $type;
     -moz-osx-font-smoothing: $type;
     font-smooth: $type;
+}
+
+/// A mixin that sets the order on a flex element.
+/// @pattern flexgrid
+@mixin zui-order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+    order: $val;
 }

@@ -14,7 +14,7 @@ $steps-forecolor-inactive: #707070;
 }
 
 .zui-steps-step {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
     
     color: $steps-forecolor-active;
     display: table-cell;

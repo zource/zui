@@ -4,7 +4,7 @@ $page-sidebar-width: 240px !default;
 $page-content-padding: 20px !default;
 
 .zui-page-panel {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     clear: both;
     display: table;
@@ -12,7 +12,7 @@ $page-content-padding: 20px !default;
     width: 100%;
 
     .zui-page-sidebar {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
         display: table-cell;
         padding: $page-sidebar-padding;
         vertical-align: top;
@@ -20,7 +20,7 @@ $page-content-padding: 20px !default;
     }
 
     .zui-page-content {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
         display: table-cell;
         padding: $page-content-padding;
         vertical-align: top;

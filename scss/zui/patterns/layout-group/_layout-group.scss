@@ -5,7 +5,7 @@ $page-header-border-right: none !default;
 $page-header-border-top: none !default;
 
 .zui-layout-group {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     display: table;
     border-spacing: 0;
@@ -13,7 +13,7 @@ $page-header-border-top: none !default;
     width: 100%;
 
     > .zui-layout-item {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         display: table-cell;
         margin: 0;

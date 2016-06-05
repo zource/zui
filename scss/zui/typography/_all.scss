@@ -1,5 +1,5 @@
 *,
 *:before,
 *:after {
-    @include box-sizing(inherit);
+    @include zui-box-sizing(inherit);
 }

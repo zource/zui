@@ -1,0 +1,84 @@
+/// The name of the class used to define a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-container: '.zui-grid-container' !default;
+
+/// The name of the class used to define a fluid flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-container-fluid: '.zui-grid-container-fluid' !default;
+
+/// The name of the class used to define a row in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-row: '.zui-grid-row' !default;
+
+/// The name of the class used to define a row in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-row-reverse: '.zui-grid-row-reverse' !default;
+
+/// The prefix of the class used to define an extra small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-xs-column: '.zui-grid-xs-column-' !default;
+
+/// The prefix of the class used to push an element in an extra small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-xs-push: '.zui-grid-xs-push-' !default;
+
+/// The prefix of the class used to define a small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-sm-column: '.zui-grid-sm-column-' !default;
+
+/// The prefix of the class used to push an element in a small size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-sm-push: '.zui-grid-sm-push-' !default;
+
+/// The prefix of the class used to define a medium size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-md-column: '.zui-grid-md-column-' !default;
+
+/// The prefix of the class used to push an element in a mediumn size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-md-push: '.zui-grid-md-push-' !default;
+
+/// The prefix of the class used to define a large size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-lg-column: '.zui-grid-lg-column-' !default;
+
+/// The prefix of the class used to push an element in a large size column in a flexgrid container.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-class-lg-push: '.zui-grid-lg-push-' !default;
+
+/// The amount of columns to use in the grid.
+/// @type integer
+/// @pattern flexgrid
+$flexgrid-column-count: 12 !default;
+
+/// The media query used to match extra small screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-xs: 'only screen and (max-width: #{$screen-xs-max})' !default;
+
+/// The media query used to match small screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-sm: 'only screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})' !default;
+
+/// The media query used to match medium screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-md: 'only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})' !default;
+
+/// The media query used to match large screens.
+/// @type string
+/// @pattern flexgrid
+$flexgrid-media-query-lg: 'only screen and (min-width: #{$screen-lg-min})' !default;

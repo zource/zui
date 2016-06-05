@@ -1,0 +1,55 @@
+/// A mixin that sets the flex display mode on an element.
+/// @pattern flexgrid
+@mixin zui-flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/// A mixin that sets the flex mode on an element.
+/// @pattern flexgrid
+@mixin zui-flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+}
+
+/// A mixin that sets the flex-wrap mode on an element.
+/// @pattern flexgrid
+@mixin zui-flex-wrap($values) {
+    -webkit-flex-wrap: $values;
+    -ms-flex-wrap: $values;
+    flex-wrap: $values;
+}
+
+/// A mixin that defines a cell in the flexgrid.
+/// @pattern flexgrid
+@mixin zui-flexgrid-cell($class-column, $class-push, $i, $percentage) {
+    #{$class-column}#{$i} {
+        flex-basis: $percentage;
+        max-width: $percentage;
+    }
+
+    #{$class-push}#{$i} {
+        margin-left: $percentage;
+    }
+
+    #{$flexgrid-class-row-reverse} #{$class-push}#{$i} {
+        margin-left: inherit;
+        margin-right: $percentage;
+    }
+}
+
+/// A mixin that defines a row of cells in the flexgrid.
+/// @pattern flexgrid
+@mixin zui-flexgrid-cells($class-column, $class-push) {
+    @for $i from 1 through $flexgrid-column-count {
+        $percentage: percentage(1 / $flexgrid-column-count * $i);
+
+        @include zui-flexgrid-cell($class-column, $class-push, $i, $percentage);
+    }
+}

@@ -5,7 +5,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     background: $button-background;
     border: 1px solid #CCC;
@@ -27,7 +27,7 @@ input[type="submit"] {
 
     &.zui-button-primary, 
     &.zui-button-primary:visited {
-        @include font-smooth(antialiased);
+        @include zui-font-smooth(antialiased);
     
         background: $button-primary-background;
         border-color: $button-primary-border-color;

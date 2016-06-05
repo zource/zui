@@ -1,7 +1,7 @@
 kbd {
-    @include border-radius(3px);
-    @include box-sizing(border-box);
-    @include box-shadow(0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #FFF inset);
+    @include zui-border-radius(3px);
+    @include zui-box-sizing(border-box);
+    @include zui-box-shadow(0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #FFF inset);
     
     background-color: #F7F7F7;
     border: 1px solid #CCC;

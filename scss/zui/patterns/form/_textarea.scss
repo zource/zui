@@ -1,5 +1,5 @@
 textarea {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
     
     border: 1px solid #CCC;
     border-radius: 3.01px;

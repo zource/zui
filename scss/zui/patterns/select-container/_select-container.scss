@@ -1,7 +1,7 @@
 $select-container-max-width: 250px;
 
 .zui-select-container {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     display: inline-block;
     margin: 0;

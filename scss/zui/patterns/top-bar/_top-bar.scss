@@ -19,7 +19,7 @@ $top-bar-color: #FFF !default;
 $top-bar-link-background: $color-primary-hover !default;
 
 .zui-top-bar {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     background: $top-bar-background;
     border-bottom: $top-bar-border-bottom;
@@ -37,7 +37,7 @@ $top-bar-link-background: $color-primary-hover !default;
         float: left;
 
         a {
-            @include box-sizing(border-box);
+            @include zui-box-sizing(border-box);
 
             float: left;
             height: 40px;
@@ -109,8 +109,8 @@ $top-bar-link-background: $color-primary-hover !default;
         position: relative;
 
         input {
-            @include appearance(textfield);
-            @include box-sizing(border-box);
+            @include zui-appearance(textfield);
+            @include zui-box-sizing(border-box);
             
             background: #F5F5F5;
             border: 0;

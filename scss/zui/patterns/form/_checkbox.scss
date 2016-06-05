@@ -12,7 +12,7 @@ fieldset {
 }
 
 input.checkbox {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     font-size: 14px;
     height: 15px;

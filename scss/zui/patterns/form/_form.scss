@@ -12,7 +12,7 @@ form .zui-icon-required {
 }
 
 .zui-buttons-container {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     clear: both;
     margin: 1px 0 0;
@@ -22,7 +22,7 @@ form .zui-icon-required {
 }
 
 .zui-field-group {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     clear: both;
     padding: 4px 0 4px 145px;
