@@ -14,7 +14,7 @@ a:active, a:focus, a:hover {
 
 a.disabled {
     color: $anchor-color-disabled;
-    cursor: $cursor-not-allowed-value;
+    cursor: $zui-cursor-not-allowed-value;
 }
 
 a.disabled:active, 

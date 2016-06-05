@@ -27,7 +27,7 @@ $note-padding: 10px;
     background: $note-background;
     border: $note-border;
     border-radius: $note-border-radius;
-    cursor: $cursor-move-value;
+    cursor: $zui-cursor-move-value;
     display: none;
     font-size: 0.8em;
     font-style: italic;
@@ -42,7 +42,7 @@ $note-padding: 10px;
     }
 
     .zui-icon.zui-icon-x {
-        cursor: $cursor-pointer-value;
+        cursor: $zui-cursor-pointer-value;
         position: absolute;
         right: $note-padding;
         top: $note-padding;
