@@ -1,12 +1,12 @@
 /// The background color of the top-bar.
 /// @type color
 /// @pattern top-bar
-$top-bar-background: $color-primary !default;
+$top-bar-background: $zui-color-primary !default;
 
 /// The bottom border of the top-bar.
 /// @type border
 /// @pattern top-bar
-$top-bar-border-bottom: 1px solid $color-primary-border !default;
+$top-bar-border-bottom: 1px solid $zui-color-primary-border !default;
 
 /// The textual color of the top-bar.
 /// @type color
@@ -16,7 +16,7 @@ $top-bar-color: #FFF !default;
 /// The background color of links.
 /// @type color
 /// @pattern top-bar
-$top-bar-link-background: $color-primary-hover !default;
+$top-bar-link-background: $zui-color-primary-hover !default;
 
 .zui-top-bar {
     @include zui-box-sizing(border-box);

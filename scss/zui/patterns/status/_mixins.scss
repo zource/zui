@@ -1,6 +1,6 @@
 /// Defines the status of an alert.
-@mixin zui-status($background, $border, $color) {
+@mixin zui-status($background, $border, $zui-color) {
     background: $background;
     border: $border;
-    color: $color;
+    color: $zui-color;
 }

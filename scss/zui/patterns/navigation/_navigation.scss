@@ -79,7 +79,7 @@ $nav-breadcrumb-disabled-cursor: $zui-cursor-not-allowed-value !default;
             float: left;
 
             a {
-                color: $color-primary;
+                color: $zui-color-primary;
                 display: block;
                 margin: 0;
                 padding: 0px 10px;
@@ -138,7 +138,7 @@ $nav-breadcrumb-disabled-cursor: $zui-cursor-not-allowed-value !default;
         }
 
         > li > a {
-            color: $color-primary;
+            color: $zui-color-primary;
             display: block;
             line-height: 1.14285714285714;
             padding: 7px 10px;
