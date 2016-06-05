@@ -1,0 +1,24 @@
+/// The background color of a note.
+/// @type color
+/// @pattern note
+$zui-note-background: #F3F34C;
+
+/// The border of a note.
+/// @type border
+/// @pattern note
+$zui-note-border: 1px solid #CCC;
+
+/// The border radius of a note.
+/// @type size
+/// @pattern note
+$zui-note-border-radius: 5px;
+
+/// The maximum width of a note.
+/// @type size
+/// @pattern note
+$zui-note-max-width: 250px;
+
+/// The padding used within a note.
+/// @type size
+/// @pattern note
+$zui-note-padding: 10px;

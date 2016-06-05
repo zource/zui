@@ -1,39 +1,16 @@
-/// The background color of a note.
-/// @type color
-/// @pattern note
-$note-background: #F3F34C;
-
-/// The border of a note.
-/// @type border
-/// @pattern note
-$note-border: 1px solid #CCC;
-
-/// The border radius of a note.
-/// @type size
-/// @pattern note
-$note-border-radius: 5px;
-
-/// The maximum width of a note.
-/// @type size
-/// @pattern note
-$note-max-width: 250px;
-
-/// The padding used within a note.
-/// @type size
-/// @pattern note
-$note-padding: 10px;
+@import "variables";
 
 .zui-note {
-    background: $note-background;
-    border: $note-border;
-    border-radius: $note-border-radius;
+    background: $zui-note-background;
+    border: $zui-note-border;
+    border-radius: $zui-note-border-radius;
     cursor: $zui-cursor-move-value;
     display: none;
     font-size: 0.8em;
     font-style: italic;
     line-height: 2em;
-    max-width: $note-max-width;
-    padding: $note-padding;
+    max-width: $zui-note-max-width;
+    padding: $zui-note-padding;
     position: absolute;
     z-index: 1000;
 
@@ -44,7 +21,7 @@ $note-padding: 10px;
     .zui-icon.zui-icon-x {
         cursor: $zui-cursor-pointer-value;
         position: absolute;
-        right: $note-padding;
-        top: $note-padding;
+        right: $zui-note-padding;
+        top: $zui-note-padding;
     }
 }
