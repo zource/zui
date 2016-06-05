@@ -57,8 +57,7 @@
 .zui-tabs.zui-tabs-disabled.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab:active, 
 .zui-tabs.zui-tabs-disabled.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab:focus, 
 .zui-tabs.zui-tabs-disabled.zui-horizontal-tabs > .zui-tabs-menu > .zui-active-tab:hover, 
-.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-menu-item.zui-active-tab, 
-.zui-tabs.zui-horizontal-tabs[data-responsive] > .zui-tabs-menu > .zui-menu-item.zui-active-tab {
+.zui-tabs.zui-horizontal-tabs > .zui-tabs-menu > .zui-menu-item.zui-active-tab {
     border-bottom: 1px solid #FFF;
     margin-bottom: -1px;
     position: relative;

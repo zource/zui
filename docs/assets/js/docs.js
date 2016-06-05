@@ -119,19 +119,19 @@ function initDialog() {
 }
 
 function initTabs() {
-    var tabCounter = $(".zui-tabs").length ? zui.Tabs.getTabCount(".zui-tabs") : 0;
+    var tabCounter = $("#zui-docs-tabs").length ? zui.Tabs.getTabCount(".zui-tabs") : 0;
 
     $("#add-tab").on("click", function() {
         tabCounter++;
 
-        zui.Tabs.addTab($(".zui-tabs"), "tab" + tabCounter, "Item " + tabCounter, "Hello Item " + tabCounter);
+        zui.Tabs.addTab($("#zui-docs-tabs"), "tab" + tabCounter, "Item " + tabCounter, "Hello Item " + tabCounter);
         zui.Tabs.selectTab("#tab" + tabCounter);
     });
 
     $("#insert-tab").on("click", function() {
-        var selectedTab = zui.Tabs.getSelectedTab(".zui-tabs");
+        var selectedTab = zui.Tabs.getSelectedTab("#zui-docs-tabs");
         var tabPosition = zui.Tabs.getTabPosition(selectedTab);
-        var tabs = $(".zui-tabs");
+        var tabs = $("#zui-docs-tabs");
 
         tabCounter++;
 
@@ -140,13 +140,13 @@ function initTabs() {
     });
 
     $("#remove-tab").on("click", function() {
-        var selectedTab = zui.Tabs.getSelectedTab(".zui-tabs");
+        var selectedTab = zui.Tabs.getSelectedTab("#zui-docs-tabs");
 
         zui.Tabs.removeTab(selectedTab);
     });
 
     $("#count-tabs").on("click", function() {
-        var tabCounter = zui.Tabs.getTabCount(".zui-tabs");
+        var tabCounter = zui.Tabs.getTabCount("#zui-docs-tabs");
 
         alert(tabCounter);
     });
