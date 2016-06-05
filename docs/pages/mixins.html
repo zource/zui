@@ -1,0 +1,31 @@
+{% extends '../templates/layout.html' %}
+
+{% set page.title = "Mixins" %}
+
+{% block content %}
+<h2>Mixins</h2>
+
+<p>
+    This page describes all mixins that exist within the ZUI.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sassMixin in sassMixins %}
+        <tr>
+            <td><code>{{ sassMixin.context.name }}</code></td>
+            <td>
+                {{ sassMixin.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

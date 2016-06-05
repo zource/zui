@@ -1,0 +1,31 @@
+{% extends '../templates/layout.html' %}
+
+{% set page.title = "Functions" %}
+
+{% block content %}
+<h2>Functions</h2>
+
+<p>
+    This page describes all functions that exist within the ZUI.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sassFunction in sassFunctions %}
+        <tr>
+            <td><code>{{ sassFunction.context.name }}</code></td>
+            <td>
+                {{ sassFunction.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

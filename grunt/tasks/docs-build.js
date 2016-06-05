@@ -1,9 +1,9 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     var swig = require('swig');
     var path = require('path');
     var hljs = require('highlight.js');
 
-    var highlightCallback = function(input, idx) {
+    var highlightCallback = function (input, idx) {
         return '<div class="code-container"><pre><code lang="html">'
             + hljs.highlight('html', input).value
             + '</code></pre></div>';
@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
     swig.setFilter("highlight", highlightCallback);
 
-    var loadFileContent = function(tpl) {
+    var loadFileContent = function (tpl) {
         if (grunt.file.exists(tpl)) {
             return grunt.file.read(tpl);
         }
@@ -20,11 +20,11 @@ module.exports = function(grunt) {
         return '';
     };
 
-    var loadPatternExamples = function(patternFile, json, options) {
+    var loadPatternExamples = function (patternFile, json, options) {
         json.exampleData = {};
 
         if (json.examples) {
-            json.examples.forEach(function(example) {
+            json.examples.forEach(function (example) {
                 var exampleDir = options.patternsDir
                     + "/"
                     + path.dirname(patternFile)
@@ -38,9 +38,7 @@ module.exports = function(grunt) {
         }
     };
 
-    var loadPatternScss = function(patternFile, json, options) {
-        var scssPath = options.scssDir + "/" + path.dirname(patternFile) + ".json";
-
+    var loadScssFile = function (scssPath, json) {
         if (grunt.file.exists(scssPath)) {
             var scssJson = grunt.file.readJSON(scssPath);
 
@@ -60,7 +58,48 @@ module.exports = function(grunt) {
         }
     };
 
-    var loadPatterns = function(options) {
+    var loadScssData = function (options) {
+        var result = {
+            functions: [],
+            mixins: [],
+            variables: []
+        };
+
+        var strCmp = function (lft, rgt) {
+            var str1 = lft.context.name;
+            var str2 = rgt.context.name;
+
+            return str1 == str2 ? 0 : (str1 > str2 ? 1 : -1);
+        };
+
+        var files = grunt.file.expand({
+            "cwd": options.scssDir
+        }, [
+            "**/*.json"
+        ]);
+
+        files.forEach(function (file) {
+            var json = {}, sass = loadScssFile(options.scssDir + "/" + file, json);
+
+            result.functions = result.functions.concat(json.sass.functions);
+            result.mixins = result.mixins.concat(json.sass.mixins);
+            result.variables = result.variables.concat(json.sass.variables);
+        });
+
+        result.functions.sort(strCmp);
+        result.mixins.sort(strCmp);
+        result.variables.sort(strCmp);
+
+        return result;
+    };
+
+    var loadPatternScss = function (patternFile, json, options) {
+        var scssPath = options.scssDir + "/" + path.dirname(patternFile) + ".json";
+
+        loadScssFile(scssPath, json);
+    };
+
+    var loadPatterns = function (options) {
         var result = [];
         var patternFiles = grunt.file.expand({
             "cwd": options.patternsDir
@@ -68,7 +107,7 @@ module.exports = function(grunt) {
             "**/pattern.json"
         ]);
 
-        patternFiles.forEach(function(patternFile) {
+        patternFiles.forEach(function (patternFile) {
             var json = grunt.file.readJSON(options.patternsDir + "/" + patternFile);
 
             grunt.log.ok("Building pattern " + json.name);
@@ -84,7 +123,7 @@ module.exports = function(grunt) {
         return result;
     };
 
-    grunt.registerTask("docs-build", "Creates the documentation.", function() {
+    grunt.registerTask("docs-build", "Creates the documentation.", function () {
         var patterns, options = this.options();
 
         if (grunt.file.exists(options.patternsDir + '/font/examples/font/zui.html')) {
@@ -96,13 +135,15 @@ module.exports = function(grunt) {
             grunt.file.delete(options.patternsDir + '/font/examples/font/zui.html');
         }
 
+        var sassData = loadScssData(options);
+
         patterns = loadPatterns(options);
 
-        patterns.forEach(function(pattern) {
+        patterns.forEach(function (pattern) {
             pattern.htmlName = pattern.name.toLowerCase().replace(' ', '-');
         });
 
-        patterns.forEach(function(pattern) {
+        patterns.forEach(function (pattern) {
             pattern.htmlName = pattern.name.toLowerCase().replace(' ', '-');
             var destPath = options.dest + "/" + pattern.htmlName + ".html";
             var template = swig.compileFile(options.templatesDir + '/pattern.html');
@@ -117,13 +158,17 @@ module.exports = function(grunt) {
             grunt.file.write(destPath, template(templateVariables));
         });
 
-        grunt.file.recurse(options.pagesDir, function(abspath, rootdir, subdir, filename) {
+        grunt.file.recurse(options.pagesDir, function (abspath, rootdir, subdir, filename) {
             var template = swig.compileFile(abspath);
             var content = template({
                 page: {},
-                patterns: patterns
+                patterns: patterns,
+                sassFunctions: sassData.functions,
+                sassMixins: sassData.mixins,
+                sassVariables: sassData.variables
             });
 
+            grunt.log.ok("Building page " + filename);
             grunt.file.write(options.dest + "/" + filename, content);
         });
     });

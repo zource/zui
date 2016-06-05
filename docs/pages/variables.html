@@ -1,0 +1,33 @@
+{% extends '../templates/layout.html' %}
+
+{% set page.title = "Variables" %}
+
+{% block content %}
+<h2>Variables</h2>
+
+<p>
+    This page describes all variables that exist within the ZUI.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sassVariable in sassVariables %}
+        <tr>
+            <td><code>{{ sassVariable.context.name }}</code></td>
+            <td><code>{{ sassVariable.type }}</code></td>
+            <td>
+                {{ sassVariable.description|raw }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
