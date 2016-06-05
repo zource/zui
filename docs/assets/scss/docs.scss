@@ -10,3 +10,8 @@
 @import "docs/page-header";
 @import "docs/page";
 @import "docs/tabs";
+
+
+.zui-table-list tr td:first-child {
+    width: 350px;
+}
