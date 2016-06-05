@@ -92,9 +92,18 @@ module.exports = function(grunt) {
         var options = this.options();
         var scssParser = new ScssCommentParser(annotations, {});
 
-        grunt.file.recurse(options.scssDir, function(abspath, rootdir, subdir, filename) {
-            var src = grunt.file.read(abspath);
+        var scssFiles = grunt.file.expand({
+            "cwd": options.scssDir
+        }, [
+            "**/*.scss"
+        ]);
+
+        scssFiles.forEach(function (scssFile) {
+            var absPath = options.scssDir + scssFile;
+            var src = grunt.file.read(absPath);
             var annotations = scssParser.parse(src);
+
+            grunt.log.ok('Parsing ' + absPath);
 
             annotations.forEach(function(annotation) {
                 if (annotation.pattern) {
