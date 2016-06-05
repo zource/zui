@@ -81,9 +81,17 @@ module.exports = function (grunt) {
         files.forEach(function (file) {
             var json = {}, sass = loadScssFile(options.scssDir + "/" + file, json);
 
-            result.functions = result.functions.concat(json.sass.functions);
-            result.mixins = result.mixins.concat(json.sass.mixins);
-            result.variables = result.variables.concat(json.sass.variables);
+            if (json.sass.functions) {
+                result.functions = result.functions.concat(json.sass.functions);
+            }
+
+            if (json.sass.mixins) {
+                result.mixins = result.mixins.concat(json.sass.mixins);
+            }
+
+            if (json.sass.variables) {
+                result.variables = result.variables.concat(json.sass.variables);
+            }
         });
 
         result.functions.sort(strCmp);

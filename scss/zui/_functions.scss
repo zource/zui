@@ -1,26 +1,28 @@
 /// The base value used to calculate the rem value from.
 /// @type size
-/// @category functions
-$rem-base: 16px !default;
+$zui-rem-base: 16px !default;
 
-@function strip-unit($num) {
+/// The zui-strip-unit function removes the unit from the given size.
+@function zui-strip-unit($num) {
     @return $num / ($num * 0 + 1);
 }
 
-@function convert-to-rem($value, $base-value: $rem-base) {
-    $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+/// Converts the given value to a rem value.
+@function zui-convert-to-rem($value, $base-value: $zui-rem-base) {
+    $value: zui-strip-unit($value) / zui-strip-unit($base-value) * 1rem;
     @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
     @return $value;
 }
 
-@function rem-calc($values, $base-value: $rem-base) {
+/// Converts the given values to a rem values.
+@function zui-rem-calc($values, $base-value: $zui-rem-base) {
     $max: length($values);
 
-    @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+    @if $max == 1 { @return zui-convert-to-rem(nth($values, 1), $base-value); }
 
     $remValues: ();
     @for $i from 1 through $max {
-        $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+        $remValues: append($remValues, zui-convert-to-rem(nth($values, $i), $base-value));
     }
     @return $remValues;
 }
