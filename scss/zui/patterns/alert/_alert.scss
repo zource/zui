@@ -1,4 +1,5 @@
-@import "_variables.scss";
+@import "variables";
+@import "mixins";
 
 .zui-alert {
     background: $zui-alert-info-background;
@@ -37,77 +38,61 @@
         speak: none;
         top: 50%;
     }
+}
 
-    &.zui-alert-danger {
-        background: $zui-alert-danger-background;
-        border: $zui-alert-danger-border;
-        
-        &:before {
-            background-color: $zui-alert-danger-border-color;
-        }
-        
-        &:after {
-            content: $zui-alert-font-icon-danger;
-        }
-    }
-    
-    &.zui-alert-success {
-        background: $zui-alert-success-background;
-        border: $zui-alert-success-border;
-        
-        &:before {
-            background-color: $zui-alert-success-border-color;
-        }
-        
-        &:after {
-            content: $zui-alert-font-icon-success;
-        }
-    }
-    
-    &.zui-alert-warning {
-        background: $zui-alert-warning-background;
-        border: $zui-alert-warning-border;
-        
-        &:before {
-            background-color: $zui-alert-warning-border-color;
-        }
-        
-        &:after {
-            content: $zui-alert-font-icon-warning;
-        }
-    }
-    
-    &.zui-alert-subtle {
-        background: $zui-alert-subtle-background;
-        border: $zui-alert-subtle-border;
-        
-        &:before {
-            background-color: $zui-alert-subtle-border-color;
-        }
-        
-        &:after {
-            content: $zui-alert-font-icon-subtle;
-        }
-    }
+.zui-alert.zui-alert-danger {
+    @include zui-alert(
+            $zui-alert-danger-background,
+            $zui-alert-danger-border,
+            $zui-alert-danger-border-color,
+            $zui-alert-font-icon-danger
+    );
+}
 
-    .zui-alert-title {
-        font-weight: 700;
-    }
-    
-    p:last-child {
-        margin-bottom: 0px;
-    }
-    
-    .zui-icon-x[role="button"] {
-        color: #707070;
-        cursor: pointer;
-        font-size: 20px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-    
-    .zui-icon-x[role="button"]:hover {
-        color: #000;
-    }
+.zui-alert.zui-alert-success {
+    @include zui-alert(
+            $zui-alert-success-background,
+            $zui-alert-success-border,
+            $zui-alert-success-border-color,
+            $zui-alert-font-icon-success
+    );
+}
+
+.zui-alert.zui-alert-warning {
+    @include zui-alert(
+            $zui-alert-warning-background,
+            $zui-alert-warning-border,
+            $zui-alert-warning-border-color,
+            $zui-alert-font-icon-warning
+    );
+}
+
+.zui-alert.zui-alert-subtle {
+    @include zui-alert(
+            $zui-alert-subtle-background,
+            $zui-alert-subtle-border,
+            $zui-alert-subtle-border-color,
+            $zui-alert-font-icon-subtle
+    );
+}
+
+.zui-alert .zui-alert-title {
+    font-weight: 700;
+}
+
+.zui-alert .zui-icon-x[role="button"] {
+    color: #707070;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.zui-alert .zui-icon-x[role="button"]:hover {
+    color: #000;
+}
+
+.zui-alert p:last-of-type {
+    margin-bottom: 0;
 }

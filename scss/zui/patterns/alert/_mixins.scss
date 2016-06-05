@@ -1,0 +1,13 @@
+/// Creates an alert
+@mixin zui-alert($background, $border, $before-background, $content) {
+    background: $background;
+    border: $border;
+
+    &:before {
+        background-color: $before-background;
+    }
+
+    &:after {
+        content: $content;
+    }
+}

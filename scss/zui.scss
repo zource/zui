@@ -21,7 +21,9 @@
 @import "zui/typography/typography";
 @import "zui/typography/visibility";
 
-// Patterns
+// Patterns (order is important because of dependencies)
+@import "zui/patterns/font/zui";
+
 @import "zui/patterns/alert/alert";
 @import "zui/patterns/badge/badge";
 @import "zui/patterns/banner/banner";
@@ -31,7 +33,6 @@
 @import "zui/patterns/dropdown/dropdown";
 @import "zui/patterns/example/example";
 @import "zui/patterns/flexgrid/flexgrid";
-@import "zui/patterns/font/zui";
 @import "zui/patterns/footer/footer";
 @import "zui/patterns/form/form";
 @import "zui/patterns/image/image";

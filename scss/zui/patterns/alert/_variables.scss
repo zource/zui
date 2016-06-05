@@ -76,24 +76,24 @@ $zui-alert-subtle-border: 1px solid $zui-alert-subtle-border-color !default;
 /// The icon character that is used for dangerous alerts.
 /// @type string
 /// @pattern alert
-$zui-alert-font-icon-danger: "\f10c" !default;
+$zui-alert-font-icon-danger: $zui-font-content-danger !default;
 
 /// The icon character that is used for information alerts.
 /// @type string
 /// @pattern alert
-$zui-alert-font-icon-info: "\f118" !default;
+$zui-alert-font-icon-info: $zui-font-content-info !default;
 
 /// The icon character that is used for success alerts.
 /// @type string
 /// @pattern alert
-$zui-alert-font-icon-success: "\f109" !default;
+$zui-alert-font-icon-success: $zui-font-content-check !default;
 
 /// The icon character that is used for warning alerts.
 /// @type string
 /// @pattern alert
-$zui-alert-font-icon-warning: "\f130" !default;
+$zui-alert-font-icon-warning: $zui-font-content-warning !default;
 
 /// The icon character that is used for warning alerts.
 /// @type string
 /// @pattern alert
-$zui-alert-font-icon-subtle: "\f118" !default;
+$zui-alert-font-icon-subtle: $zui-font-content-info !default;
