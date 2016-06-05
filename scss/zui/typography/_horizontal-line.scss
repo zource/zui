@@ -1,6 +1,26 @@
-hr {
-    background-color: #CCC;
-    border: 0px;
-    height: 1px;
-    margin: 20px 0px;
+/// The selector that matches a horizontal line.
+/// @pattern Typography
+$zui-horizontal-line-selector: "hr" !default;
+
+/// The background of the horizontal line. Usually just the color.
+/// @pattern Typography
+$zui-horizontal-line-background: #CCC !default;
+
+/// The border of the horizontal line. Usually just the size.
+/// @pattern Typography
+$zui-horizontal-line-border: 1px !default;
+
+/// The height of the horizontal line.
+/// @pattern Typography
+$zui-horizontal-line-height: 1px !default;
+
+/// The margin of the horizontal line.
+/// @pattern Typography
+$zui-horizontal-line-margin: 20px 0px !default;
+
+#{$zui-horizontal-line-selector} {
+    background: $zui-horizontal-line-background;
+    border: $zui-horizontal-line-border;
+    height: $zui-horizontal-line-height;
+    margin: $zui-horizontal-line-margin;
 }
