@@ -1,30 +1,12 @@
-/// The background color of the top-bar.
-/// @type color
-/// @pattern top-bar
-$top-bar-background: $zui-color-primary !default;
-
-/// The bottom border of the top-bar.
-/// @type border
-/// @pattern top-bar
-$top-bar-border-bottom: 1px solid $zui-color-primary-border !default;
-
-/// The textual color of the top-bar.
-/// @type color
-/// @pattern top-bar
-$top-bar-color: #FFF !default;
-
-/// The background color of links.
-/// @type color
-/// @pattern top-bar
-$top-bar-link-background: $zui-color-primary-hover !default;
+@import "variables";
 
 .zui-top-bar {
     @include zui-box-sizing(border-box);
 
-    background: $top-bar-background;
-    border-bottom: $top-bar-border-bottom;
+    background: $zui-top-bar-background;
+    border-bottom: $zui-top-bar-border-bottom;
     clear: both;
-    color: $top-bar-color;
+    color: $zui-top-bar-color;
     float: left;
     padding: 0 10px;
     width: 100%;
@@ -77,12 +59,12 @@ $top-bar-link-background: $zui-color-primary-hover !default;
         text-decoration: none;
 
         &:active, &:hover, &.zui-button-active {
-            background-color: $top-bar-link-background;
+            background-color: $zui-top-bar-link-background;
         }
     }
     
     .zui-nav > li.selected a {
-        background-color: $top-bar-link-background;
+        background-color: $zui-top-bar-link-background;
     }
 
     .zui-nav > li {
