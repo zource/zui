@@ -38,7 +38,7 @@
         margin-left: $percentage;
     }
 
-    #{$flexgrid-class-row-reverse} #{$class-push}#{$i} {
+    #{$zui-flexgrid-class-row-reverse} #{$class-push}#{$i} {
         margin-left: inherit;
         margin-right: $percentage;
     }
@@ -47,8 +47,8 @@
 /// A mixin that defines a row of cells in the flexgrid.
 /// @pattern flexgrid
 @mixin zui-flexgrid-cells($class-column, $class-push) {
-    @for $i from 1 through $flexgrid-column-count {
-        $percentage: percentage(1 / $flexgrid-column-count * $i);
+    @for $i from 1 through $zui-flexgrid-column-count {
+        $percentage: percentage(1 / $zui-flexgrid-column-count * $i);
 
         @include zui-flexgrid-cell($class-column, $class-push, $i, $percentage);
     }

@@ -1,18 +1,18 @@
 @import "variables";
 @import "mixins";
 
-#{$flexgrid-class-container},
-#{$flexgrid-class-container-fluid} {
+#{$zui-flexgrid-class-container},
+#{$zui-flexgrid-class-container-fluid} {
     margin-right: auto;
     margin-left: auto;
 }
 
-#{$flexgrid-class-container-fluid} {
+#{$zui-flexgrid-class-container-fluid} {
     padding-right: 2rem;
     padding-left: 2rem;
 }
 
-#{$flexgrid-class-row} {
+#{$zui-flexgrid-class-row} {
     @include zui-flexbox();
     @include zui-flex-wrap(wrap);
 
@@ -23,8 +23,8 @@
     flex-direction: row;
 }
 
-#{$flexgrid-class-row-reverse} {
-    @extend #{$flexgrid-class-row};
+#{$zui-flexgrid-class-row-reverse} {
+    @extend #{$zui-flexgrid-class-row};
 
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
@@ -32,30 +32,30 @@
     flex-direction: row-reverse;
 }
 
-@media #{$flexgrid-media-query-lg} {
+@media #{$zui-flexgrid-media-query-lg} {
     @include zui-flexgrid-cells(
-            $flexgrid-class-lg-column,
-            $flexgrid-class-lg-push
+            $zui-flexgrid-class-lg-column,
+            $zui-flexgrid-class-lg-push
     );
 }
 
-@media #{$flexgrid-media-query-md} {
+@media #{$zui-flexgrid-media-query-md} {
     @include zui-flexgrid-cells(
-            $flexgrid-class-md-column,
-            $flexgrid-class-md-push
+            $zui-flexgrid-class-md-column,
+            $zui-flexgrid-class-md-push
     );
 }
 
-@media #{$flexgrid-media-query-sm} {
+@media #{$zui-flexgrid-media-query-sm} {
     @include zui-flexgrid-cells(
-            $flexgrid-class-sm-column,
-            $flexgrid-class-sm-push
+            $zui-flexgrid-class-sm-column,
+            $zui-flexgrid-class-sm-push
     );
 }
 
-@media #{$flexgrid-media-query-xs} {
+@media #{$zui-flexgrid-media-query-xs} {
     @include zui-flexgrid-cells(
-            $flexgrid-class-xs-column,
-            $flexgrid-class-xs-push
+            $zui-flexgrid-class-xs-column,
+            $zui-flexgrid-class-xs-push
     );
 }
