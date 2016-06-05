@@ -5,6 +5,10 @@
     ],
     "html": {
         "attributes": [
+            {
+                "name": "zui-image-round",
+                "description": "Gives the image round borders"
+            }
         ],
         "classes": [
         ]

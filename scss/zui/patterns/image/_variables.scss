@@ -1,0 +1,9 @@
+/// The selector for round images.
+/// @type string
+/// @pattern image
+$zui-image-round-selector: ".zui-image-round" !default;
+
+/// The size of the border radius.
+/// @type size
+/// @pattern image
+$zui-image-round-border-radius: 100% !default;

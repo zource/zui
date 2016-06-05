@@ -1,7 +1,9 @@
+@import "variables";
+
 a img {
     border: none;
 }
 
-img.zui-image-round {
-    border-radius: 100%;
+img#{$zui-image-round-selector} {
+    border-radius: $zui-image-round-border-radius;
 }
