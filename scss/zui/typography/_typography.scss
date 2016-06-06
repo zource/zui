@@ -1,8 +1,19 @@
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.text-justify { text-align: justify; }
-
 p {
     margin: 0px 0px 20px 0px;
+}
+
+.zui-text-left {
+    text-align: left;
+}
+
+.zui-text-right {
+    text-align: right;
+}
+
+.zui-text-center {
+    text-align: center;
+}
+
+.zui-text-justify {
+    text-align: justify;
 }

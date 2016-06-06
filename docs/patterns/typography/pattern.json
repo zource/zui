@@ -7,6 +7,22 @@
         "attributes": [
         ],
         "classes": [
+            {
+                "name": "zui-text-left",
+                "description": "Aligns the textual content to the left side."
+            },
+            {
+                "name": "zui-text-right",
+                "description": "Aligns the textual content to the right side."
+            },
+            {
+                "name": "zui-text-center",
+                "description": "Aligns the textual content in the center."
+            },
+            {
+                "name": "zui-text-justify",
+                "description": "Aligns the textual content to the left and right side."
+            }
         ]
     },
     "js": {

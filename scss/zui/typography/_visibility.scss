@@ -1,6 +1,19 @@
-.visible { visibility: visible; }
-.hidden { visibility: hidden; }
+.zui-visible {
+    visibility: visible;
+}
 
-.hide { display: none; }
-.show { display: block; }
-.show-inline { display: inline-block; }
+.zui-hidden {
+    visibility: hidden;
+}
+
+.zui-hide {
+    display: none;
+}
+
+.zui-show {
+    display: block;
+}
+
+.zui-show-inline {
+    display: inline-block;
+}

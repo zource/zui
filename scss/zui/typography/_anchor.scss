@@ -1,24 +1,44 @@
-$anchor-color: $zui-color-primary !default;
-$anchor-color-disabled: #999 !default;
-$anchor-text-decoration: none !default;
-$anchor-text-decoration-hover: underline !default;
+/// The color of anchors.
+/// @type color
+/// @pattern typography
+$zui-anchor-color: $zui-color-primary !default;
+
+/// The color of disabled anchors.
+/// @type color
+/// @pattern typography
+$zui-anchor-color-disabled: #999 !default;
+
+/// The text decoration of anchors.
+/// @type text-decoration
+/// @pattern typography
+$zui-anchor-text-decoration: none !default;
+
+/// The text decoration of anchors when hovered.
+/// @type text-decoration
+/// @pattern typography
+$zui-anchor-text-decoration-hover: underline !default;
+
+/// The cursor used for anchors that are disabled.
+/// @type cursor
+/// @pattern typography
+$zui-anchor-cursor-disabled: $zui-cursor-not-allowed-value !default;
 
 a {
-    color: $anchor-color;
-    text-decoration: $anchor-text-decoration;
+    color: $zui-anchor-color;
+    text-decoration: $zui-anchor-text-decoration;
 }
 
 a:active, a:focus, a:hover {
-    text-decoration: $anchor-text-decoration-hover;
+    text-decoration: $zui-anchor-text-decoration-hover;
 }
 
 a.disabled {
-    color: $anchor-color-disabled;
-    cursor: $zui-cursor-not-allowed-value;
+    color: $zui-anchor-color-disabled;
+    cursor: $zui-anchor-cursor-disabled;
 }
 
 a.disabled:active, 
 a.disabled:focus, 
 a.disabled:hover {
-    text-decoration: $anchor-text-decoration;
+    text-decoration: $zui-anchor-text-decoration;
 }

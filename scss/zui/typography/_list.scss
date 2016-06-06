@@ -1,3 +1,8 @@
+/// The margin of lists
+/// @type margin
+/// @pattern typography
+$zui-list-margin: 0 0 20px 0 !default;
+
 dl, ol, ul {
-    margin: 0 0 20px 0;
+    margin: $zui-list-margin;
 }
