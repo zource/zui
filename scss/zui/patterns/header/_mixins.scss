@@ -1,0 +1,11 @@
+/// A mixin that sets the properties of a header.
+/// @pattern header
+@mixin zui-header($color, $font-size, $subheader-color, $subheader-font-size) {
+    color: $color;
+    font-size: $font-size;
+
+    &.zui-subheader {
+        color: $subheader-color;
+        font-size: $subheader-font-size;
+    }
+}

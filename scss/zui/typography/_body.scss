@@ -1,37 +1,63 @@
-$body-bg: #fff !default;
-$body-font-color: #333 !default;
-$body-font-family: arial,sans-serif !default;
-$body-font-size: 14px !default;
-$body-font-style: normal !default;
-$body-font-weight: normal !default;
+/// The background color of the body.
+/// @type size
+/// @pattern typography
+$zui-body-background: #fff !default;
 
-$body-line-height: 1.25 !default;
+/// The font color of the body.
+/// @type color
+/// @pattern typography
+$zui-body-font-color: #333 !default;
 
-$body-overflow-x: auto !default;
-$body-overflow-y: scroll !default;
-$body-overflow-wrap: inherit !default;
+/// The font family of the body.
+/// @type size
+/// @pattern typography
+$zui-body-font-family: arial,sans-serif !default;
+
+/// The font size of the body.
+/// @type size
+/// @pattern typography
+$zui-body-font-size: 14px !default;
+
+/// The font style of the body.
+/// @type font-style
+/// @pattern typography
+$zui-body-font-style: normal !default;
+
+/// The font weight of the body.
+/// @type font-weight
+/// @pattern typography
+$zui-body-font-weight: normal !default;
+
+/// The line height of the body.
+/// @type size
+/// @pattern typography
+$zui-body-line-height: 1.25 !default;
+
+$zui-body-overflow-x: auto !default;
+$zui-body-overflow-y: scroll !default;
+$zui-body-overflow-wrap: inherit !default;
 
 html {
     @include zui-box-sizing(border-box);
 }
 
 html, body {
-    font-size: $body-font-size;
+    font-size: $zui-body-font-size;
     height: 100%;
 }
 
 body {
-    background: $body-bg;
-    color: $body-font-color;
+    background: $zui-body-background;
+    color: $zui-body-font-color;
     cursor: $zui-cursor-auto-value;
-    font-family: $body-font-family;
-    font-style: $body-font-style;
-    font-weight: $body-font-weight;
-    line-height: $body-line-height;
+    font-family: $zui-body-font-family;
+    font-style: $zui-body-font-style;
+    font-weight: $zui-body-font-weight;
+    line-height: $zui-body-line-height;
     margin: 0;
-    overflow-x: $body-overflow-x;
-    overflow-y: $body-overflow-y;
-    overflow-wrap: $body-overflow-wrap;
+    overflow-x: $zui-body-overflow-x;
+    overflow-y: $zui-body-overflow-y;
+    overflow-wrap: $zui-body-overflow-wrap;
     padding: 0;
     position: relative;
 }

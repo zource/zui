@@ -1,21 +1,26 @@
 /// The selector that matches a horizontal line.
 /// @type string
+/// @pattern typography
 $zui-horizontal-line-selector: "hr" !default;
 
 /// The background of the horizontal line. Usually just the color.
 /// @type color
+/// @pattern typography
 $zui-horizontal-line-background: #CCC !default;
 
 /// The border of the horizontal line. Usually just the size.
 /// @type size
+/// @pattern typography
 $zui-horizontal-line-border: 1px !default;
 
 /// The height of the horizontal line.
 /// @type size
+/// @pattern typography
 $zui-horizontal-line-height: 1px !default;
 
 /// The margin of the horizontal line.
 /// @type size
+/// @pattern typography
 $zui-horizontal-line-margin: 20px 0px !default;
 
 #{$zui-horizontal-line-selector} {

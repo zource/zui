@@ -1,0 +1,74 @@
+@import "variables";
+@import "mixins";
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.25;
+    text-transform: none;
+    margin: 0px 0px 20px 0px;
+}
+
+h1 {
+    @include zui-header(
+            $zui-header-h1-color,
+            $zui-header-h1-font-size,
+            $zui-subheader-h1-color,
+            $zui-subheader-h1-font-size
+    );
+}
+
+h2 {
+    @include zui-header(
+            $zui-header-h2-color,
+            $zui-header-h2-font-size,
+            $zui-subheader-h2-color,
+            $zui-subheader-h2-font-size
+    );
+}
+
+h3 {
+    @include zui-header(
+            $zui-header-h3-color,
+            $zui-header-h3-font-size,
+            $zui-subheader-h3-color,
+            $zui-subheader-h3-font-size
+    );
+}
+
+h4 {
+    @include zui-header(
+            $zui-header-h4-color,
+            $zui-header-h4-font-size,
+            $zui-subheader-h4-color,
+            $zui-subheader-h4-font-size
+    );
+}
+
+h5 {
+    @include zui-header(
+            $zui-header-h5-color,
+            $zui-header-h5-font-size,
+            $zui-subheader-h5-color,
+            $zui-subheader-h5-font-size
+    );
+}
+
+h6 {
+    @include zui-header(
+            $zui-header-h6-color,
+            $zui-header-h6-font-size,
+            $zui-subheader-h6-color,
+            $zui-subheader-h6-font-size
+    );
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-size: $zui-header-small-font-size;
+    color: $zui-header-small-color;
+    line-height: 0;
+}
