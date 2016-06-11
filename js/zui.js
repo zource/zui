@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-06-11T22:04Z
+ * Date: 2016-06-11T22:15Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0"
+        version: "0.0.0 af735420bf26fc3e6bf6d69ea23cd535440e2305"
     };
 
     zui.log = function() {
