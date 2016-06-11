@@ -1,0 +1,15 @@
+&.zui-button-primary,
+&.zui-button-primary:visited {
+    @include zui-font-smooth(antialiased);
+
+    background: $button-primary-background;
+    border-color: $button-primary-border-color;
+    color: $button-primary-color;
+    font-weight: 700;
+
+    &:focus, &:hover {
+        background: $button-primary-hover-background;
+        border-color: $button-primary-hover-border-color;
+        color: $button-primary-hover-color;
+    }
+}

@@ -1,0 +1,17 @@
+.zui-button-file {
+    @include zui-button();
+
+    overflow: hidden;
+    position: relative;
+}
+
+.zui-button-file input[type="file"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    font-size: 100px;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}

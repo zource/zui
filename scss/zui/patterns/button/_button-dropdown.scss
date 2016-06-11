@@ -1,0 +1,33 @@
+.zui-button-dropdown {
+    padding-right: 24px !important;
+    position: relative;
+}
+
+.zui-button-dropdown:active:before,
+.zui-button-dropdown:focus:before,
+.zui-button-dropdown:hover:before {
+    visibility: hidden;
+}
+
+.zui-button-dropdown:before {
+    content: '';
+    border-left: 1px solid #CCC;
+    bottom: 4px;
+    display: block;
+    left: -1px;
+    position: absolute;
+    top: 4px;
+}
+
+.zui-button-dropdown:after {
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-top-color: #333;
+    content: "";
+    height: 0;
+    left: 100%;
+    margin-left: -16px;
+    top: 13px;
+    opacity: .8;
+    position: absolute;
+    width: 0;
+}

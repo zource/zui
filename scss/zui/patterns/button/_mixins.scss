@@ -1,0 +1,78 @@
+@mixin zui-button() {
+    background: $button-background;
+    border: 1px solid #CCC;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    height: 2.14285714em;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 4px 10px;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    &.zui-button-subtle {
+        background: 0 0;
+        border-color: rgba(0, 0, 0, 0);
+        color: #707070;
+    }
+
+    &.zui-button-link {
+        background: 0 0;
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        color: $zui-color-primary;
+        padding: 4px 0;
+        text-decoration: none;
+
+        &:active {
+            background: 0 0;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            text-decoration: underline;
+        }
+
+        &:focus {
+            background: 0 0;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            background: 0 0;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            text-decoration: underline;
+        }
+    }
+
+    &.zui-button-active,
+    &:active {
+        box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+        background: $button-active-background;
+    }
+
+    &.zui-button-active,
+    &:focus,
+    &:hover {
+        background: $button-hover-background;
+        border-color: $button-hover-border-color;
+        color: $button-hover-color;
+    }
+
+    &[disabled],
+    &.disabled {
+        background: $button-disabled-background;
+        border-color: $button-disabled-border-color;
+        box-shadow: none;
+        color: $button-disabled-color;
+        cursor: $zui-cursor-not-allowed-value;
+    }
+}

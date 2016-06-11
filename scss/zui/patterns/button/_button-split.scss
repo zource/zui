@@ -1,0 +1,38 @@
+.zui-button-split-more {
+    padding-right: 15px !important;
+    position: relative;
+    text-align: left;
+    text-indent: -9999em;
+}
+
+.zui-button-split-main + .zui-button-split-more:before {
+    content: '';
+    border-left: 1px solid #CCC;
+    bottom: 4px;
+    display: block;
+    left: -1px;
+    position: absolute;
+    top: 4px;
+}
+
+.zui-button-split-main + .zui-button-split-more:after {
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-top-color: #333;
+    content: "";
+    height: 0;
+    left: 100%;
+    margin-left: -16px;
+    top: 13px;
+    opacity: .8;
+    position: absolute;
+    width: 0;
+}
+
+.zui-button-split-main:not(.zui-button-primary) + .zui-button-split-more:active:before,
+.zui-button-split-main:not(.zui-button-primary) + .zui-button-split-more:focus:before,
+.zui-button-split-main:not(.zui-button-primary) + .zui-button-split-more:hover:before,
+.zui-button-split-main:not(.zui-button-primary):active + .zui-button-split-more:before,
+.zui-button-split-main:not(.zui-button-primary):focus + .zui-button-split-more:before,
+.zui-button-split-main:not(.zui-button-primary):hover + .zui-button-split-more:before {
+    visibility: hidden;
+}

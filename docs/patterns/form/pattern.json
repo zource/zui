@@ -2,6 +2,7 @@
     "name": "Form",
     "examples": [
         "Input",
+        "File",
         "Checkbox",
         "Radio",
         "Disabled",

@@ -1,0 +1,42 @@
+.zui-button-group {
+    display: inline-block;
+    font-size: 0;
+    
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    button, 
+    .zui-button {
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    button ~ button,
+    .zui-button ~ .zui-button {
+        border-left-width: 0;
+    }
+    
+    .zui-button:first-child,
+    button:first-child {
+        border-bottom-left-radius: $button-border-radius;
+        border-top-left-radius: $button-border-radius;
+    }
+    
+    .zui-button:last-child,
+    button:last-child {
+        border-bottom-right-radius: $button-border-radius;
+        border-top-right-radius: $button-border-radius;
+    }
+    
+    button ~ button:hover,
+    .zui-button ~ .zui-button:hover {
+        border-width: 1px;
+        margin-left: -1px;
+        position: relative;
+    }
+
+    @import "button-split";
+}
