@@ -181,31 +181,326 @@
     <div class="zui-tabs-content">
         <div role="tabpanel" aria-hidden="false" id="html-attributes" class="zui-tabs-pane zui-docs-tab zui-active-pane">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no attributes defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Default Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>data-zui-dialog-button</code></td>
+                    <td>
+                        <p>Defines a button that controls the dialog.</p>
+
+                        
+                        <p>Valid values are:</p>
+                        <dl>
+                            
+                            <dt>cancel</dt>
+                            <dd>When the element is clicked, the dialog will be closed.</dd>
+                            
+                            <dt>next</dt>
+                            <dd>When the element is clicked, the next panel will be activated.</dd>
+                            
+                            <dt>previous</dt>
+                            <dd>When the element is clicked, the previous panel will be activated.</dd>
+                            
+                        </dl>
+                        
+                    </td>
+                    <td><code>undefined</code></td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-dialog-remove-on-close</code></td>
+                    <td>
+                        <p>Can be set to clean up the HTML code of the dialog element after closing.</p>
+
+                        
+                        <p>Valid values are:</p>
+                        <dl>
+                            
+                            <dt>false</dt>
+                            <dd>Keeps the HTML code of the dialog element after the dialog has been closed.</dd>
+                            
+                            <dt>true</dt>
+                            <dd>Cleans up the HTML code of the dialog element after the dialog has been closed.</dd>
+                            
+                        </dl>
+                        
+                    </td>
+                    <td><code>false</code></td>
+                </tr>
+                
+                <tr>
+                    <td><code>data-zui-dialog-trigger</code></td>
+                    <td>
+                        <p>Bind this attribute to an element that will trigger the dialog when clicked.</p>
+
+                        
+                        <p>Valid values are:</p>
+                        <dl>
+                            
+                            <dt>CSS selector</dt>
+                            <dd>A CSS selector that refers to the dialog that should be opened.</dd>
+                            
+                            <dt>URL</dt>
+                            <dd>An URL to the page that loads the dialog so that the dialog can be opened via AJAX.</dd>
+                            
+                        </dl>
+                        
+                    </td>
+                    <td><code>undefined</code></td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no classes defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-dialog</code></td>
+                    <td>
+                        The class that defines an element as a dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-inline</code></td>
+                    <td>
+                        Shows the dialog inline the page, so no popup is opened.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-tiny</code></td>
+                    <td>
+                        Converts the dialog to a tiny dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-small</code></td>
+                    <td>
+                        Converts the dialog to a small dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-medium</code></td>
+                    <td>
+                        Converts the dialog to a medium dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-large</code></td>
+                    <td>
+                        Converts the dialog to a large dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-xlarge</code></td>
+                    <td>
+                        Converts the dialog to a large dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-full</code></td>
+                    <td>
+                        Converts the dialog to a full screen dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-header</code></td>
+                    <td>
+                        Defines the HTML element as the header of the dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-footer</code></td>
+                    <td>
+                        Defines the HTML element as the footer of the dialog.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-footer-left</code></td>
+                    <td>
+                        The left side of the footer, can be used to display hints.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-footer-right</code></td>
+                    <td>
+                        The right side of the footer, the place where the buttons are.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-hint</code></td>
+                    <td>
+                        The representation of a hint.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-page</code></td>
+                    <td>
+                        The representation of a page.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-page-body</code></td>
+                    <td>
+                        The container that contains the panels on a page.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-menu</code></td>
+                    <td>
+                        The element that contains the menu for a page.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-panel</code></td>
+                    <td>
+                        The element that contains the content of a panel.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
         <div role="tabpanel" aria-hidden="true" id="js-events" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no events defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-dialog-button-clicked</code></td>
+                    <td>
+                        Called when a button in the dialog is clicked.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-button-cancel-clicked</code></td>
+                    <td>
+                        Called when the cancel button is clicked.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-button-next-clicked</code></td>
+                    <td>
+                        Called when the next button is clicked.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-button-previous-clicked</code></td>
+                    <td>
+                        Called when the previous button is clicked.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-closing</code></td>
+                    <td>
+                        Called before the dialog is closed.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-closed</code></td>
+                    <td>
+                        Called after the dialog has been closed.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-panel-activating</code></td>
+                    <td>
+                        Called when a panel is about to become active.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-panel-activated</code></td>
+                    <td>
+                        Called when a panel has been made active.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-panel-deactivating</code></td>
+                    <td>
+                        Called when a panel is about to be deactivated.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-panel-deactivated</code></td>
+                    <td>
+                        Called when a panel has been deactivated.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-opening</code></td>
+                    <td>
+                        Called when a dialog is about to be opened.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-opened</code></td>
+                    <td>
+                        Called when a dialog has been opened.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-centered</code></td>
+                    <td>
+                        Called when a dialog has been centered in the mididle of the screen. Called after zui-dialog-opened.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
@@ -241,11 +536,385 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no variables defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-dialog-selector</code></td>
+                    <td>
+                        The selector for dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-inline</code></td>
+                    <td>
+                        The selector for inline dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-tiny</code></td>
+                    <td>
+                        The selector for tiny dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-small</code></td>
+                    <td>
+                        The selector for small dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-medium</code></td>
+                    <td>
+                        The selector for medium dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-large</code></td>
+                    <td>
+                        The selector for large dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-xlarge</code></td>
+                    <td>
+                        The selector for extra large dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-full</code></td>
+                    <td>
+                        The selector for full size dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-header</code></td>
+                    <td>
+                        The selector for the dialog title.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-footer</code></td>
+                    <td>
+                        The selector for the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-footer-left</code></td>
+                    <td>
+                        The selector for the left footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-footer-right</code></td>
+                    <td>
+                        The selector for the right footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-hint</code></td>
+                    <td>
+                        The selector for a hint in the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-page</code></td>
+                    <td>
+                        The selector for the page.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-page-body</code></td>
+                    <td>
+                        The selector for the body of the page.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-menu</code></td>
+                    <td>
+                        The selector for the menu.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-selector-panel</code></td>
+                    <td>
+                        The selector for the panel.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-tiny-height</code></td>
+                    <td>
+                        The height of a tiny dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-tiny-width</code></td>
+                    <td>
+                        The width of a tiny dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-small-height</code></td>
+                    <td>
+                        The height of a small dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-small-width</code></td>
+                    <td>
+                        The width of a small dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-medium-height</code></td>
+                    <td>
+                        The height of a medium size dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-medium-width</code></td>
+                    <td>
+                        The width of a medium size dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-large-height</code></td>
+                    <td>
+                        The height of a large size dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-large-width</code></td>
+                    <td>
+                        The width of a large size dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-xlarge-height</code></td>
+                    <td>
+                        The height of an extra large size dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-xlarge-width</code></td>
+                    <td>
+                        The width of an extra large size dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-full-width</code></td>
+                    <td>
+                        The height of a full screen dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-size-full-height</code></td>
+                    <td>
+                        The width of a full screen dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-background</code></td>
+                    <td>
+                        The background of a dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-border</code></td>
+                    <td>
+                        The border of a dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-border-radius</code></td>
+                    <td>
+                        The border radius of a dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-border-radius-size-full</code></td>
+                    <td>
+                        The border radius for full screen dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-min-height</code></td>
+                    <td>
+                        The minimum height of a dialog.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-z-index</code></td>
+                    <td>
+                        The z-index used for dialogs.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-header-background</code></td>
+                    <td>
+                        The background color of the dialog header.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-header-color</code></td>
+                    <td>
+                        The font color of the header.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-header-font-size</code></td>
+                    <td>
+                        The font size of the header.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-header-height</code></td>
+                    <td>
+                        The height of the header.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-header-padding</code></td>
+                    <td>
+                        The padding used for the header.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-footer-background</code></td>
+                    <td>
+                        The background -color used for the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-footer-height</code></td>
+                    <td>
+                        The height of the dialog footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-footer-padding</code></td>
+                    <td>
+                        The padding used for the footer.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-menu-width</code></td>
+                    <td>
+                        The width of a page menu.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-hint-color</code></td>
+                    <td>
+                        The font color of hints.
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-dialog-hint-line-height</code></td>
+                    <td>
+                        The line-height used for the hints.
+
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
     </div>
@@ -266,7 +935,7 @@
         </li>
         
         <li role="presentation" class="zui-menu-item">
-            <a href="#tab-example-small" role="tab" aria-selected="false"><strong>Small</strong></a>
+            <a href="#tab-example-sizes" role="tab" aria-selected="false"><strong>Sizes</strong></a>
         </li>
         
         <li role="presentation" class="zui-menu-item">
@@ -281,27 +950,55 @@
             <div class="zui-example">
                 <a href="#" class="zui-button" data-zui-dialog-trigger="#example-dialog">Show dialog</a>
 
-<div class="zui-dialog" id="example-dialog">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">Dialog</h2>
+<div class="zui-dialog zui-dialog-medium" id="example-dialog">
+    <div class="zui-dialog-header">
+        <h2>Dialog</h2>
+        <i class="zui-icon zui-icon-x"></i>
+    </div>
 
+    <div class="zui-dialog-page">
         <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
+            <div class="zui-dialog-panel">
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
+                <p>This is the content of the dialog panel.</p>
                 <p>This is the content of the dialog panel.</p>
             </div>
         </div>
+    </div>
 
-        <div class="zui-dialog-button-panel">
-            <div class="zui-dialog-button-panel-left">
-                <div class="zui-dialog-hint">
-                    This is a hint.
-                </div>
+    <div class="zui-dialog-footer">
+        <div class="zui-dialog-footer-left">
+            <div class="zui-dialog-hint">
+                This is a hint.
             </div>
+        </div>
 
-            <div class="zui-dialog-button-panel-right">
-                <button class="zui-button-panel-button" data-zui-dialog-button="ok">OK</button>
-                <a href="#" class="zui-button-panel-link #" data-zui-dialog-button="cancel">Cancel</a>
-            </div>
+        <div class="zui-dialog-footer-right">
+            <button data-zui-dialog-button="ok">OK</button>
+            <a href="#" data-zui-dialog-button="cancel">Cancel</a>
         </div>
     </div>
 </div>
@@ -311,22 +1008,33 @@
         
         <div role="tabpanel" aria-hidden="true" id="tab-example-inline" class="zui-tabs-pane">
             <div class="zui-example">
-                <div class="zui-dialog zui-dialog-inline">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">Dialog</h2>
+                <div class="zui-dialog zui-dialog-inline" style="height: 500px;">
+    <div class="zui-dialog-header">
+        <h2>Dialog</h2>
+        <i class="zui-icon zui-icon-x"></i>
+    </div>
 
-        <ul class="zui-dialog-page-menu">
-            <li class="zui-page-menu-item selected"><button class="zui-item-button">Panel 1</button></li>
-            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 2</button></li>
-            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 3</button></li>
-        </ul>
+    <div class="zui-dialog-page">
+        <div class="zui-dialog-menu">
+            <ul>
+                <li aria-selected="true">
+                    <button>Panel 1</button>
+                </li>
+                <li>
+                    <button>Panel 2</button>
+                </li>
+                <li>
+                    <button>Panel 3</button>
+                </li>
+            </ul>
+        </div>
 
         <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
+            <div class="zui-dialog-panel">
                 <p>This is the content of the dialog panel.</p>
             </div>
 
-            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
+            <div class="zui-dialog-panel" aria-hidden="true">
                 <p>This is the content of another dialog panel.</p>
 
                 <div style="height: 2000px;"></div>
@@ -334,7 +1042,7 @@
                 <p>Cool eh?</p>
             </div>
 
-            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
+            <div class="zui-dialog-panel" aria-hidden="true">
                 <p>This is another awesome panel.</p>
 
                 <div style="height: 2000px;"></div>
@@ -342,18 +1050,18 @@
                 <p>Cool eh?</p>
             </div>
         </div>
+    </div>
 
-        <div class="zui-dialog-button-panel">
-            <div class="zui-dialog-button-panel-left">
-                <div class="zui-dialog-hint">
-                    This is a hint.
-                </div>
+    <div class="zui-dialog-footer">
+        <div class="zui-dialog-footer-left">
+            <div class="zui-dialog-hint">
+                This is a hint.
             </div>
+        </div>
 
-            <div class="zui-dialog-button-panel-right">
-                <button class="zui-button-panel-button" data-zui-dialog-button="previous">Previous</button>
-                <button class="zui-button-panel-button" data-zui-dialog-button="next">Next</button>
-            </div>
+        <div class="zui-dialog-footer-right">
+            <button data-zui-dialog-button="previous">Previous</button>
+            <button data-zui-dialog-button="next">Next</button>
         </div>
     </div>
 </div>
@@ -361,31 +1069,58 @@
             </div>
         </div>
         
-        <div role="tabpanel" aria-hidden="true" id="tab-example-small" class="zui-tabs-pane">
+        <div role="tabpanel" aria-hidden="true" id="tab-example-sizes" class="zui-tabs-pane">
             <div class="zui-example">
-                <a href="#" class="zui-button" data-zui-dialog-trigger="#small-example-dialog">Show dialog</a>
+                <p>
+    <a href="#" class="zui-button" data-zui-dialog-trigger="#zui-docs-example-dialog" data-zui-dialog-size="tiny">
+        Show tiny dialog
+    </a>
 
-<div class="zui-dialog zui-dialog-small" id="small-example-dialog">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">Small Dialog</h2>
+    <a href="#" class="zui-button" data-zui-dialog-trigger="#zui-docs-example-dialog" data-zui-dialog-size="small">
+        Show small dialog
+    </a>
 
+    <a href="#" class="zui-button" data-zui-dialog-trigger="#zui-docs-example-dialog" data-zui-dialog-size="medium">
+        Show medium dialog
+    </a>
+
+    <a href="#" class="zui-button" data-zui-dialog-trigger="#zui-docs-example-dialog" data-zui-dialog-size="large">
+        Show large dialog
+    </a>
+
+    <a href="#" class="zui-button" data-zui-dialog-trigger="#zui-docs-example-dialog" data-zui-dialog-size="xlarge">
+        Show xlarge dialog
+    </a>
+
+    <a href="#" class="zui-button" data-zui-dialog-trigger="#zui-docs-example-dialog" data-zui-dialog-size="full">
+        Show full dialog
+    </a>
+</p>
+
+<div class="zui-dialog" id="zui-docs-example-dialog">
+    <div class="zui-dialog-header">
+        <h2>Dialog</h2>
+        <i class="zui-icon zui-icon-x"></i>
+    </div>
+
+    <div class="zui-dialog-page">
         <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
+            <div class="zui-dialog-panel">
                 <p>This is the content of the dialog panel.</p>
             </div>
         </div>
+    </div>
 
-        <div class="zui-dialog-button-panel">
-            <div class="zui-dialog-button-panel-left">
-                <div class="zui-dialog-hint">
-                    This is a hint.
-                </div>
+    <div class="zui-dialog-footer">
+        <div class="zui-dialog-footer-left">
+            <div class="zui-dialog-hint">
+                This is a hint.
             </div>
+        </div>
 
-            <div class="zui-dialog-button-panel-right">
-                <button class="zui-button-panel-button" data-zui-dialog-button="ok">OK</button>
-                <a href="#" class="zui-button-panel-link #" data-zui-dialog-button="cancel">Cancel</a>
-            </div>
+        <div class="zui-dialog-footer-right">
+            <button data-zui-dialog-button="ok">OK</button>
+            <a href="#" data-zui-dialog-button="cancel">Cancel</a>
         </div>
     </div>
 </div>
@@ -419,7 +1154,7 @@
         </li>
         
         <li role="presentation" class="zui-menu-item">
-            <a href="#tab-markup-small" role="tab" aria-selected="false"><strong>Small</strong></a>
+            <a href="#tab-markup-sizes" role="tab" aria-selected="false"><strong>Sizes</strong></a>
         </li>
         
         <li role="presentation" class="zui-menu-item">
@@ -433,27 +1168,30 @@
         <div role="tabpanel" aria-hidden="false" id="tab-markup-trigger" class="zui-tabs-pane zui-active-pane">
 <div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#example-dialog"</span>&gt;</span>Show dialog<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"example-dialog"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-components"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-title"</span>&gt;</span>Dialog<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog zui-dialog-medium"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"example-dialog"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Dialog<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page-body"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel-body"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is the content of the dialog panel.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel-left"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-hint"</span>&gt;</span>
-                    This is a hint.
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-hint"</span>&gt;</span>
+                This is a hint.
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel-right"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-panel-button"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"ok"</span>&gt;</span>OK<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-panel-link #"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"cancel"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"ok"</span>&gt;</span>OK<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"cancel"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -461,22 +1199,33 @@
         </div>
         
         <div role="tabpanel" aria-hidden="true" id="tab-markup-inline" class="zui-tabs-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog zui-dialog-inline"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-components"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-title"</span>&gt;</span>Dialog<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog zui-dialog-inline"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"height: 500px;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Dialog<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page-menu"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-page-menu-item selected"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-item-button"</span>&gt;</span>Panel 1<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-page-menu-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-item-button"</span>&gt;</span>Panel 2<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-page-menu-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-item-button"</span>&gt;</span>Panel 3<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-menu"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">aria-selected</span>=<span class="hljs-value">"true"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Panel 1<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Panel 2<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Panel 3<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page-body"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel-body"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is the content of the dialog panel.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel-body zui-dialog-panel-hidden"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is the content of another dialog panel.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"height: 2000px;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -484,7 +1233,7 @@
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Cool eh?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel-body zui-dialog-panel-hidden"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is another awesome panel.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"height: 2000px;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -492,48 +1241,75 @@
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Cool eh?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel-left"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-hint"</span>&gt;</span>
-                    This is a hint.
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-hint"</span>&gt;</span>
+                This is a hint.
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel-right"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-panel-button"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"previous"</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-panel-button"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"next"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"previous"</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"next"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
         </div>
         
-        <div role="tabpanel" aria-hidden="true" id="tab-markup-small" class="zui-tabs-pane">
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#small-example-dialog"</span>&gt;</span>Show dialog<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-sizes" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#zui-docs-example-dialog"</span> <span class="hljs-attribute">data-zui-dialog-size</span>=<span class="hljs-value">"tiny"</span>&gt;</span>
+        Show tiny dialog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog zui-dialog-small"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"small-example-dialog"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-components"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-title"</span>&gt;</span>Small Dialog<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#zui-docs-example-dialog"</span> <span class="hljs-attribute">data-zui-dialog-size</span>=<span class="hljs-value">"small"</span>&gt;</span>
+        Show small dialog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#zui-docs-example-dialog"</span> <span class="hljs-attribute">data-zui-dialog-size</span>=<span class="hljs-value">"medium"</span>&gt;</span>
+        Show medium dialog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#zui-docs-example-dialog"</span> <span class="hljs-attribute">data-zui-dialog-size</span>=<span class="hljs-value">"large"</span>&gt;</span>
+        Show large dialog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#zui-docs-example-dialog"</span> <span class="hljs-attribute">data-zui-dialog-size</span>=<span class="hljs-value">"xlarge"</span>&gt;</span>
+        Show xlarge dialog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span> <span class="hljs-attribute">data-zui-dialog-trigger</span>=<span class="hljs-value">"#zui-docs-example-dialog"</span> <span class="hljs-attribute">data-zui-dialog-size</span>=<span class="hljs-value">"full"</span>&gt;</span>
+        Show full dialog
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"zui-docs-example-dialog"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Dialog<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-icon zui-icon-x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-page-body"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel-body"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-panel"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is the content of the dialog panel.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel-left"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-hint"</span>&gt;</span>
-                    This is a hint.
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-hint"</span>&gt;</span>
+                This is a hint.
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-button-panel-right"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-panel-button"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"ok"</span>&gt;</span>OK<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-panel-link #"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"cancel"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-dialog-footer-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"ok"</span>&gt;</span>OK<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-zui-dialog-button</span>=<span class="hljs-value">"cancel"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>

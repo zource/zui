@@ -1,18 +1,27 @@
-<div class="zui-dialog zui-dialog-inline">
-    <div class="zui-dialog-components">
-        <h2 class="zui-dialog-title">AJAX Dialog</h2>
+<div class="zui-dialog zui-dialog-medium">
+    <div class="zui-dialog-header">
+        <h2>AJAX Dialog</h2>
+        <i class="zui-icon zui-icon-x"></i>
+    </div>
 
-        <ul class="zui-dialog-page-menu">
-            <li class="zui-page-menu-item selected"><button class="zui-item-button">Panel 1</button></li>
-            <li class="zui-page-menu-item"><button class="zui-item-button">Panel 2</button></li>
-        </ul>
+    <div class="zui-dialog-page">
+        <div class="zui-dialog-menu">
+            <ul>
+                <li aria-selected="true">
+                    <button>Panel 1</button>
+                </li>
+                <li>
+                    <button>Panel 2</button>
+                </li>
+            </ul>
+        </div>
 
         <div class="zui-dialog-page-body">
-            <div class="zui-dialog-panel-body">
+            <div class="zui-dialog-panel" aria-hidden="false">
                 <p>This is the content of the dialog panel.</p>
             </div>
 
-            <div class="zui-dialog-panel-body zui-dialog-panel-hidden">
+            <div class="zui-dialog-panel" aria-hidden="true">
                 <p>This is the content of another dialog panel.</p>
 
                 <div style="height: 2000px;"></div>
@@ -20,10 +29,12 @@
                 <p>Cool eh?</p>
             </div>
         </div>
+    </div>
 
-        <div class="zui-dialog-button-panel">
-            <button class="zui-button-panel-button" data-zui-dialog-button="previous">Previous</button>
-            <button class="zui-button-panel-button" data-zui-dialog-button="next">Next</button>
+    <div class="zui-dialog-footer">
+        <div class="zui-dialog-footer-right">
+            <button data-zui-dialog-button="previous">Previous</button>
+            <button data-zui-dialog-button="next">Next</button>
         </div>
     </div>
 </div>
