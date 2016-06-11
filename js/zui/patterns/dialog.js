@@ -17,7 +17,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
     }
 
     function loadContent(dialog) {
-        $(".zui-dialog-panel-body", dialog).each(function() {
+        $(".zui-dialog-panel", dialog).each(function() {
             var panelBody = $(this);
             if ($(this).data("zui-dialog-ajax")) {
                 loadAjaxContent(panelBody, $(this).data("zui-dialog-ajax"));
@@ -33,9 +33,9 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
         }
     }
 
-    function updateButtonBar(dialog) {
-        var index = $(".zui-page-menu-item.selected", dialog).prevAll(".zui-page-menu-item").length;
-        var total = $(".zui-page-menu-item", dialog).length;
+    function updateDialogFooter(dialog) {
+        var index = $(".zui-dialog-menu [aria-selected='true']", dialog).prevAll("li").length;
+        var total = $(".zui-dialog-menu li", dialog).length;
 
         if (index === 0) {
             $("[data-zui-dialog-button='previous']", dialog).attr("disabled", true);
@@ -50,20 +50,33 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
         }
     }
 
+    function updateDialogSize(dialog, size) {
+        var valid = ["tiny", "small", "medium", "large", "xlarge", "full"],
+            index = valid.indexOf(size);
+
+        if (index !== -1) {
+            for (var i = 0; i < valid.length; ++i) {
+                currentDialog.removeClass("zui-dialog-" + valid[i]);
+            }
+
+            currentDialog.addClass("zui-dialog-" + valid[index]);
+        }
+    }
+
     zui.Dialog = {
         bind: function() {
             $(document).ready(function() {
                 loadContent($(".zui-dialog"));
-                updateButtonBar($(".zui-dialog"));
+                updateDialogFooter($(".zui-dialog"));
 
-                $("body").on("click", ".zui-dialog-button-panel a, .zui-dialog-button-panel button", function() {
+                $("body").on("click", ".zui-dialog-footer a, .zui-dialog-footer button", function() {
                     $(this).closest(".zui-dialog").trigger("zui-dialog-button-clicked", [this]);
                     return false;
                 });
 
-                $("body").on("click", ".zui-dialog-page-menu .zui-item-button", function() {
+                $("body").on("click", ".zui-dialog-menu button", function() {
                     var dialog = $(this).closest(".zui-dialog");
-                    var index = $(this).parent().prevAll(".zui-page-menu-item").length;
+                    var index = $(this).parent().prevAll("li").length;
 
                     zui.Dialog.activatePage(dialog, index);
 
@@ -78,7 +91,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
                 $("body").on("click", "[data-zui-dialog-button='next']", function() {
                     var dialog = $(this).closest(".zui-dialog");
-                    var index = $(".zui-page-menu-item.selected", dialog).prevAll(".zui-page-menu-item").length;
+                    var index = $(".zui-dialog-menu  [aria-selected='true']", dialog).prevAll("li").length;
 
                     zui.Dialog.activatePage(dialog, index + 1);
 
@@ -90,7 +103,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
                 $("body").on("click", "[data-zui-dialog-button='previous']", function() {
                     var dialog = $(this).closest(".zui-dialog");
-                    var index = $(".zui-page-menu-item.selected", dialog).prevAll(".zui-page-menu-item").length;
+                    var index = $(".zui-dialog-menu  [aria-selected='true']", dialog).prevAll("li").length;
 
                     zui.Dialog.activatePage(dialog, index - 1);
 
@@ -103,7 +116,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 $("body").on("click", "[data-zui-dialog-button='cancel']", function() {
                     if (currentDialog) {
                         currentDialog.trigger("zui-dialog-button-cancel-clicked", [this]);
-                        zui.Dialog.close();
+                        zui.Dialog.close(this);
                     }
                     return false;
                 });
@@ -118,53 +131,66 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
                     } finally {
                         if (element && element.length) {
-                            zui.Dialog.open(element);
+                            zui.Dialog.open(this, element);
                         } else {
-                            zui.Dialog.load(selector);
+                            zui.Dialog.load(this, selector);
                         }
                     }
 
                     return false;
                 });
+
+                $("body").on("click", ".zui-dialog .zui-icon-x", function() {
+                    if (currentDialog) {
+                        currentDialog.trigger("zui-dialog-button-cancel-clicked", [this]);
+                        zui.Dialog.close(this);
+                    }
+                    return false;
+                });
             });
         },
 
-        load: function(url) {
+        load: function(target, url) {
             $.ajax({
                 "type": "get",
                 "url": url,
                 "success": function(data) {
                     var element = $(data).appendTo("body");
+                    var dialog = zui.Dialog.open(target, element);
 
-                    zui.Dialog.open(element);
+                    dialog.data("zui-dialog-remove-on-close", "true");
                 }
             });
         },
 
         activatePage: function(dialog, index) {
-            var page = $(".zui-dialog-components", dialog);
+            var page = $(".zui-dialog-page", dialog);
 
-            // Deactiavte all panels:
-            $(".zui-dialog-panel-body", page).addClass("zui-dialog-panel-hidden");
+            // Deactivate all panels:
+            dialog.trigger("zui-dialog-panel-deactivate", []);
+            $(".zui-dialog-panel", page).attr("aria-hidden", "true");
+            dialog.trigger("zui-dialog-panel-deactivated", []);
 
             // Make sure the index is valid:
-            index = Math.max(0, Math.min(index, $(".zui-page-menu-item", page).length - 1));
+            index = Math.max(0, Math.min(index, $(".zui-dialog-menu li", page).length - 1));
+
+            dialog.trigger("zui-dialog-panel-activating", [dialog, index]);
 
             // Activate the panel that was clicked:
-            $($(".zui-dialog-panel-body", page).get(index)).removeClass("zui-dialog-panel-hidden");
+            $($(".zui-dialog-panel", page).get(index)).attr("aria-hidden", "false");
 
             // Change the state of the menu items:
-            $(".zui-page-menu-item", page).removeClass("selected");
-            $($(".zui-page-menu-item", dialog).get(index)).addClass("selected");
+            $(".zui-dialog-menu li", page).attr("aria-selected", "false");
+            $($(".zui-dialog-menu li", dialog).get(index)).attr("aria-selected", "true");
 
-            dialog.trigger("zui-dialog-page-activated", [dialog, index]);
+            dialog.trigger("zui-dialog-panel-activated", [dialog, index]);
 
-            updateButtonBar(dialog);
+            updateDialogFooter(dialog);
         },
 
-        close: function() {
+        close: function(target) {
             if (currentDialog) {
-                currentDialog.trigger("zui-dialog-closing", [this]);
+                currentDialog.trigger("zui-dialog-closing", [target, this]);
 
                 if (currentDialog.data("zui-dialog-remove-on-close") === "true") {
                     currentDialog.remove();
@@ -172,34 +198,36 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                     currentDialog.hide();
                 }
 
-                currentDialog.trigger("zui-dialog-closed", [this]);
+                currentDialog.trigger("zui-dialog-closed", [target, this]);
             }
 
             $("#zui-blanket").remove();
         },
 
-        open: function(id) {
-            zui.Dialog.close();
+        open: function(target, id) {
+            zui.Dialog.close(target);
 
             currentDialog = $(id);
             currentDialog.css("position", "fixed");
 
-            currentDialog.trigger("zui-dialog-opening", [this]);
+            updateDialogSize(currentDialog, $(target).data("zui-dialog-size"));
+
+            currentDialog.trigger("zui-dialog-opening", [target, this]);
 
             $("<div id='zui-blanket' aria-hidden='false'>").appendTo("body").on("click", function() {
-                zui.Dialog.close();
+                zui.Dialog.close(this);
             });
 
             loadContent(currentDialog);
 
             currentDialog.show();
-            currentDialog.trigger("zui-dialog-opened", [this]);
+            currentDialog.trigger("zui-dialog-opened", [target, this]);
 
+            // Place the dialog in the center of the screen
             zui.Screen.centerElement(currentDialog);
+            currentDialog.trigger("zui-dialog-centered", [target, this]);
 
-            currentDialog.trigger("zui-dialog-centered", [this]);
-
-            updateButtonBar(currentDialog);
+            updateDialogFooter(currentDialog);
 
             return currentDialog;
         },
@@ -217,10 +245,10 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
             $("<h2>").addClass("zui-dialog-title").text(options.title).appendTo(dialogComponents);
 
             if (options.panels.length > 1) {
-                var pageItem, pageMenu = $("<ul>").addClass("zui-dialog-page-menu").appendTo(dialogComponents);
+                var pageItem, pageMenu = $("<ul>").addClass("zui-dialog-menu").appendTo(dialogComponents);
 
                 for (i = 0; i < options.panels.length; ++i) {
-                    pageItem = $("<li>").addClass("zui-page-menu-item").appendTo(pageMenu);
+                    pageItem = $("<li>").appendTo(pageMenu);
 
                     if (i === 0) {
                         pageItem.addClass("selected");
@@ -230,20 +258,20 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 }
             }
 
-            var pageBody = $("<div>").addClass("zui-dialog-page-body").appendTo(dialogComponents);
+            var pageBody = $("<div>").addClass("zui-dialog-page").appendTo(dialogComponents);
             for (i = 0; i < options.panels.length; ++i) {
-                panelBody = $("<div>").addClass("zui-dialog-panel-body").appendTo(pageBody);
+                panelBody = $("<div>").addClass("zui-dialog-panel").appendTo(pageBody);
 
                 loadBody(panelBody, options, i);
 
                 if (i !== 0) {
-                    panelBody.addClass("zui-dialog-panel-hidden");
+                    panelBody.attr("aria-hidden", "true");
                 }
             }
 
-            var buttonPanel = $("<div>").addClass("zui-dialog-button-panel").appendTo(dialogComponents);
-            var buttonPanelLeft = $("<div>").addClass("zui-dialog-button-panel-left").appendTo(buttonPanel);
-            var buttonPanelRight = $("<div>").addClass("zui-dialog-button-panel-right").appendTo(buttonPanel);
+            var buttonPanel = $("<div>").addClass("zui-dialog-footer").appendTo(dialogComponents);
+            var buttonPanelLeft = $("<div>").addClass("zui-dialog-footer-left").appendTo(buttonPanel);
+            var buttonPanelRight = $("<div>").addClass("zui-dialog-footer-right").appendTo(buttonPanel);
 
             if (options.hint) {
                 $("<div>").addClass("zui-dialog-hint").html(options.hint).appendTo(buttonPanelLeft);
@@ -251,7 +279,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
             if (options.buttons) {
                 for (i = 0; i < options.buttons.length; ++i) {
-                    var button = $("<button>").addClass("zui-button-panel-button").appendTo(buttonPanelRight);
+                    var button = $("<button>").appendTo(buttonPanelRight);
 
                     if (options.buttons[i].click) {
                         button.on("click", options.buttons[i].click);
@@ -265,7 +293,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 }
             }
 
-            return zui.Dialog.open(dialog);
+            return zui.Dialog.open(null, dialog);
         },
 
         replaceWith: function(data) {

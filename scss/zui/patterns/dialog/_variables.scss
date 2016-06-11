@@ -1,0 +1,230 @@
+/// The selector for dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector: ".zui-dialog" !default;
+
+/// The selector for inline dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-inline: ".zui-dialog-inline" !default;
+
+/// The selector for tiny dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-tiny: ".zui-dialog-tiny" !default;
+
+/// The selector for small dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-small: ".zui-dialog-small" !default;
+
+/// The selector for medium dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-medium: ".zui-dialog-medium" !default;
+
+/// The selector for large dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-large: ".zui-dialog-large" !default;
+
+/// The selector for extra large dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-xlarge: ".zui-dialog-xlarge" !default;
+
+/// The selector for full size dialogs.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-full: ".zui-dialog-full" !default;
+
+/// The selector for the dialog title.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-header: ".zui-dialog-header" !default;
+
+/// The selector for the footer.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-footer: ".zui-dialog-footer" !default;
+
+/// The selector for the left footer.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-footer-left: ".zui-dialog-footer-left" !default;
+
+/// The selector for the right footer.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-footer-right: ".zui-dialog-footer-right" !default;
+
+/// The selector for a hint in the footer.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-hint: ".zui-dialog-hint" !default;
+
+/// The selector for the page.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-page: ".zui-dialog-page" !default;
+
+/// The selector for the body of the page.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-page-body: ".zui-dialog-page-body" !default;
+
+/// The selector for the menu.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-menu: ".zui-dialog-menu" !default;
+
+/// The selector for the panel.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-panel: ".zui-dialog-panel" !default;
+
+/// The height of a tiny dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-tiny-height: 20% !default;
+
+/// The width of a tiny dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-tiny-width: 20% !default;
+
+/// The height of a small dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-small-height: 35% !default;
+
+/// The width of a small dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-small-width: 35% !default;
+
+/// The height of a medium size dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-medium-height: 50% !default;
+
+/// The width of a medium size dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-medium-width: 50% !default;
+
+/// The height of a large size dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-large-height: 65% !default;
+
+/// The width of a large size dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-large-width: 65% !default;
+
+/// The height of an extra large size dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-xlarge-height: 80% !default;
+
+/// The width of an extra large size dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-xlarge-width: 80% !default;
+
+/// The height of a full screen dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-full-width: 100% !default;
+
+/// The width of a full screen dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-size-full-height: 100% !default;
+
+/// The background of a dialog.
+/// @type background
+/// @pattern dialog
+$zui-dialog-background: #FFF !default;
+
+/// The border of a dialog.
+/// @type border
+/// @pattern dialog
+$zui-dialog-border: 1px solid #CCC !default;
+
+/// The border radius of a dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-border-radius: 10px !default;
+
+/// The border radius for full screen dialogs.
+/// @type size
+/// @pattern dialog
+$zui-dialog-border-radius-size-full: 0px !default;
+
+/// The minimum height of a dialog.
+/// @type size
+/// @pattern dialog
+$zui-dialog-min-height: 225px !default;
+
+/// The z-index used for dialogs.
+/// @type integer
+/// @pattern dialog
+$zui-dialog-z-index: 3000 !default;
+
+/// The background color of the dialog header.
+/// @type background
+/// @pattern dialog
+$zui-dialog-header-background: #F5F5F5 !default;
+
+/// The font color of the header.
+/// @type color
+/// @pattern dialog
+$zui-dialog-header-color: #333 !default;
+
+/// The font size of the header.
+/// @type size
+/// @pattern dialog
+$zui-dialog-header-font-size: 20px !default;
+
+/// The height of the header.
+/// @type height
+/// @pattern dialog
+$zui-dialog-header-height: 56px !default;
+
+/// The padding used for the header.
+/// @type padding
+/// @pattern dialog
+$zui-dialog-header-padding: 15px 20px !default;
+
+/// The background -color used for the footer.
+/// @type color
+/// @pattern dialog
+$zui-dialog-footer-background: $zui-dialog-header-background !default;
+
+/// The height of the dialog footer.
+/// @type height
+/// @pattern dialog
+$zui-dialog-footer-height: 51px !default;
+
+/// The padding used for the footer.
+/// @type padding
+/// @pattern dialog
+$zui-dialog-footer-padding: 10px 20px !default;
+
+/// The width of a page menu.
+/// @type size
+/// @pattern dialog
+$zui-dialog-menu-width: 20% !default;
+
+/// The font color of hints.
+/// @type color
+/// @pattern dialog
+$zui-dialog-hint-color: #707070 !default;
+
+/// The line-height used for the hints.
+/// @type size
+/// @pattern dialog
+$zui-dialog-hint-line-height: 31px !default;
+

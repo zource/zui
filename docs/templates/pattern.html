@@ -41,11 +41,12 @@
     <div class="zui-tabs-content">
         <div role="tabpanel" aria-hidden="false" id="html-attributes" class="zui-tabs-pane zui-docs-tab zui-active-pane">
             {% if pattern.html.attributes.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>Default Value</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -53,8 +54,21 @@
                 <tr>
                     <td><code>{{ htmlAttribute.name }}</code></td>
                     <td>
-                        {{ htmlAttribute.description|raw }}
+                        <p>{{ htmlAttribute.description|raw }}</p>
+
+                        {% if htmlAttribute.values.length > 0 %}
+                        <p>Valid values are:</p>
+                        <dl>
+                            {% for htmlAttributeValue in htmlAttribute.values %}
+                            <dt>{{ htmlAttributeValue.name }}</dt>
+                            <dd>{{ htmlAttributeValue.description|raw }}</dd>
+                            {% endfor %}
+                        </dl>
+                        {% else %}
+                        <p>No values have been documented for this attribute.</p>
+                        {% endif %}
                     </td>
+                    <td><code>{{ htmlAttribute.defaultValue }}</code></td>
                 </tr>
                 {% endfor %}
                 </tbody>
@@ -70,7 +84,7 @@
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             {% if pattern.html.classes.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -99,7 +113,7 @@
 
         <div role="tabpanel" aria-hidden="true" id="js-events" class="zui-tabs-pane zui-docs-tab">
             {% if pattern.js.events.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -128,7 +142,7 @@
 
         <div role="tabpanel" aria-hidden="true" id="js-methods" class="zui-tabs-pane zui-docs-tab">
             {% if pattern.js.methods.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -157,7 +171,7 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-functions" class="zui-tabs-pane zui-docs-tab">
             {% if pattern.sass.functions.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -186,7 +200,7 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-mixins" class="zui-tabs-pane zui-docs-tab">
             {% if pattern.sass.mixins.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -215,7 +229,7 @@
 
         <div role="tabpanel" aria-hidden="true" id="sass-variables" class="zui-tabs-pane zui-docs-tab">
             {% if pattern.sass.variables.length > 0 %}
-            <table class="zui-table-list zui-table-bordered">
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>

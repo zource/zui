@@ -3,17 +3,186 @@
     "examples": [
         "Trigger",
         "Inline",
-        "Small",
+        "Sizes",
         "Ajax"
     ],
     "html": {
         "attributes": [
+            {
+                "name": "data-zui-dialog-button",
+                "description": "Defines a button that controls the dialog.",
+                "defaultValue": "undefined",
+                "values": [
+                    {
+                        "name": "cancel",
+                        "description": "When the element is clicked, the dialog will be closed."
+                    },
+                    {
+                        "name": "next",
+                        "description": "When the element is clicked, the next panel will be activated."
+                    },
+                    {
+                        "name": "previous",
+                        "description": "When the element is clicked, the previous panel will be activated."
+                    }
+                ]
+            },
+            {
+                "name": "data-zui-dialog-remove-on-close",
+                "description": "Can be set to clean up the HTML code of the dialog element after closing.",
+                "defaultValue": "false",
+                "values": [
+                    {
+                        "name": "false",
+                        "description": "Keeps the HTML code of the dialog element after the dialog has been closed."
+                    },
+                    {
+                        "name": "true",
+                        "description": "Cleans up the HTML code of the dialog element after the dialog has been closed."
+                    }
+                ]
+            },
+            {
+                "name": "data-zui-dialog-trigger",
+                "description": "Bind this attribute to an element that will trigger the dialog when clicked.",
+                "defaultValue": "undefined",
+                "values": [
+                    {
+                        "name": "CSS selector",
+                        "description": "A CSS selector that refers to the dialog that should be opened."
+                    },
+                    {
+                        "name": "URL",
+                        "description": "An URL to the page that loads the dialog so that the dialog can be opened via AJAX."
+                    }
+                ]
+            }
         ],
         "classes": [
+            {
+                "name": "zui-dialog",
+                "description": "The class that defines an element as a dialog."
+            },
+            {
+                "name": "zui-dialog-inline",
+                "description": "Shows the dialog inline the page, so no popup is opened."
+            },
+            {
+                "name": "zui-dialog-tiny",
+                "description": "Converts the dialog to a tiny dialog."
+            },
+            {
+                "name": "zui-dialog-small",
+                "description": "Converts the dialog to a small dialog."
+            },
+            {
+                "name": "zui-dialog-medium",
+                "description": "Converts the dialog to a medium dialog."
+            },
+            {
+                "name": "zui-dialog-large",
+                "description": "Converts the dialog to a large dialog."
+            },
+            {
+                "name": "zui-dialog-xlarge",
+                "description": "Converts the dialog to a large dialog."
+            },
+            {
+                "name": "zui-dialog-full",
+                "description": "Converts the dialog to a full screen dialog."
+            },
+            {
+                "name": "zui-dialog-header",
+                "description": "Defines the HTML element as the header of the dialog."
+            },
+            {
+                "name": "zui-dialog-footer",
+                "description": "Defines the HTML element as the footer of the dialog."
+            },
+            {
+                "name": "zui-dialog-footer-left",
+                "description": "The left side of the footer, can be used to display hints."
+            },
+            {
+                "name": "zui-dialog-footer-right",
+                "description": "The right side of the footer, the place where the buttons are."
+            },
+            {
+                "name": "zui-dialog-hint",
+                "description": "The representation of a hint."
+            },
+            {
+                "name": "zui-dialog-page",
+                "description": "The representation of a page."
+            },
+            {
+                "name": "zui-dialog-page-body",
+                "description": "The container that contains the panels on a page."
+            },
+            {
+                "name": "zui-dialog-menu",
+                "description": "The element that contains the menu for a page."
+            },
+            {
+                "name": "zui-dialog-panel",
+                "description": "The element that contains the content of a panel."
+            }
         ]
     },
     "js": {
         "events": [
+            {
+                "name": "zui-dialog-button-clicked",
+                "description": "Called when a button in the dialog is clicked."
+            },
+            {
+                "name": "zui-dialog-button-cancel-clicked",
+                "description": "Called when the cancel button is clicked."
+            },
+            {
+                "name": "zui-dialog-button-next-clicked",
+                "description": "Called when the next button is clicked."
+            },
+            {
+                "name": "zui-dialog-button-previous-clicked",
+                "description": "Called when the previous button is clicked."
+            },
+            {
+                "name": "zui-dialog-closing",
+                "description": "Called before the dialog is closed."
+            },
+            {
+                "name": "zui-dialog-closed",
+                "description": "Called after the dialog has been closed."
+            },
+            {
+                "name": "zui-dialog-panel-activating",
+                "description": "Called when a panel is about to become active."
+            },
+            {
+                "name": "zui-dialog-panel-activated",
+                "description": "Called when a panel has been made active."
+            },
+            {
+                "name": "zui-dialog-panel-deactivating",
+                "description": "Called when a panel is about to be deactivated."
+            },
+            {
+                "name": "zui-dialog-panel-deactivated",
+                "description": "Called when a panel has been deactivated."
+            },
+            {
+                "name": "zui-dialog-opening",
+                "description": "Called when a dialog is about to be opened."
+            },
+            {
+                "name": "zui-dialog-opened",
+                "description": "Called when a dialog has been opened."
+            },
+            {
+                "name": "zui-dialog-centered",
+                "description": "Called when a dialog has been centered in the mididle of the screen. Called after zui-dialog-opened."
+            }
         ],
         "methods": [
         ]

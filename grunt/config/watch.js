@@ -7,7 +7,7 @@ module.exports = {
         files: ['Gruntfile.js', 'grunt/**/*.js']
     },
     docs: {
-        files: ["docs/**/*.html"],
+        files: ["docs/**/*.html", "docs/**/*.js"],
         tasks: ['docs'],
         options: {
             livereload: true

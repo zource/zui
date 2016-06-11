@@ -1,26 +1,30 @@
 function initDialog() {
-    $(".dialog").on("dialog-opening", function() {
-        console.log("A dialog is opening.");
-    });
-
-    $(".dialog").on("dialog-opened", function() {
-        console.log("A dialog is opened.");
-    });
-
-    $("#example-dialog").on("dialog-opened", function() {
+    $("#zui-docs-example-dialog").on("zui-dialog-opened", function() {
         console.log("The example-dialog is opened.");
     });
 
-    $(".dialog").on("dialog-closed", function() {
+    $(".dialog").on("zui-dialog-opening", function() {
+        console.log("A dialog is opening.");
+    });
+
+    $(".dialog").on("zui-dialog-opened", function() {
+        console.log("A dialog is opened.");
+    });
+
+    $(".dialog").on("zui-dialog-closing", function() {
+        console.log("A dialog is closing.");
+    });
+
+    $(".dialog").on("zui-dialog-closed", function() {
         console.log("A dialog is closed.");
     });
 
-    $(".dialog").on("dialog-button-clicked", function() {
+    $(".dialog").on("zui-dialog-button-clicked", function() {
         console.log("A dialog button is clicked.");
     });
 
-    $(".dialog").on("dialog-page-activated", function(e, dialogs, index) {
-        console.log("A dialog page is activated: ", e, dialogs, index);
+    $(".dialog").on("zui-dialog-panel-activated", function(e, dialogs, index) {
+        console.log("A dialog panel is activated: ", e, dialogs, index);
     });
 
     $("#createCustomDialog").on("click", function() {
@@ -101,6 +105,7 @@ function initDialog() {
         zui.Dialog.create({
             "title": "My Awesome AJAX Dialog",
             "hint": "This is an awesome hint.",
+            "class": "zui-dialog-medium",
             "buttons": [
                 {
                     "label": "Close",
