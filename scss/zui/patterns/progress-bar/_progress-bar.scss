@@ -1,4 +1,6 @@
-.status-bar {
+@import "variables";
+
+#{$zui-progress-bar-selector} {
     -webkit-animation: progressSlide 1s infinite linear;
     animation: progressSlide 1s infinite linear;
     background-color: #E9E9E9;
@@ -13,7 +15,7 @@
     transform: skewX(45deg);
     width: 100%;
 
-    .status-bar-value {
+    #{$zui-progress-bar-selector-value} {
         background: $zui-color-primary;
         border-radius: 3px;
         display: block;

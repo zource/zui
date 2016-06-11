@@ -1,0 +1,9 @@
+/// The selector for the progress bar.
+/// @type string
+/// @pattern progress-bar
+$zui-progress-bar-selector: ".zui-progress-bar" !default;
+
+/// The selector for the progress bar value element.
+/// @type string
+/// @pattern progress-bar
+$zui-progress-bar-selector-value: ".zui-progress-bar-value" !default;

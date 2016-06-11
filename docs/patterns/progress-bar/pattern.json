@@ -1,0 +1,26 @@
+{
+    "name": "Progress Bar",
+    "examples": [
+        "Progress Bar"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-progress-bar",
+                "description": "The element that represents the progress bar."
+            },
+            {
+                "name": "zui-progress-bar-value",
+                "description": "The element that represents the value of the progress bar."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}
