@@ -1,0 +1,18 @@
+<p>
+    Press <code>Shift+?</code> to show an alert.
+</p>
+
+<p>
+    Press <code>w</code>, <code>t</code> to redirect to http://waltertamboer.nl
+</p>
+
+<script>
+    // A bit hacky but there is currently no way to work around the fact that ZUI is loaded after this script.
+    setTimeout(function() {
+        zui.Shortcut.on("Shift+?").invoke(function () {
+            alert("I'll be happy to explain things to you!");
+        });
+
+        zui.Shortcut.on("w, t").redirect('http://waltertamboer.nl');
+    }, 1000);
+</script>

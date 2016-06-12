@@ -14,6 +14,7 @@ define([
     "zui/patterns/id",
     "zui/patterns/select-container",
     "zui/patterns/note",
+    "zui/patterns/shortcut",
     "zui/patterns/splitter",
     "zui/patterns/tabs",
     "zui/patterns/table",
@@ -35,6 +36,7 @@ define([
     zui.Note.bind();
     zui.SelectContainer.bind();
     zui.Screen.bind();
+    zui.Shortcut.bind();
     zui.Splitter.bind();
     zui.Tabs.bind();
     zui.Table.bind();
