@@ -164,6 +164,10 @@
         padding: 20px;
     }
 
+    #{$zui-dialog-selector-panel-no-padding} {
+        padding: 0px;
+    }
+
     #{$zui-dialog-selector-panel}[aria-hidden='true'] {
         display: none;
     }

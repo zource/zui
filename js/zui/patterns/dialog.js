@@ -122,20 +122,11 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 });
 
                 $("body").on("click", "[data-zui-dialog-trigger]", function() {
-                    var selector, element;
+                    var selector = $(this).data("zui-dialog-trigger");
 
-                    try {
-                        selector = $(this).data("zui-dialog-trigger");
-                        element = $(selector);
-                    } catch (e) {
-
-                    } finally {
-                        if (element && element.length) {
-                            zui.Dialog.open(this, element);
-                        } else {
-                            zui.Dialog.load(this, selector);
-                        }
-                    }
+                    zui.Dialog.openSelector(selector, function(dialog) {
+                        console.log(dialog);
+                    });
 
                     return false;
                 });
@@ -150,7 +141,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
             });
         },
 
-        load: function(target, url) {
+        load: function(target, url, callback) {
             $.ajax({
                 "type": "get",
                 "url": url,
@@ -159,6 +150,10 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                     var dialog = zui.Dialog.open(target, element);
 
                     dialog.data("zui-dialog-remove-on-close", "true");
+
+                    if (callback) {
+                        callback(dialog);
+                    }
                 }
             });
         },
@@ -230,6 +225,26 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
             updateDialogFooter(currentDialog);
 
             return currentDialog;
+        },
+
+        openSelector: function(selector, callback) {
+            var element, dialog;
+
+            try {
+                element = $(selector);
+            } catch (e) {
+
+            } finally {
+                if (element && element.length) {
+                    dialog = zui.Dialog.open(this, element);
+
+                    if (callback) {
+                        callback(dialog);
+                    }
+                } else {
+                    zui.Dialog.load(this, selector, callback);
+                }
+            }
         },
 
         create: function(options) {

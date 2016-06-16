@@ -83,6 +83,11 @@ $zui-dialog-selector-menu: ".zui-dialog-menu" !default;
 /// @pattern dialog
 $zui-dialog-selector-panel: ".zui-dialog-panel" !default;
 
+/// The selector for the panel that should not have padding.
+/// @type string
+/// @pattern dialog
+$zui-dialog-selector-panel-no-padding: ".zui-dialog-panel-no-padding" !default;
+
 /// The height of a tiny dialog.
 /// @type size
 /// @pattern dialog

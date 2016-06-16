@@ -126,6 +126,10 @@
             {
                 "name": "zui-dialog-panel",
                 "description": "The element that contains the content of a panel."
+            },
+            {
+                "name": "zui-dialog-panel-no-padding",
+                "description": "Disables the padding on the panel."
             }
         ]
     },

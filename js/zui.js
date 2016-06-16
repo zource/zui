@@ -11,6 +11,7 @@ define([
     "zui/patterns/button",
     "zui/patterns/dialog",
     "zui/patterns/dropdown",
+    "zui/patterns/file-selection",
     "zui/patterns/id",
     "zui/patterns/select-container",
     "zui/patterns/note",
@@ -33,6 +34,7 @@ define([
     zui.Button.bind();
     zui.Dialog.bind();
     zui.Dropdown.bind();
+    zui.FileSelection.bind();
     zui.Note.bind();
     zui.SelectContainer.bind();
     zui.Screen.bind();

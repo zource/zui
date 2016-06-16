@@ -1,0 +1,19 @@
+{
+    "name": "File Selection",
+    "wip": true,
+    "examples": [
+        "File Selection"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

@@ -59,7 +59,14 @@
 
                         <ul class="zui-nav">
                             {% for pattern in patterns %}
-                            <li><a href="{{ pattern.htmlName }}.html">{{ pattern.name }}</a></li>
+                            <li>
+                                <a href="{{ pattern.htmlName }}.html">
+                                    {{ pattern.name }}
+                                    {% if pattern.wip %}
+                                    <span class="zui-status zui-status-blue zui-status-subtle">WIP</span>
+                                    {% endif %}
+                                </a>
+                            </li>
                             {% endfor %}
                         </ul>
                     </div>

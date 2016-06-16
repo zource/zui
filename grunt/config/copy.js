@@ -24,6 +24,15 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 src: [
+                    '<%= paths.docs %>/assets/img/avatars/*'
+                ],
+                dest: '<%= paths.docs %>/build/img/avatars/',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                flatten: true,
+                src: [
                     '<%= paths.docs %>/assets/js/*.js',
                     '<%= paths.dist %>/js/*.js'
                 ],
