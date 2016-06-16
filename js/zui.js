@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-06-12T17:45Z
+ * Date: 2016-06-16T17:45Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0 a945036558c89b6921a850ab62026e15d916ae02"
+        version: "0.0.0 0273111584b5993f451032cb51c7d001b72793e2"
     };
 
     zui.log = function() {
@@ -433,20 +433,11 @@
                 });
 
                 $("body").on("click", "[data-zui-dialog-trigger]", function() {
-                    var selector, element;
+                    var selector = $(this).data("zui-dialog-trigger");
 
-                    try {
-                        selector = $(this).data("zui-dialog-trigger");
-                        element = $(selector);
-                    } catch (e) {
-
-                    } finally {
-                        if (element && element.length) {
-                            zui.Dialog.open(this, element);
-                        } else {
-                            zui.Dialog.load(this, selector);
-                        }
-                    }
+                    zui.Dialog.openSelector(selector, function(dialog) {
+                        console.log(dialog);
+                    });
 
                     return false;
                 });
@@ -461,7 +452,7 @@
             });
         },
 
-        load: function(target, url) {
+        load: function(target, url, callback) {
             $.ajax({
                 "type": "get",
                 "url": url,
@@ -470,6 +461,10 @@
                     var dialog = zui.Dialog.open(target, element);
 
                     dialog.data("zui-dialog-remove-on-close", "true");
+
+                    if (callback) {
+                        callback(dialog);
+                    }
                 }
             });
         },
@@ -541,6 +536,26 @@
             updateDialogFooter(currentDialog);
 
             return currentDialog;
+        },
+
+        openSelector: function(selector, callback) {
+            var element, dialog;
+
+            try {
+                element = $(selector);
+            } catch (e) {
+
+            } finally {
+                if (element && element.length) {
+                    dialog = zui.Dialog.open(this, element);
+
+                    if (callback) {
+                        callback(dialog);
+                    }
+                } else {
+                    zui.Dialog.load(this, selector, callback);
+                }
+            }
         },
 
         create: function(options) {
@@ -780,6 +795,28 @@
             } else {
                 zui.Dropdown.open(activatingElement, parentToElement);
             }
+        }
+    };
+
+    
+
+    zui.FileSelection = {
+        bind: function() {
+            $("body").on("click", "[data-zui-file-selection-trigger]", function() {
+                var trigger = this, selector = $(this).data("zui-file-selection-trigger");
+
+                zui.Dialog.openSelector(selector, function(dialog) {
+                    dialog.data("triggered-by", trigger);
+                    console.log(this);
+                });
+
+                return false;
+            });
+
+            $("body").on("click", ".zui-file-selection li img", function() {
+                console.log(this);
+                return false;
+            });
         }
     };
 
@@ -1843,6 +1880,7 @@
     zui.Button.bind();
     zui.Dialog.bind();
     zui.Dropdown.bind();
+    zui.FileSelection.bind();
     zui.Note.bind();
     zui.SelectContainer.bind();
     zui.Screen.bind();
