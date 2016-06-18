@@ -3,10 +3,8 @@
     "wip": true,
     "examples": [
         "File Selection",
-        "Upload",
-        "Toolbar",
-        "AJAX",
-        "Label"
+        "File Label",
+        "Toolbar"
     ],
     "html": {
         "attributes": [
