@@ -1,0 +1,20 @@
+[
+    {
+        "label": "Item 1",
+        "last_modified": "2016-06-19 22:19",
+        "preview": "img/avatars/a.jpg",
+        "explorer": "img/avatars/a.jpg"
+    },
+    {
+        "label": "Item 2",
+        "last_modified": "2016-06-19 22:19",
+        "preview": "img/avatars/b.jpg",
+        "explorer": "img/avatars/b.jpg"
+    },
+    {
+        "label": "Item 3",
+        "last_modified": "2016-06-19 22:19",
+        "preview": "img/avatars/c.jpg",
+        "explorer": "img/avatars/c.jpg"
+    }
+]

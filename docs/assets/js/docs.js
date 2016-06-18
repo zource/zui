@@ -220,6 +220,43 @@ function initBlanket() {
     });
 }
 
+function initFileSelection() {
+    $("body").on("click", "[data-zui-file-selection-trigger]", function() {
+        var trigger = this, selector = $(this).data("zui-file-selection-trigger");
+
+        zui.Dialog.openSelector(selector, function(dialog) {
+            dialog.data("triggered-by", trigger);
+        });
+
+        return false;
+    });
+
+    $("body").on("zui-file-selection-selected", function(e, item) {
+        console.log('File selection selected!', e, item);
+    });
+
+    $("body").on("click", ".zui-file-selection li img", function() {
+        var button = $(this).closest("button");
+        var triggeredBy = $(this).closest(".zui-file-selection").data("triggered-by");
+        var triggeredByContainer = $(triggeredBy).closest(".zui-file-selection-trigger-container");
+
+        var selectionThumb = $(".zui-file-selection-trigger-thumb", triggeredByContainer);
+        selectionThumb.attr("src", $(this).attr("src"));
+
+        var selectionLabel = $(".zui-file-selection-trigger-label", triggeredByContainer);
+        selectionLabel.text(button.find("div").text());
+
+        var selectionField = $("input[type=hidden]", triggeredByContainer);
+        selectionField.val(button.data("zui-file-selection-id"));
+
+        $("body").trigger("zui-file-selection-selected", [this]);
+
+        zui.Dialog.close();
+
+        return false;
+    });
+}
+
 $(document).ready(function() {
     initDialog();
     initTabs();
@@ -228,4 +265,6 @@ $(document).ready(function() {
     initPage();
     initSelectContainer();
     initBlanket();
+
+    initFileSelection();
 });

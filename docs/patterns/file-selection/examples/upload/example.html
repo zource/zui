@@ -1,0 +1,63 @@
+<div class="zui-file-selection-trigger-container" data-zui-file-selection-trigger="#file-selection-dialog-upload">
+    <input type="hidden" value="">
+    <h3 class="zui-file-selection-trigger-label">File 1</h3>
+    <p>
+        <img src="img/avatars/a.jpg" alt="" tabindex="1" class="zui-file-selection-trigger-thumb">
+    </p>
+</div>
+
+<div class="zui-file-selection zui-dialog zui-dialog-small" id="file-selection-dialog-upload">
+    <div class="zui-dialog-header">
+        <h2>Select File</h2>
+        <i class="zui-icon zui-icon-x"></i>
+    </div>
+
+    <div class="zui-dialog-page">
+        <div class="zui-dialog-page-body">
+            <div class="zui-dialog-panel zui-dialog-panel-no-padding">
+                <form>
+                    <div class="zui-button-file">
+                        <input type="file" required/>
+
+                        <span>
+                            <i class="zui-icon zui-icon-upload"></i>
+                            Upload
+                        </span>
+                    </div>
+
+                    <div class="zui-error">Something went wrong</div>
+                </form>
+
+                <ul>
+                    <li title="Select this file">
+                        <button>
+                            <img src="img/avatars/a.jpg" height="48" width="48" alt="Select this file">
+                        </button>
+                    </li>
+                    <li title="Select this file">
+                        <button>
+                            <img src="img/avatars/b.jpg" height="48" width="48" alt="Select this file">
+                        </button>
+                    </li>
+                    <li title="Select this file">
+                        <button>
+                            <img src="img/avatars/c.jpg" height="48" width="48" alt="Select this file">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="zui-dialog-footer">
+        <div class="zui-dialog-footer-left">
+            <div class="zui-dialog-hint">
+                Click on the thumbnail to select the file.
+            </div>
+        </div>
+
+        <div class="zui-dialog-footer-right">
+            <a href="#" data-zui-dialog-button="cancel">Cancel</a>
+        </div>
+    </div>
+</div>

@@ -151,10 +151,10 @@ module.exports = function (grunt) {
             pattern.htmlName = pattern.name.toLowerCase().replace(' ', '-');
         });
 
+        var templatePattern = swig.compileFile(options.templatesDir + '/pattern.html');
         patterns.forEach(function (pattern) {
             pattern.htmlName = pattern.name.toLowerCase().replace(' ', '-');
             var destPath = options.dest + "/" + pattern.htmlName + ".html";
-            var template = swig.compileFile(options.templatesDir + '/pattern.html');
             var templateVariables = {
                 page: {
                     title: pattern.name
@@ -163,7 +163,7 @@ module.exports = function (grunt) {
                 pattern: pattern
             };
 
-            grunt.file.write(destPath, template(templateVariables));
+            grunt.file.write(destPath, templatePattern(templateVariables));
         });
 
         grunt.file.recurse(options.pagesDir, function (abspath, rootdir, subdir, filename) {

@@ -2,7 +2,11 @@
     "name": "File Selection",
     "wip": true,
     "examples": [
-        "File Selection"
+        "File Selection",
+        "Upload",
+        "Toolbar",
+        "AJAX",
+        "Label"
     ],
     "html": {
         "attributes": [
