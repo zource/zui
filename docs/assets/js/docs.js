@@ -231,7 +231,7 @@ function initFileSelection() {
         return false;
     });
 
-    $("body").on("keyup", ".zui-file-selection-toolbar input[type=text]", function(e) {
+    $("body").on("keyup", ".zui-file-selection-toolbar input[type=text]", function() {
         var query = $(this).val().toLowerCase();
         var items = $(this).closest(".zui-dialog-panel").find("li");
 
@@ -247,7 +247,7 @@ function initFileSelection() {
     });
 
     $("body").on("zui-file-selection-selected", function(e, item) {
-        console.log('File selection selected!', e, item);
+        console.log("File selection selected!", e, item);
     });
 
     $("body").on("click", ".zui-file-selection li img", function() {
