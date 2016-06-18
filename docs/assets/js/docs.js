@@ -231,6 +231,21 @@ function initFileSelection() {
         return false;
     });
 
+    $("body").on("keyup", ".zui-file-selection-toolbar input[type=text]", function(e) {
+        var query = $(this).val().toLowerCase();
+        var items = $(this).closest(".zui-dialog-panel").find("li");
+
+        items.each(function() {
+            var label = $("div", this).text().toLowerCase();
+
+            if (query !== "" && label.indexOf(query) === -1) {
+                $(this).hide();
+            } else {
+                $(this).show();
+            }
+        });
+    });
+
     $("body").on("zui-file-selection-selected", function(e, item) {
         console.log('File selection selected!', e, item);
     });
