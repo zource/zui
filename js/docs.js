@@ -220,6 +220,12 @@ function initBlanket() {
     });
 }
 
+function initFileSelection() {
+    $("body").on("zui-file-selection-selected", function(e, item) {
+        console.log("File selection selected!", e, item);
+    });
+}
+
 $(document).ready(function() {
     initDialog();
     initTabs();
@@ -228,4 +234,6 @@ $(document).ready(function() {
     initPage();
     initSelectContainer();
     initBlanket();
+
+    initFileSelection();
 });
