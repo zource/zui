@@ -1,6 +1,6 @@
 {
     "name": "File Selection",
-    "wip": true,
+    "wip": false,
     "examples": [
         "File Selection",
         "File Label",
