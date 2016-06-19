@@ -1,0 +1,14 @@
+[
+    {
+        "id": 444,
+        "label": "Uploaded 1",
+        "preview": "img/avatars/a.jpg",
+        "explorer": "img/avatars/a.jpg"
+    },
+    {
+        "id": 555,
+        "label": "Uploaded 2",
+        "preview": "img/avatars/b.jpg",
+        "explorer": "img/avatars/b.jpg"
+    }
+]

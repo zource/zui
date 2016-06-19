@@ -3,50 +3,64 @@
 #{$zui-dialog-selector}#{$zui-file-selection-selector} {
     height: 500px;
 
-    form {
-        border-bottom: $zui-dialog-border;
-        margin-bottom: 20px;
-        padding: 20px;
-        text-align: center;
-
-        .zui-error {
-            color: #FF0000;
-            margin-top: 10px;
-        }
-    }
-
-    .zui-dialog-panel ul {
+    ul.zui-file-selection-items{
         list-style-type: none;
         margin: 20px;
         padding: 0;
     }
 
-    .zui-file-selection-toolbar {
-        background: #FAFAFA;
-        border-bottom: $zui-dialog-border;
-        padding: 10px 20px;
-
-        .zui-button-file {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-        }
-    }
-
-    li {
-        display: inline-block;
+    .zui-file-selection-items li {
+        float: left;
         height: auto;
-        margin: 0px 10px 10px 0px;
-        width: 48px;
+        margin: 0px 10px 0px 0px;
+        width: $zui-file-selection-item-width;
     }
 
-    li button {
+    .zui-file-selection-items li button {
         background: none;
         border: 0;
         height: auto;
         margin: 0;
         padding: 0;
+
+        img {
+            width: $zui-file-selection-item-width;
+        }
+
+        .zui-file-selection-label {
+            overflow: hidden;
+            width: $zui-file-selection-item-width;
+        }
     }
+
+    .zui-file-selection-toolbar {
+        background: #FAFAFA;
+        border-bottom: $zui-dialog-border;
+        display: table;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .zui-file-selection-toolbar-left {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    .zui-file-selection-toolbar-right {
+        display: table-cell;
+        text-align: right;
+        vertical-align: top;
+        width: 50%;
+
+        form {
+            display: inline;
+        }
+    }
+}
+
+.zui-file-selection-upload-status {
+    display: none;
 }
 
 .zui-file-selection-trigger-thumb,

@@ -16,35 +16,49 @@
         <div class="zui-dialog-page-body">
             <div class="zui-dialog-panel zui-dialog-panel-no-padding">
                 <div class="zui-file-selection-toolbar">
-                    <input type="text" placeholder="Search query">
+                    <div class="zui-file-selection-toolbar-left">
+                        <input type="text" placeholder="Search query" tabindex="1">
+                    </div>
 
-                    <div class="zui-button-file">
-                        <input type="file" required/>
+                    <div class="zui-file-selection-toolbar-right">
+                        <form action="./file-selection-upload.json"
+                              method="post"
+                              enctype="multipart/form-data"
+                              data-zui-file-selection-upload-error="Failed to upload the file."
+                              data-zui-file-selection-upload-success="Successfully added the file.">
+                            <span class="zui-file-selection-upload-status">Failed to upload the file.</span>
+                            <button class="zui-button-file" tabindex="1">
+                                <input type="file" required/>
 
-                        <span>
-                            <i class="zui-icon zui-icon-upload"></i>
-                            Upload
-                        </span>
+                                <span>
+                                    <i class="zui-icon zui-icon-upload"></i>
+                                    Upload
+                                </span>
+                            </button>
+                        </form>
                     </div>
                 </div>
 
-                <ul>
+                <ul class="zui-file-selection-items">
                     <li title="Select this file">
-                        <button tabindex="1" data-zui-file-selection-id="111" data-zui-file-selection-preview="img/avatars/a.jpg">
-                            <img src="img/avatars/a.jpg" height="48" width="48" alt="Select this file">
-                            <div>File 1</div>
+                        <button tabindex="1" data-zui-file-selection-id="111"
+                                data-zui-file-selection-preview="img/avatars/a.jpg">
+                            <img src="img/avatars/a.jpg" alt="Select this file">
+                            <div class="zui-file-selection-label">File 1</div>
                         </button>
                     </li>
                     <li title="Select this file">
-                        <button tabindex="1" data-zui-file-selection-id="222" data-zui-file-selection-preview="img/avatars/b.jpg">
-                            <img src="img/avatars/b.jpg" height="48" width="48" alt="Select this file">
-                            <div>File 2</div>
+                        <button tabindex="1" data-zui-file-selection-id="222"
+                                data-zui-file-selection-preview="img/avatars/b.jpg">
+                            <img src="img/avatars/b.jpg" alt="Select this file">
+                            <div class="zui-file-selection-label">File 2</div>
                         </button>
                     </li>
                     <li title="Select this file">
-                        <button tabindex="1" data-zui-file-selection-id="333" data-zui-file-selection-preview="img/avatars/c.jpg">
-                            <img src="img/avatars/c.jpg" height="48" width="48" alt="Select this file">
-                            <div>File 3</div>
+                        <button tabindex="1" data-zui-file-selection-id="333"
+                                data-zui-file-selection-preview="img/avatars/c.jpg">
+                            <img src="img/avatars/c.jpg" alt="Select this file">
+                            <div class="zui-file-selection-label">File 3</div>
                         </button>
                     </li>
                 </ul>
