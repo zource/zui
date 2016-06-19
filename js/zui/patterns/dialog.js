@@ -185,6 +185,8 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
         close: function(target) {
             if (currentDialog) {
+                $("body").css("overflow", $("body").data("overflow-backup")).data("overflow-backup", null);
+
                 currentDialog.trigger("zui-dialog-closing", [target, this]);
 
                 if (currentDialog.data("zui-dialog-remove-on-close") === "true") {
@@ -223,6 +225,10 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
             currentDialog.trigger("zui-dialog-centered", [target, this]);
 
             updateDialogFooter(currentDialog);
+
+            // Disable scrolling on the body
+            var overflow = $("body").css("overflow");
+            $("body").data("overflow-backup", overflow).css("overflow", "hidden");
 
             return currentDialog;
         },
