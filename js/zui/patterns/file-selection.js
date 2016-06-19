@@ -34,7 +34,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 var triggeredByContainer = $(triggeredBy).closest(".zui-file-selection-trigger-container");
 
                 var selectionThumb = $(".zui-file-selection-trigger-thumb", triggeredByContainer);
-                selectionThumb.attr("src", $("img", this).attr("src"));
+                selectionThumb.attr("src", button.data("zui-file-selection-preview"));
 
                 var selectionLabel = $(".zui-file-selection-trigger-label", triggeredByContainer);
                 selectionLabel.text(button.find("div").text());
