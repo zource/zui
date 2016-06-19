@@ -224,6 +224,14 @@ function initFileSelection() {
     $("body").on("zui-file-selection-selected", function(e, item) {
         console.log("File selection selected!", e, item);
     });
+
+    $("body").on("zui-file-selection-upload-starting", function(e, jqXHR, settings) {
+        console.log("File upload starting!", e, jqXHR, settings);
+    });
+
+    $("body").on("zui-file-selection-upload-complete", function(e, jqXHR) {
+        console.log("File upload complete!", e, jqXHR);
+    });
 }
 
 $(document).ready(function() {

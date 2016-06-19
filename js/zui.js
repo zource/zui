@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-06-19T11:14Z
+ * Date: 2016-06-19T15:22Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0 c23921d2cefeb30bcb1178e887fa32147d0b08d6"
+        version: "0.0.0 d63294b669e7000a1185546a3fd9f48b63688c27"
     };
 
     zui.log = function() {
@@ -846,6 +846,95 @@
                 zui.Dialog.close();
 
                 return false;
+            });
+
+            $("body").on("submit", ".zui-file-selection-toolbar form", function(e) {
+                $("button", this).click();
+                e.preventDefault();
+                return false;
+            });
+
+            $("body").on("zui-file-selection-upload-complete", function(e, form, jqXHR) {
+                var status = $(".zui-file-selection-upload-status", form),
+                    msgError = form.data("zui-file-selection-upload-error"),
+                    msgSuccess = form.data("zui-file-selection-upload-success");
+
+                if (jqXHR.status === 200) {
+                    status.show().text(msgSuccess);
+                } else {
+                    status.show().text(msgError);
+                }
+
+                setTimeout(function() {
+                    status.fadeOut();
+                }, 1000);
+            });
+
+            $("body").on("zui-file-selection-upload-success", function(e, form, data) {
+                var ul, item, template, populate;
+
+                populate = function(item, data) {
+                    console.log($("button", item));
+                    $("button", item).attr({
+                        "data-zui-file-selection-id": data.id,
+                        "data-zui-file-selection-preview": data.preview
+                    });
+
+                    $(".zui-file-selection-label", item).text(data.label);
+                    $("img", item).attr("src", data.explorer);
+                };
+
+                ul = $(".zui-file-selection-items", form.closest(".zui-dialog-panel"));
+                template = $("li:first", ul);
+
+                if (data.length) {
+                    for (var i = 0; i < data.length; ++i) {
+                        item = template.clone();
+
+                        populate(item, data[i]);
+
+                        ul.append(item);
+                    }
+                } else if (data.explorer) {
+                    item = template.clone();
+
+                    populate(item, data);
+
+                    ul.append(item);
+                }
+            });
+
+            $("body").on("change", ".zui-file-selection-toolbar input[type=file]", function() {
+                var form = $(this.closest("form")),
+                    formData = new FormData(),
+                    files = this.files;
+
+                for (var i = 0; i < files.length; i++) {
+                    var file = files[i];
+
+                    if (!file.type.match("image.*")) {
+                        continue;
+                    }
+
+                    formData.append("file[]", file, file.name);
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: form.attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    beforeSend: function(jqXHR, settings) {
+                        $("body").trigger("zui-file-selection-upload-starting", [form, jqXHR, settings]);
+                    },
+                    complete: function(jqXHR) {
+                        $("body").trigger("zui-file-selection-upload-complete", [form, jqXHR]);
+                    },
+                    success: function(data, textStatus, jqXHR) {
+                        $("body").trigger("zui-file-selection-upload-success", [form, data, textStatus, jqXHR]);
+                    }
+                });
             });
         }
     };

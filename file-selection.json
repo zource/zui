@@ -1,17 +1,20 @@
 [
     {
+        "id": 111,
         "label": "Item 1",
         "last_modified": "2016-06-19 22:19",
         "preview": "img/avatars/a.jpg",
         "explorer": "img/avatars/a.jpg"
     },
     {
+        "id": 222,
         "label": "Item 2",
         "last_modified": "2016-06-19 22:19",
         "preview": "img/avatars/b.jpg",
         "explorer": "img/avatars/b.jpg"
     },
     {
+        "id": 333,
         "label": "Item 3",
         "last_modified": "2016-06-19 22:19",
         "preview": "img/avatars/c.jpg",
