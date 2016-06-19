@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-06-18T18:02Z
+ * Date: 2016-06-19T11:14Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0 370bdcd9c2abd7d08dd25ba40017a4447ccfd30a"
+        version: "0.0.0 c23921d2cefeb30bcb1178e887fa32147d0b08d6"
     };
 
     zui.log = function() {
@@ -833,7 +833,7 @@
                 var triggeredByContainer = $(triggeredBy).closest(".zui-file-selection-trigger-container");
 
                 var selectionThumb = $(".zui-file-selection-trigger-thumb", triggeredByContainer);
-                selectionThumb.attr("src", $("img", this).attr("src"));
+                selectionThumb.attr("src", button.data("zui-file-selection-preview"));
 
                 var selectionLabel = $(".zui-file-selection-trigger-label", triggeredByContainer);
                 selectionLabel.text(button.find("div").text());
