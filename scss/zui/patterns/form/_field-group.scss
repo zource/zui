@@ -1,0 +1,50 @@
+.zui-field-group {
+    @include zui-box-sizing(border-box);
+
+    clear: both;
+    padding: 4px 0 4px 145px;
+    position: relative;
+    margin: 1px 0;
+    width: 100%;
+
+    &:after, 
+        &:before {
+        content: " ";
+        display: table;
+    }
+
+    .zui-error {
+        clear: both;
+        color: #D04437;
+        display: block;
+        margin: 5px 0 0;
+    }
+
+    .zui-description {
+        color: #707070;
+        font-size: 12px;
+        line-height: 1.66666666666667;
+        margin: 5px 0 0;
+    }
+
+    label,
+    span.zui-form-label {
+        color: #707070;
+        cursor: $zui-cursor-pointer-value;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: -145px;
+        position: relative;
+        text-align: right;
+        width: 130px;
+        word-wrap: break-word;
+    }
+
+    .zui-field-group-inner label {
+        @include zui-box-sizing(border-box);
+
+        float: none;
+        margin-left: 0;
+    }
+}
