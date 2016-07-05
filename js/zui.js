@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-06-19T15:22Z
+ * Date: 2016-07-05T19:15Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0 d63294b669e7000a1185546a3fd9f48b63688c27"
+        version: "0.0.0 efd00dc310147552cf9927a46c5d8441784e0963"
     };
 
     zui.log = function() {
@@ -496,6 +496,8 @@
 
         close: function(target) {
             if (currentDialog) {
+                $("body").css("overflow", $("body").data("overflow-backup")).data("overflow-backup", null);
+
                 currentDialog.trigger("zui-dialog-closing", [target, this]);
 
                 if (currentDialog.data("zui-dialog-remove-on-close") === "true") {
@@ -534,6 +536,10 @@
             currentDialog.trigger("zui-dialog-centered", [target, this]);
 
             updateDialogFooter(currentDialog);
+
+            // Disable scrolling on the body
+            var overflow = $("body").css("overflow");
+            $("body").data("overflow-backup", overflow).css("overflow", "hidden");
 
             return currentDialog;
         },

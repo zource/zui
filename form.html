@@ -613,21 +613,26 @@
         <div role="tabpanel" aria-hidden="true" id="tab-example-checkbox" class="zui-tabs-pane">
             <div class="zui-example">
                 <form>
-    <fieldset class="zui-group">
-        <legend><span>Checkboxes</span></legend>
-        <div class="checkbox">
-            <input class="checkbox" type="checkbox" name="checkBoxA" id="checkBoxA">
-            <label for="checkBoxA">Checkbox A</label>
+    <div class="zui-field-group">
+        <span class="zui-form-label">Checkboxes</span>
+
+        <div class="zui-field-group-inner">
+            <div>
+                <input type="checkbox" name="checkBoxA" id="checkBoxA">
+                <label for="checkBoxA">Checkbox A</label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkBoxB" id="checkBoxB">
+                <label for="checkBoxB">Checkbox B</label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkBoxC" id="checkBoxC">
+                <label for="checkBoxC">Checkbox C</label>
+            </div>
         </div>
-        <div class="checkbox">
-            <input class="checkbox" type="checkbox" name="checkBoxB" id="checkBoxB">
-            <label for="checkBoxB">Checkbox B</label>
-        </div>
-        <div class="checkbox">
-            <input class="checkbox" type="checkbox" name="checkBoxC" id="checkBoxC">
-            <label for="checkBoxC">Checkbox C</label>
-        </div>
-    </fieldset>
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
 </form>
 
             </div>
@@ -636,21 +641,26 @@
         <div role="tabpanel" aria-hidden="true" id="tab-example-radio" class="zui-tabs-pane">
             <div class="zui-example">
                 <form>
-    <fieldset class="zui-group">
-        <legend><span>Radio buttons</span></legend>
-        <div class="radio">
-            <input class="radio" type="radio" name="radioBox" id="radioBoxA" checked="checked">
-            <label for="radioBoxA">Radio box A</label>
+    <div class="zui-field-group">
+        <span class="zui-form-label">Radio buttons</span>
+
+        <div class="zui-field-group-inner">
+            <div>
+                <input type="radio" name="radioBox" id="radioBoxA" checked="checked">
+                <label for="radioBoxA">Radio box A</label>
+            </div>
+            <div>
+                <input type="radio" name="radioBox" id="radioBoxB">
+                <label for="radioBoxB">Radio box B</label>
+            </div>
+            <div>
+                <input type="radio" name="radioBox" id="radioBoxC">
+                <label for="radioBoxC">Radio box C</label>
+            </div>
         </div>
-        <div class="radio">
-            <input class="radio" type="radio" name="radioBox" id="radioBoxB">
-            <label for="radioBoxB">Radio box B</label>
-        </div>
-        <div class="radio">
-            <input class="radio" type="radio" name="radioBox" id="radioBoxC">
-            <label for="radioBoxC">Radio box C</label>
-        </div>
-    </fieldset>
+        <div class="zui-description">This is a description of the element.</div>
+        <div class="zui-error">This is an error message for the element.</div>
+    </div>
 </form>
 
             </div>
@@ -804,42 +814,52 @@
         
         <div role="tabpanel" aria-hidden="true" id="tab-markup-checkbox" class="zui-tabs-pane">
 <div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">legend</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Checkboxes<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">legend</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxA"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxA"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxA"</span>&gt;</span>Checkbox A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-form-label"</span>&gt;</span>Checkboxes<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group-inner"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxA"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxA"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxA"</span>&gt;</span>Checkbox A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxB"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxB"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxB"</span>&gt;</span>Checkbox B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxC"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxC"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxC"</span>&gt;</span>Checkbox C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxB"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxB"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxB"</span>&gt;</span>Checkbox B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkBoxC"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkBoxC"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkBoxC"</span>&gt;</span>Checkbox C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-description"</span>&gt;</span>This is a description of the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-error"</span>&gt;</span>This is an error message for the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
 </code></pre></div>
         </div>
         
         <div role="tabpanel" aria-hidden="true" id="tab-markup-radio" class="zui-tabs-pane">
 <div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">legend</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Radio buttons<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">legend</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxA"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxA"</span>&gt;</span>Radio box A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-form-label"</span>&gt;</span>Radio buttons<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-field-group-inner"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxA"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxA"</span>&gt;</span>Radio box A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxB"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxB"</span>&gt;</span>Radio box B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxC"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxC"</span>&gt;</span>Radio box C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxB"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxB"</span>&gt;</span>Radio box B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radioBox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radioBoxC"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radioBoxC"</span>&gt;</span>Radio box C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-description"</span>&gt;</span>This is a description of the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-error"</span>&gt;</span>This is an error message for the element.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
 </code></pre></div>
         </div>
