@@ -1,5 +1,6 @@
 define([
     "jquery",
+    "select2",
     "zui/core/core",
     "zui/core/aria",
     "zui/core/events",
@@ -15,6 +16,7 @@ define([
     "zui/patterns/id",
     "zui/patterns/select-container",
     "zui/patterns/note",
+    "zui/patterns/select2",
     "zui/patterns/shortcut",
     "zui/patterns/splitter",
     "zui/patterns/tabs",
@@ -36,6 +38,7 @@ define([
     zui.Dropdown.bind();
     zui.FileSelection.bind();
     zui.Note.bind();
+    zui.Select2.bind();
     zui.SelectContainer.bind();
     zui.Screen.bind();
     zui.Shortcut.bind();

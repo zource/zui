@@ -1,0 +1,21 @@
+{
+    "name": "Select2",
+    "examples": [
+        "Single",
+        "Multiple",
+        "AJAX",
+        "Tags"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

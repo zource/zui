@@ -16,7 +16,8 @@ module.exports = function (grunt) {
         },
         rawText: {},
         paths: {
-            "jquery": "//code.jquery.com/jquery-2.0.0.min.js"
+            "jquery": "//code.jquery.com/jquery-2.0.0.min.js",
+            "select2": "../node_modules/select2/dist/js/select2"
         },
         onBuildWrite: convert
     };
