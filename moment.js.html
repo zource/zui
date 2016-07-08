@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Example - ZUI Documentation</title>
+        <title>Moment.js - ZUI Documentation</title>
 
         <link href="css/docs.css" rel="stylesheet">
     </head>
@@ -44,7 +44,7 @@
         <div class="zui-page-header">
             <div class="zui-page-header-inner">
                 <div class="zui-page-header-main">
-                    <h1>Example</h1>
+                    <h1>Moment.js</h1>
                 </div>
             </div>
         </div>
@@ -336,8 +336,8 @@
 
 
 <p>
-    The example pattern is used throughout this documentation all the time. It's a pattern that can be used, as the 
-    name implies, to display examples. It shows a border around the content that you want to display.
+    The moment.js pattern utilizes the moment.js library. More information about the library can be found here:
+    <a href="http://momentjs.com">http://momentjs.com</a>
 </p>
 
 
@@ -380,24 +380,11 @@
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             
-            <table class="zui-table-list zui-table-bordered zui-table-striped">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <td><code>zui-example</code></td>
-                    <td>
-                        The class that defines an HTML element as an example box.
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+            <div class="zui-alert zui-alert-subtle">
+                <p>
+                    There are no classes defined for this pattern.
+                </p>
+            </div>
             
         </div>
 
@@ -456,21 +443,139 @@
 <h2>Example</h2>
 
 
-<div class="zui-example">
-    <div class="zui-example"> 
-    This is an example box.
-</div>
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-format" role="tab" aria-selected="true"><strong>Format</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-relative" role="tab" aria-selected="false"><strong>Relative</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-time-element" role="tab" aria-selected="false"><strong>Time Element</strong></a>
+        </li>
+        
+    </ul>
 
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-format" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <p>
+    <span class="zui-momentjs" data-zui-momentjs-format="dddd YYYYMMDD"></span>
+</p>
+
+<p>
+    <span class="zui-momentjs" data-zui-momentjs-format="dddd YYYYMMDD" data-zui-momentjs-date="20111031" ></span>
+</p>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-relative" class="zui-tabs-pane">
+            <div class="zui-example">
+                <p>
+    <span class="zui-momentjs"
+          data-zui-momentjs-relative="true"
+          data-zui-momentjs-format="YYYYMMDD"
+          data-zui-momentjs-date="20111031"></span>
+</p>
+
+<p>
+    <span class="zui-momentjs"
+          data-zui-momentjs-relative="true"
+          data-zui-momentjs-format="YYYYMMDD"
+          data-zui-momentjs-start-of="day"></span>
+</p>
+
+<p>
+    <span class="zui-momentjs"
+          data-zui-momentjs-relative="true"
+          data-zui-momentjs-format="YYYYMMDD"
+          data-zui-momentjs-end-of="day"></span>
+</p>
+
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-time-element" class="zui-tabs-pane">
+            <div class="zui-example">
+                <time datetime="2001-05-15T19:00">May 15</time>
+
+            </div>
+        </div>
+        
+    </div>
 </div>
 
 
 <h2>Markup</h2>
 
 
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-example"</span>&gt;</span> 
-    This is an example box.
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-markup-format" role="tab" aria-selected="true"><strong>Format</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-relative" role="tab" aria-selected="false"><strong>Relative</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-time-element" role="tab" aria-selected="false"><strong>Time Element</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-markup-format" class="zui-tabs-pane zui-active-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-momentjs"</span> <span class="hljs-attribute">data-zui-momentjs-format</span>=<span class="hljs-value">"dddd YYYYMMDD"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-momentjs"</span> <span class="hljs-attribute">data-zui-momentjs-format</span>=<span class="hljs-value">"dddd YYYYMMDD"</span> <span class="hljs-attribute">data-zui-momentjs-date</span>=<span class="hljs-value">"20111031"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-relative" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-momentjs"</span>
+          <span class="hljs-attribute">data-zui-momentjs-relative</span>=<span class="hljs-value">"true"</span>
+          <span class="hljs-attribute">data-zui-momentjs-format</span>=<span class="hljs-value">"YYYYMMDD"</span>
+          <span class="hljs-attribute">data-zui-momentjs-date</span>=<span class="hljs-value">"20111031"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-momentjs"</span>
+          <span class="hljs-attribute">data-zui-momentjs-relative</span>=<span class="hljs-value">"true"</span>
+          <span class="hljs-attribute">data-zui-momentjs-format</span>=<span class="hljs-value">"YYYYMMDD"</span>
+          <span class="hljs-attribute">data-zui-momentjs-start-of</span>=<span class="hljs-value">"day"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-momentjs"</span>
+          <span class="hljs-attribute">data-zui-momentjs-relative</span>=<span class="hljs-value">"true"</span>
+          <span class="hljs-attribute">data-zui-momentjs-format</span>=<span class="hljs-value">"YYYYMMDD"</span>
+          <span class="hljs-attribute">data-zui-momentjs-end-of</span>=<span class="hljs-value">"day"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-time-element" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">time</span> <span class="hljs-attribute">datetime</span>=<span class="hljs-value">"2001-05-15T19:00"</span>&gt;</span>May 15<span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
 
 
 
