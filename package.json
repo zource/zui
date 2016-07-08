@@ -31,7 +31,6 @@
     "phantomjs": "^1.9.17",
     "requirejs": "2.1.15",
     "scss-comment-parser": "^0.7.0",
-    "select2": "^4.0.3",
     "semver": "^4.3.6",
     "shelljs": "^0.5.1",
     "swig": "^1.4.2"

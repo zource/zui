@@ -1,0 +1,20 @@
+{
+    "name": "Moment.js",
+    "examples": [
+        "Format",
+        "Relative",
+        "Time Element"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

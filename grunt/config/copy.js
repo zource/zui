@@ -34,6 +34,8 @@ module.exports = {
                 flatten: true,
                 src: [
                     '<%= paths.vendor %>/jquery/dist/jquery.min.js',
+                    '<%= paths.vendor %>/moment/min/moment.min.js',
+                    '<%= paths.vendor %>/select2/dist/js/select2.min.js',
                     '<%= paths.docs %>/assets/js/*.js',
                     '<%= paths.dist %>/js/*.js'
                 ],

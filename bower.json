@@ -15,7 +15,9 @@
   "homepage": "http://github.com/zource/zui-bower",
   "ignore": [],
   "dependencies": {
-    "jquery": "2.*"
+    "jquery": "3.*",
+    "moment": "^2.14.1",
+    "select2": "^4.0.3"
   },
   "devDependencies": {
     "jasmine-jquery": "~2.1.0"
