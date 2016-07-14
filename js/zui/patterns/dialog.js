@@ -124,9 +124,7 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 $("body").on("click", "[data-zui-dialog-trigger]", function() {
                     var selector = $(this).data("zui-dialog-trigger");
 
-                    zui.Dialog.openSelector(selector, function(dialog) {
-                        console.log(dialog);
-                    });
+                    zui.Dialog.openSelector(selector);
 
                     return false;
                 });

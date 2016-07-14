@@ -75,7 +75,6 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
                 var ul, item, template, populate;
 
                 populate = function(item, data) {
-                    console.log($("button", item));
                     $("button", item).attr({
                         "data-zui-file-selection-id": data.id,
                         "data-zui-file-selection-preview": data.preview
