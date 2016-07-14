@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-07-08T22:34Z
+ * Date: 2016-07-14T19:16Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0 f56eec647eec500d360dbf99bbb198ef24200eab"
+        version: "0.0.0 f0ac91c3f21d35345b3f31f3bc978da646d69a47"
     };
 
     zui.log = function() {
@@ -435,9 +435,7 @@
                 $("body").on("click", "[data-zui-dialog-trigger]", function() {
                     var selector = $(this).data("zui-dialog-trigger");
 
-                    zui.Dialog.openSelector(selector, function(dialog) {
-                        console.log(dialog);
-                    });
+                    zui.Dialog.openSelector(selector);
 
                     return false;
                 });
@@ -880,7 +878,6 @@
                 var ul, item, template, populate;
 
                 populate = function(item, data) {
-                    console.log($("button", item));
                     $("button", item).attr({
                         "data-zui-file-selection-id": data.id,
                         "data-zui-file-selection-preview": data.preview
