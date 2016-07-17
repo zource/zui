@@ -1,7 +1,7 @@
 /*!
  * Zource User Interface Library
  *
- * Date: 2016-07-14T19:16Z
+ * Date: 2016-07-17T17:23Z
  */
 
 (function(global, factory) {
@@ -21,7 +21,7 @@
     
 
     var zui = window.zui = {
-        version: "0.0.0 f0ac91c3f21d35345b3f31f3bc978da646d69a47"
+        version: "0.0.0 b3e316e251612093754e4e4d572409a52e3478e9"
     };
 
     zui.log = function() {
@@ -306,6 +306,15 @@
                 e.preventDefault();
 
                 zui.Dropdown.toggle(this, this);
+            });
+
+            $(".zui-button-loader").on("click", function() {
+                var button = $(this),
+                    timeout = button.data("zui-button-loader-timeout") || 1000;
+
+                setTimeout(function() {
+                    button.addClass("zui-button-loader-active");
+                }, timeout);
             });
         }
     };

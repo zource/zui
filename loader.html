@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Splitter - ZUI Documentation</title>
+        <title>Loader - ZUI Documentation</title>
 
         <link href="css/docs.css" rel="stylesheet">
     </head>
@@ -44,7 +44,7 @@
         <div class="zui-page-header">
             <div class="zui-page-header-inner">
                 <div class="zui-page-header-main">
-                    <h1>Splitter</h1>
+                    <h1>Loader</h1>
                 </div>
             </div>
         </div>
@@ -343,7 +343,7 @@
 
 
 <p>
-    Splitters should be used to split content in two containers. The containers can be resized.
+    The loader pattern enables a loading icon which should be used to indicate that a background task is running.
 </p>
 
 
@@ -386,11 +386,45 @@
 
         <div role="tabpanel" aria-hidden="true" id="html-classes" class="zui-tabs-pane zui-docs-tab">
             
-            <div class="zui-alert zui-alert-subtle">
-                <p>
-                    There are no classes defined for this pattern.
-                </p>
-            </div>
+            <table class="zui-table-list zui-table-bordered zui-table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td><code>zui-loader-16</code></td>
+                    <td>
+                        The zui-loader-16 class enables the loading icon with a width and height of 16 pixels.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-loader-32</code></td>
+                    <td>
+                        The zui-loader-32 class enables the loading icon with a width and height of 32 pixels.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-loader-48</code></td>
+                    <td>
+                        The zui-loader-48 class enables the loading icon with a width and height of 48 pixels.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-loader-panel</code></td>
+                    <td>
+                        The class that creates a loader panel.
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
             
         </div>
 
@@ -449,85 +483,73 @@
 <h2>Example</h2>
 
 
-<div class="zui-example">
-    <div class="splitter">
-    <div class="splitter-pane1" style="background-color: #F5F5F5; padding: 20px;">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a rhoncus arcu, vitae mollis diam. Cras 
-            sodales magna cursus libero porttitor mattis. Duis sollicitudin vulputate nulla et congue. Maecenas porta 
-            libero quis lorem consectetur finibus. Duis nec euismod lectus. Phasellus consequat vulputate suscipit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet nunc non velit sagittis placerat. 
-            Quisque nec felis enim. Morbi ut tincidunt nisi, vel dapibus est. Pellentesque ipsum dolor, malesuada et 
-            leo et, pulvinar lacinia sem. Vivamus bibendum ipsum ante, eu consectetur enim ullamcorper luctus. Nam 
-            sollicitudin varius nisl vitae tempus. Quisque tempus venenatis quam eget sollicitudin.
-        </p>
-        <p>
-            Maecenas cursus luctus metus, et suscipit urna. Sed lacinia nec turpis in aliquet. Curabitur porttitor 
-            tortor in ornare aliquam. Phasellus eu tortor scelerisque velit faucibus tristique a nec eros. Nullam 
-            aliquam felis tortor, vel ultricies dolor tristique et. Etiam semper, tortor at iaculis commodo, dolor 
-            quam lobortis risus, in facilisis massa elit non odio. Donec lacinia augue quis massa molestie, blandit 
-            egestas eros vehicula. Praesent risus nibh, placerat quis felis id, commodo lacinia felis. Morbi non enim 
-            non felis convallis tempus sed et justo. Cras odio odio, blandit eu massa vitae, sagittis maximus diam. 
-            Mauris ac vehicula tellus. Praesent mauris ipsum, rhoncus non hendrerit non, aliquam non est. Donec tempor 
-            convallis elit, ut maximus justo auctor eu. Suspendisse a sapien egestas, blandit odio a, consequat justo.
-        </p>
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-example-loader" role="tab" aria-selected="true"><strong>Loader</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-panel" role="tab" aria-selected="false"><strong>Panel</strong></a>
+        </li>
+        
+    </ul>
 
-        <p>
-            Nulla fringilla orci sit amet nunc elementum, eu faucibus massa fringilla. Fusce at auctor risus. Proin 
-            condimentum, libero non tincidunt placerat, tortor dui molestie elit, et sodales elit elit id libero. 
-            Fusce in massa urna. Phasellus pharetra sem non hendrerit placerat. Aenean vel euismod lectus. Aliquam 
-            dignissim nec diam at hendrerit. Ut et ipsum in enim posuere accumsan. Nullam dignissim congue quam eget 
-            interdum. Nulla auctor semper euismod. Ut imperdiet ligula cursus, pulvinar sem eu, sagittis dolor.
-        </p>
-    </div>
-    <div class="splitter-bar"></div>
-    <div class="splitter-pane2" style="padding: 20px;">
-        <p>
-            Nunc a felis velit. Nam nec ipsum ultricies, luctus enim id, egestas nulla. Praesent eros neque, suscipit 
-            in ante eu, varius consequat eros. Suspendisse potenti. Proin iaculis, arcu nec venenatis volutpat, quam 
-            est euismod nibh, ut dictum nulla mauris eget enim. Duis fringilla quam non dignissim lacinia. Aenean 
-            sollicitudin, arcu in ultricies vulputate, libero sem mollis augue, ac aliquet lectus erat sodales ipsum. 
-            Nunc ultricies tincidunt varius. Vivamus et mauris non risus vulputate varius. Suspendisse sed quam arcu. 
-            Donec et magna velit. Mauris tincidunt nisl neque. Integer ultricies sed arcu et porttitor. Maecenas 
-            pharetra, neque placerat volutpat lacinia, est lectus gravida tellus, et vestibulum augue odio ut lectus. 
-            In sit amet ultricies urna. Quisque aliquam nisi ligula.
-        </p>
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-example-loader" class="zui-tabs-pane zui-active-pane">
+            <div class="zui-example">
+                <span class="zui-loader-16"></span>
 
-        <p>
-            Cras eu lacus nec velit pellentesque convallis eu vel leo. Aenean varius, ante sed ornare bibendum, nulla 
-            leo rutrum dui, sit amet bibendum risus risus vitae elit. Pellentesque a ultrices lectus. Sed sed arcu id 
-            nibh ultricies egestas. Morbi sodales sit amet nunc in egestas. Nulla facilisi. Vestibulum eleifend auctor 
-            hendrerit. Ut laoreet justo quam, id sodales elit malesuada eget.
-        </p>
-
-        <p>
-            Fusce vel odio sit amet neque dictum tempus. Cras aliquet risus sit amet ornare ultricies. Nunc ut felis 
-            lacus. Suspendisse scelerisque, dolor a auctor iaculis, ex ligula porta nulla, auctor volutpat augue ex 
-            eget lacus. Etiam lacinia eu enim eget lacinia. Nullam sollicitudin augue neque, a pretium dolor ultricies 
-            vitae. Vestibulum maximus sapien sit amet commodo volutpat. Aliquam auctor sollicitudin lacus at suscipit. 
-            Quisque egestas interdum mattis. Ut a nunc non odio tempor faucibus. Sed eget varius leo. Mauris at euismod 
-            ante, nec luctus ante. Mauris quis justo ligula. Proin sollicitudin quis odio id scelerisque. Praesent 
-            congue massa sit amet facilisis dapibus.    
-        </p>
-    </div>
+            </div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-example-panel" class="zui-tabs-pane">
+            <div class="zui-example">
+                <div class="zui-loader-panel">
+    Waiting for a task to complete.
 </div>
 
+            </div>
+        </div>
+        
+    </div>
 </div>
 
 
 <h2>Markup</h2>
 
 
-<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"splitter"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"splitter-pane1"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-color: #F5F5F5; padding: 20px;"</span>&gt;</span>
-        ...
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"splitter-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"splitter-pane2"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"padding: 20px;"</span>&gt;</span>
-        ...
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<div class="zui-tabs zui-horizontal-tabs">
+    <ul class="zui-tabs-menu" role="tablist">
+        
+        <li role="presentation" class="zui-menu-item zui-active-tab">
+            <a href="#tab-markup-loader" role="tab" aria-selected="true"><strong>Loader</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-panel" role="tab" aria-selected="false"><strong>Panel</strong></a>
+        </li>
+        
+    </ul>
+    
+    <div class="zui-tabs-content">
+        
+        <div role="tabpanel" aria-hidden="false" id="tab-markup-loader" class="zui-tabs-pane zui-active-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-loader-16"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-panel" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-loader-panel"</span>&gt;</span>
+    Waiting for a task to complete.
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre></div>
+        </div>
+        
+    </div>
+</div>
 
 
 

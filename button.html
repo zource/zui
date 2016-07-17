@@ -193,6 +193,13 @@
                             </li>
                             
                             <li>
+                                <a href="loader.html">
+                                    Loader
+                                    
+                                </a>
+                            </li>
+                            
+                            <li>
                                 <a href="moment.js.html">
                                     Moment.js
                                     
@@ -393,6 +400,18 @@
                     <td><code></code></td>
                 </tr>
                 
+                <tr>
+                    <td><code>data-zui-button-loader-timeout</code></td>
+                    <td>
+                        <p>The timeout in milliseconds before the loader icon is shown. Default is 1000.</p>
+
+                        
+                        <p>No values have been documented for this attribute.</p>
+                        
+                    </td>
+                    <td><code></code></td>
+                </tr>
+                
                 </tbody>
             </table>
             
@@ -427,6 +446,13 @@
                     <td><code>zui-button-link</code></td>
                     <td>
                         The zui-button-link class turns a button into a link. This is useful for tertiary buttons such as cancel links.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><code>zui-button-loader</code></td>
+                    <td>
+                        The zui-button-loader class adds a loader icon next to the button to indicate that a background task is running.
                     </td>
                 </tr>
                 
@@ -555,6 +581,10 @@
         
         <li role="presentation" class="zui-menu-item">
             <a href="#tab-example-button-group" role="tab" aria-selected="false"><strong>Button Group</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-example-loader" role="tab" aria-selected="false"><strong>Loader</strong></a>
         </li>
         
     </ul>
@@ -715,6 +745,15 @@
             </div>
         </div>
         
+        <div role="tabpanel" aria-hidden="true" id="tab-example-loader" class="zui-tabs-pane">
+            <div class="zui-example">
+                <button class="zui-button-loader">Loader</button>
+
+<a href="#" class="zui-button zui-button-loader">Button</a>
+
+            </div>
+        </div>
+        
     </div>
 </div>
 
@@ -759,6 +798,10 @@
         
         <li role="presentation" class="zui-menu-item">
             <a href="#tab-markup-button-group" role="tab" aria-selected="false"><strong>Button Group</strong></a>
+        </li>
+        
+        <li role="presentation" class="zui-menu-item">
+            <a href="#tab-markup-loader" role="tab" aria-selected="false"><strong>Loader</strong></a>
         </li>
         
     </ul>
@@ -898,6 +941,13 @@
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div>
+        </div>
+        
+        <div role="tabpanel" aria-hidden="true" id="tab-markup-loader" class="zui-tabs-pane">
+<div class="code-container"><pre><code lang="html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button-loader"</span>&gt;</span>Loader<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"zui-button zui-button-loader"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 </code></pre></div>
         </div>
         
