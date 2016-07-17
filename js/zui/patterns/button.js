@@ -28,6 +28,15 @@ define(["jquery", "../core/core", "../core/aria"], function($, zui) {
 
                 zui.Dropdown.toggle(this, this);
             });
+
+            $(".zui-button-loader").on("click", function() {
+                var button = $(this),
+                    timeout = button.data("zui-button-loader-timeout") || 1000;
+
+                setTimeout(function() {
+                    button.addClass("zui-button-loader-active");
+                }, timeout);
+            });
         }
     };
 

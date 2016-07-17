@@ -1,0 +1,41 @@
+@import "variables";
+
+.zui-loader-panel {
+    border: 1px solid #CCC;
+    padding: ($zui-loader-panel-size * 2) 0px ($zui-loader-panel-size / 2) 0px;
+    position: relative;
+    text-align: center;
+
+    &:before {
+        background: url($zui-loader-data-64);
+        content: ' ';
+        display: block;
+        height: $zui-loader-panel-size;
+        left: 50%;
+        margin-left: -($zui-loader-panel-size / 2);
+        position: absolute;
+        top: $zui-loader-panel-size / 2;
+        width: $zui-loader-panel-size;
+    }
+}
+
+.zui-loader-16 {
+    background: url($zui-loader-data-16);
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.zui-loader-32 {
+    background: url($zui-loader-data-32);
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+.zui-loader-64 {
+    background: url($zui-loader-data-64);
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+}

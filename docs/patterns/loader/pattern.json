@@ -1,0 +1,35 @@
+{
+    "name": "Loader",
+    "examples": [
+        "Loader",
+        "Panel"
+    ],
+    "html": {
+        "attributes": [
+        ],
+        "classes": [
+            {
+                "name": "zui-loader-16",
+                "description": "The zui-loader-16 class enables the loading icon with a width and height of 16 pixels."
+            },
+            {
+                "name": "zui-loader-32",
+                "description": "The zui-loader-32 class enables the loading icon with a width and height of 32 pixels."
+            },
+            {
+                "name": "zui-loader-48",
+                "description": "The zui-loader-48 class enables the loading icon with a width and height of 48 pixels."
+            },
+            {
+                "name": "zui-loader-panel",
+                "description": "The class that creates a loader panel."
+            }
+        ]
+    },
+    "js": {
+        "events": [
+        ],
+        "methods": [
+        ]
+    }
+}

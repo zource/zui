@@ -1,0 +1,21 @@
+.zui-button-loader + .zui-loader-16 {
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
+.zui-button-loader.zui-button-loader-active {
+    &:before {
+        background: url($zui-loader-data-12);
+        content: ' ';
+        display: inline-block;
+        height: 12px;
+        left: 6px;
+        margin-top: -6px;
+        position: absolute;
+        top: 50%;
+        width: 12px;
+    }
+
+    padding-left: 24px;
+    position: relative;
+}

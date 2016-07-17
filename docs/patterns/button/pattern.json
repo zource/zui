@@ -9,13 +9,18 @@
         "Dropdown",
         "Icon",
         "Subtle",
-        "Button Group"
+        "Button Group",
+        "Loader"
     ],
     "html": {
         "attributes": [
             {
                 "name": "role",
                 "description": "The role attribute must be set to the value <em>button</em>. It is used to identify the element as a command button the the browser. This is especially needed for anchor elements that are turned into buttons."
+            },
+            {
+                "name": "data-zui-button-loader-timeout",
+                "description": "The timeout in milliseconds before the loader icon is shown. Default is 1000."
             }
         ],
         "classes": [
@@ -30,6 +35,10 @@
             {
                 "name": "zui-button-link",
                 "description": "The zui-button-link class turns a button into a link. This is useful for tertiary buttons such as cancel links."
+            },
+            {
+                "name": "zui-button-loader",
+                "description": "The zui-button-loader class adds a loader icon next to the button to indicate that a background task is running."
             },
             {
                 "name": "zui-button-primary",
